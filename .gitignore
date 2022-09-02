@@ -1,0 +1,6 @@
+
+*.DS_Store
+*.ipa
+*.dsym
+Pods/
+xcuserdata

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_google_drive_folder.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

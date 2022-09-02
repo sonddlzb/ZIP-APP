@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_media_no_permission.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

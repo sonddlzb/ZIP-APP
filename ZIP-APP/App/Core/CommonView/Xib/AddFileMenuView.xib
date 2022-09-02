@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddFileMenuView" customModule="Zip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="609" height="410"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fll-qc-vQO">
+                    <rect key="frame" x="0.0" y="0.0" width="609" height="472"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Add files to my files from:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JV4-tV-4d1">
+                            <rect key="frame" x="40" y="20" width="529" height="18"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <color key="textColor" red="0.15686274509803921" green="0.19607843137254902" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MOI-GV-pOl">
+                            <rect key="frame" x="29" y="63" width="551" height="381"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kUx-kC-MsB">
+                                    <rect key="frame" x="0.0" y="0.0" width="551" height="170.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fc6-mt-WS2" customClass="TapableView" customModule="Zip" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="154.5" height="170.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_photos" translatesAutoresizingMaskIntoConstraints="NO" id="5LI-7V-6Nd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="154.5" height="170.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Fc6-mt-WS2" secondAttribute="height" multiplier="76:84" id="5xk-TG-VMW"/>
+                                                <constraint firstItem="5LI-7V-6Nd" firstAttribute="top" secondItem="Fc6-mt-WS2" secondAttribute="top" id="Byq-bd-tgd"/>
+                                                <constraint firstAttribute="bottom" secondItem="5LI-7V-6Nd" secondAttribute="bottom" id="aoH-l4-5xp"/>
+                                                <constraint firstAttribute="trailing" secondItem="5LI-7V-6Nd" secondAttribute="trailing" id="pXk-pq-wKb"/>
+                                                <constraint firstItem="5LI-7V-6Nd" firstAttribute="leading" secondItem="Fc6-mt-WS2" secondAttribute="leading" id="ysv-nV-pML"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="photoButtonDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="tNq-pM-VQW"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HbK-0C-3DU" customClass="TapableView" customModule="Zip" customModuleProvider="target">
+                                            <rect key="frame" x="198.5" y="0.0" width="154" height="170.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_audio" translatesAutoresizingMaskIntoConstraints="NO" id="3vh-sy-oiv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="154" height="170.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="3vh-sy-oiv" firstAttribute="top" secondItem="HbK-0C-3DU" secondAttribute="top" id="AIj-Nk-x2d"/>
+                                                <constraint firstAttribute="trailing" secondItem="3vh-sy-oiv" secondAttribute="trailing" id="LP7-rb-hBA"/>
+                                                <constraint firstAttribute="bottom" secondItem="3vh-sy-oiv" secondAttribute="bottom" id="geb-zb-tWr"/>
+                                                <constraint firstItem="3vh-sy-oiv" firstAttribute="leading" secondItem="HbK-0C-3DU" secondAttribute="leading" id="w3n-Ql-8Pj"/>
+                                                <constraint firstAttribute="width" secondItem="HbK-0C-3DU" secondAttribute="height" multiplier="76:84" id="yTk-Dm-cUZ"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="audioButtonDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="3dV-F7-yEv"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4t-ca-fV2" customClass="TapableView" customModule="Zip" customModuleProvider="target">
+                                            <rect key="frame" x="396.5" y="0.0" width="154.5" height="170.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_browser_document" translatesAutoresizingMaskIntoConstraints="NO" id="aVf-a0-1X0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="154.5" height="170.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="aVf-a0-1X0" secondAttribute="bottom" id="OD7-Ed-JBE"/>
+                                                <constraint firstItem="aVf-a0-1X0" firstAttribute="top" secondItem="Q4t-ca-fV2" secondAttribute="top" id="OTl-Ii-Oud"/>
+                                                <constraint firstAttribute="width" secondItem="Q4t-ca-fV2" secondAttribute="height" multiplier="76:84" id="Pgp-dM-pn6"/>
+                                                <constraint firstItem="aVf-a0-1X0" firstAttribute="leading" secondItem="Q4t-ca-fV2" secondAttribute="leading" id="V6M-aS-qOf"/>
+                                                <constraint firstAttribute="trailing" secondItem="aVf-a0-1X0" secondAttribute="trailing" id="dXL-iH-wMp"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="documentBrowserButtonDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="1oh-uO-r1W"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="Fc6-mt-WS2" firstAttribute="leading" secondItem="kUx-kC-MsB" secondAttribute="leading" id="EX7-DG-q9i"/>
+                                        <constraint firstItem="Fc6-mt-WS2" firstAttribute="width" secondItem="HbK-0C-3DU" secondAttribute="width" id="GIb-YQ-6bw"/>
+                                        <constraint firstItem="Fc6-mt-WS2" firstAttribute="width" secondItem="Q4t-ca-fV2" secondAttribute="width" id="Juq-jF-2cE"/>
+                                        <constraint firstItem="Q4t-ca-fV2" firstAttribute="leading" secondItem="HbK-0C-3DU" secondAttribute="trailing" constant="44" id="Sde-Va-zeW"/>
+                                        <constraint firstItem="HbK-0C-3DU" firstAttribute="top" secondItem="kUx-kC-MsB" secondAttribute="top" id="W45-xs-iLu"/>
+                                        <constraint firstItem="Q4t-ca-fV2" firstAttribute="top" secondItem="kUx-kC-MsB" secondAttribute="top" id="WCg-1V-qdM"/>
+                                        <constraint firstItem="Fc6-mt-WS2" firstAttribute="top" secondItem="kUx-kC-MsB" secondAttribute="top" id="aVH-U9-1th"/>
+                                        <constraint firstAttribute="bottom" secondItem="Q4t-ca-fV2" secondAttribute="bottom" id="glc-6B-ZlJ"/>
+                                        <constraint firstItem="HbK-0C-3DU" firstAttribute="leading" secondItem="Fc6-mt-WS2" secondAttribute="trailing" constant="44" id="pTI-fH-JVY"/>
+                                        <constraint firstAttribute="bottom" secondItem="HbK-0C-3DU" secondAttribute="bottom" id="wjq-Ym-yYy"/>
+                                        <constraint firstAttribute="trailing" secondItem="Q4t-ca-fV2" secondAttribute="trailing" id="xCj-wH-yEe"/>
+                                        <constraint firstAttribute="bottom" secondItem="Fc6-mt-WS2" secondAttribute="bottom" id="znI-5C-7Ro"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="two-VR-4Iz">
+                                    <rect key="frame" x="0.0" y="210.5" width="551" height="170.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80T-sf-hva" customClass="TapableView" customModule="Zip" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="154.5" height="170.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_google_drive" translatesAutoresizingMaskIntoConstraints="NO" id="7dC-kG-Cjg">
+                                                    <rect key="frame" x="0.0" y="0.0" width="154.5" height="170.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="7dC-kG-Cjg" firstAttribute="top" secondItem="80T-sf-hva" secondAttribute="top" id="85l-tL-Bbs"/>
+                                                <constraint firstAttribute="trailing" secondItem="7dC-kG-Cjg" secondAttribute="trailing" id="Erk-ZU-xmF"/>
+                                                <constraint firstAttribute="width" secondItem="80T-sf-hva" secondAttribute="height" multiplier="76:84" id="Vrf-Q8-Zhj"/>
+                                                <constraint firstAttribute="bottom" secondItem="7dC-kG-Cjg" secondAttribute="bottom" id="iRl-cM-xuC"/>
+                                                <constraint firstItem="7dC-kG-Cjg" firstAttribute="leading" secondItem="80T-sf-hva" secondAttribute="leading" id="uub-bC-VQB"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="googleDriveButtonDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="BIq-Ug-uGW"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="scQ-GE-KQE" customClass="TapableView" customModule="Zip" customModuleProvider="target">
+                                            <rect key="frame" x="198.5" y="0.0" width="154" height="170.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_onedrive" translatesAutoresizingMaskIntoConstraints="NO" id="LyO-Vd-Oza">
+                                                    <rect key="frame" x="0.0" y="0.0" width="154" height="170.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="scQ-GE-KQE" secondAttribute="height" multiplier="76:84" id="5fC-Qc-cX7"/>
+                                                <constraint firstItem="LyO-Vd-Oza" firstAttribute="leading" secondItem="scQ-GE-KQE" secondAttribute="leading" id="92f-O1-b72"/>
+                                                <constraint firstAttribute="bottom" secondItem="LyO-Vd-Oza" secondAttribute="bottom" id="FFC-PQ-6Zb"/>
+                                                <constraint firstItem="LyO-Vd-Oza" firstAttribute="top" secondItem="scQ-GE-KQE" secondAttribute="top" id="V2h-ET-LIR"/>
+                                                <constraint firstAttribute="trailing" secondItem="LyO-Vd-Oza" secondAttribute="trailing" id="WUf-97-ExB"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="onedriveButtonDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="Jsy-1W-R0c"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3C-Qa-Woe" customClass="TapableView" customModule="Zip" customModuleProvider="target">
+                                            <rect key="frame" x="396.5" y="0.0" width="154.5" height="170.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_dropbox" translatesAutoresizingMaskIntoConstraints="NO" id="f07-0t-d6d">
+                                                    <rect key="frame" x="0.0" y="0.0" width="154.5" height="170.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="f07-0t-d6d" secondAttribute="trailing" id="1Bp-Y5-Olb"/>
+                                                <constraint firstAttribute="bottom" secondItem="f07-0t-d6d" secondAttribute="bottom" id="Bo4-aH-cCJ"/>
+                                                <constraint firstAttribute="width" secondItem="i3C-Qa-Woe" secondAttribute="height" multiplier="76:84" id="Ehf-oC-4YL"/>
+                                                <constraint firstItem="f07-0t-d6d" firstAttribute="leading" secondItem="i3C-Qa-Woe" secondAttribute="leading" id="YJQ-WW-bxr"/>
+                                                <constraint firstItem="f07-0t-d6d" firstAttribute="top" secondItem="i3C-Qa-Woe" secondAttribute="top" id="zaN-zB-HRq"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="dropboxButtonDidTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="nzE-7K-tgQ"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="80T-sf-hva" secondAttribute="bottom" id="3tZ-kd-F6X"/>
+                                        <constraint firstItem="80T-sf-hva" firstAttribute="width" secondItem="scQ-GE-KQE" secondAttribute="width" id="6m6-7y-t9h"/>
+                                        <constraint firstAttribute="bottom" secondItem="scQ-GE-KQE" secondAttribute="bottom" id="7H1-5c-LwI"/>
+                                        <constraint firstItem="i3C-Qa-Woe" firstAttribute="leading" secondItem="scQ-GE-KQE" secondAttribute="trailing" constant="44" id="Aih-nc-CGK"/>
+                                        <constraint firstItem="80T-sf-hva" firstAttribute="width" secondItem="i3C-Qa-Woe" secondAttribute="width" id="H57-SM-otM"/>
+                                        <constraint firstAttribute="bottom" secondItem="i3C-Qa-Woe" secondAttribute="bottom" id="JHe-RW-Akx"/>
+                                        <constraint firstItem="80T-sf-hva" firstAttribute="top" secondItem="two-VR-4Iz" secondAttribute="top" id="K9C-kj-22e"/>
+                                        <constraint firstItem="scQ-GE-KQE" firstAttribute="leading" secondItem="80T-sf-hva" secondAttribute="trailing" constant="44" id="PUa-ui-llt"/>
+                                        <constraint firstAttribute="trailing" secondItem="i3C-Qa-Woe" secondAttribute="trailing" id="jHT-wM-utG"/>
+                                        <constraint firstItem="i3C-Qa-Woe" firstAttribute="top" secondItem="two-VR-4Iz" secondAttribute="top" id="uag-oi-swx"/>
+                                        <constraint firstItem="80T-sf-hva" firstAttribute="leading" secondItem="two-VR-4Iz" secondAttribute="leading" id="wTQ-co-Zaf"/>
+                                        <constraint firstItem="scQ-GE-KQE" firstAttribute="top" secondItem="two-VR-4Iz" secondAttribute="top" id="yur-9a-SZw"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="two-VR-4Iz" secondAttribute="bottom" id="3C0-xG-2ZC"/>
+                                <constraint firstItem="kUx-kC-MsB" firstAttribute="leading" secondItem="MOI-GV-pOl" secondAttribute="leading" id="5Au-7o-t0A"/>
+                                <constraint firstItem="kUx-kC-MsB" firstAttribute="top" secondItem="MOI-GV-pOl" secondAttribute="top" id="IxG-XR-xv8"/>
+                                <constraint firstItem="two-VR-4Iz" firstAttribute="top" secondItem="kUx-kC-MsB" secondAttribute="bottom" constant="40" id="XNQ-zt-4EJ"/>
+                                <constraint firstAttribute="trailing" secondItem="two-VR-4Iz" secondAttribute="trailing" id="Y9O-AQ-eap"/>
+                                <constraint firstItem="two-VR-4Iz" firstAttribute="leading" secondItem="MOI-GV-pOl" secondAttribute="leading" id="Z53-GJ-neJ"/>
+                                <constraint firstAttribute="trailing" secondItem="kUx-kC-MsB" secondAttribute="trailing" id="bdm-cW-4lt"/>
+                                <constraint firstItem="two-VR-4Iz" firstAttribute="height" secondItem="kUx-kC-MsB" secondAttribute="height" id="gkh-OX-RIU"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="JV4-tV-4d1" firstAttribute="leading" secondItem="fll-qc-vQO" secondAttribute="leading" constant="40" id="12f-8S-IOU"/>
+                        <constraint firstAttribute="bottom" secondItem="MOI-GV-pOl" secondAttribute="bottom" constant="28" id="AqE-xN-Sam"/>
+                        <constraint firstItem="MOI-GV-pOl" firstAttribute="leading" secondItem="fll-qc-vQO" secondAttribute="leading" constant="29" id="Bjk-oQ-WR0"/>
+                        <constraint firstAttribute="trailing" secondItem="JV4-tV-4d1" secondAttribute="trailing" constant="40" id="JQ5-yo-ALw"/>
+                        <constraint firstAttribute="trailing" secondItem="MOI-GV-pOl" secondAttribute="trailing" constant="29" id="KFX-RT-Gw3"/>
+                        <constraint firstItem="MOI-GV-pOl" firstAttribute="top" secondItem="JV4-tV-4d1" secondAttribute="bottom" constant="25" id="dVR-j8-O1k"/>
+                        <constraint firstItem="JV4-tV-4d1" firstAttribute="top" secondItem="fll-qc-vQO" secondAttribute="top" constant="20" id="pYU-p6-WbL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fll-qc-vQO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="08C-sx-mkk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fll-qc-vQO" secondAttribute="trailing" id="7iv-CT-Hbx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fll-qc-vQO" secondAttribute="bottom" id="NZM-ey-NCA"/>
+                <constraint firstItem="fll-qc-vQO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rEq-jY-iA3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="273.1884057971015" y="-153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_audio" width="240" height="264"/>
+        <image name="btn_browser_document" width="240" height="264"/>
+        <image name="btn_dropbox" width="240" height="264"/>
+        <image name="btn_google_drive" width="240" height="264"/>
+        <image name="btn_onedrive" width="240" height="264"/>
+        <image name="btn_photos" width="240" height="264"/>
+    </resources>
+</document>

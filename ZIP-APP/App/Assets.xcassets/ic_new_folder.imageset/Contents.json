@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_new_folder.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

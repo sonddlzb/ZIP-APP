@@ -1,0 +1,74 @@
+PODS:
+  - Alamofire (5.6.2)
+  - DifferenceKit (1.3.0):
+    - DifferenceKit/Core (= 1.3.0)
+    - DifferenceKit/UIKitExtension (= 1.3.0)
+  - DifferenceKit/Core (1.3.0)
+  - DifferenceKit/UIKitExtension (1.3.0):
+    - DifferenceKit/Core
+  - lottie-ios (3.4.1)
+  - Resolver (1.5.0)
+  - RIBs (0.9.3):
+    - RxRelay (~> 5.1)
+    - RxSwift (~> 5.1)
+  - RxCocoa (5.1.3):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.3):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.3)
+  - SVProgressHUD (2.2.5)
+  - SwiftLint (0.48.0)
+  - TLLogging (1.0.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - DifferenceKit
+  - lottie-ios
+  - Resolver
+  - RIBs (from `https://github.com/uber/RIBs/`, tag `v0.10.0`)
+  - RxCocoa
+  - RxSwift
+  - SVProgressHUD
+  - SwiftLint
+  - TLLogging
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DifferenceKit
+    - lottie-ios
+    - Resolver
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SVProgressHUD
+    - SwiftLint
+    - TLLogging
+
+EXTERNAL SOURCES:
+  RIBs:
+    :git: https://github.com/uber/RIBs/
+    :tag: v0.10.0
+
+CHECKOUT OPTIONS:
+  RIBs:
+    :git: https://github.com/uber/RIBs/
+    :tag: v0.10.0
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  DifferenceKit: ab185c4d7f9cef8af3fcf593e5b387fb81e999ca
+  lottie-ios: 016449b5d8be0c3dcbcfa0a9988469999cd04c5d
+  Resolver: 68984624572763018fd8ec7b8e3e8df0e3b6bba5
+  RIBs: d4c4c7e7e4580f0bbe88bdc88b6c11704a738b7f
+  RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
+  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
+  RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftLint: 284cea64b6187c5d6bd83e9a548a64104d546447
+  TLLogging: da818f99577a4629c555d6a6db6d4916878c2b71
+
+PODFILE CHECKSUM: 3d9b6dd834608a684523d02440fb1c9e93250933
+
+COCOAPODS: 1.11.3
