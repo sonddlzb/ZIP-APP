@@ -2,7 +2,6 @@
 //  RootBuilder.swift
 //  Zip
 //
-//  Created by Linh Nguyen Duc on 20/06/2022.
 //
 
 import RIBs

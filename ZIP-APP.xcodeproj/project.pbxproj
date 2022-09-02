@@ -127,6 +127,71 @@
 		C8842F3928B9C66400673799 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F1D28B9C66400673799 /* RootRouter.swift */; };
 		C8842F3A28B9C66400673799 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F1E28B9C66400673799 /* RootBuilder.swift */; };
 		C8842F3C28BA69B100673799 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F3B28BA69B100673799 /* AppComponent.swift */; };
+		C8842F5A28C194DA00673799 /* OpenFolderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F5528C194DA00673799 /* OpenFolderRouter.swift */; };
+		C8842F5B28C194DA00673799 /* OpenFolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F5628C194DA00673799 /* OpenFolderViewController.swift */; };
+		C8842F5C28C194DA00673799 /* OpenFolderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F5728C194DA00673799 /* OpenFolderBuilder.swift */; };
+		C8842F5D28C194DA00673799 /* OpenFolderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F5828C194DA00673799 /* OpenFolderInteractor.swift */; };
+		C8842F6128C195C500673799 /* OpenFolderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8842F6028C195C500673799 /* OpenFolderViewController.xib */; };
+		C8842F6C28C195E400673799 /* OpenFolderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F6328C195E400673799 /* OpenFolderViewModel.swift */; };
+		C8842F6D28C195E400673799 /* OptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F6428C195E400673799 /* OptionViewModel.swift */; };
+		C8842F6E28C195E400673799 /* OptionItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F6528C195E400673799 /* OptionItemViewModel.swift */; };
+		C8842F6F28C195E400673799 /* OptionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F6728C195E400673799 /* OptionItemCell.swift */; };
+		C8842F7028C195E400673799 /* OptionItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8842F6828C195E400673799 /* OptionItemCell.xib */; };
+		C8842F7128C195E400673799 /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F6928C195E400673799 /* OptionView.swift */; };
+		C8842F7228C195E400673799 /* OpenFolderNoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8842F6A28C195E400673799 /* OpenFolderNoDataView.xib */; };
+		C8842F7328C195E400673799 /* OpenFolderNoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F6B28C195E400673799 /* OpenFolderNoDataView.swift */; };
+		C8842F8328C1975800673799 /* FolderDetailCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F7628C1975800673799 /* FolderDetailCellViewModel.swift */; };
+		C8842F8428C1975800673799 /* FolderDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F7728C1975800673799 /* FolderDetailViewModel.swift */; };
+		C8842F8528C1975800673799 /* FolderDetailItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F7828C1975800673799 /* FolderDetailItemViewModel.swift */; };
+		C8842F8628C1975800673799 /* FolderDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F7928C1975800673799 /* FolderDetailInteractor.swift */; };
+		C8842F8728C1975800673799 /* FileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F7B28C1975800673799 /* FileType.swift */; };
+		C8842F8828C1975800673799 /* FolderDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8842F7C28C1975800673799 /* FolderDetailViewController.xib */; };
+		C8842F8928C1975800673799 /* FolderDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F7D28C1975800673799 /* FolderDetailRouter.swift */; };
+		C8842F8A28C1975800673799 /* FolderDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F7F28C1975800673799 /* FolderDetailCell.swift */; };
+		C8842F8B28C1975800673799 /* FolderDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8842F8028C1975800673799 /* FolderDetailCell.xib */; };
+		C8842F8C28C1975800673799 /* FolderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F8128C1975800673799 /* FolderDetailViewController.swift */; };
+		C8842F8D28C1975800673799 /* FolderDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F8228C1975800673799 /* FolderDetailBuilder.swift */; };
+		C8842F9628C1978B00673799 /* CreateFolderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F9028C1978A00673799 /* CreateFolderViewModel.swift */; };
+		C8842F9728C1978B00673799 /* CreateFolderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F9128C1978A00673799 /* CreateFolderInteractor.swift */; };
+		C8842F9828C1978B00673799 /* CreateFolderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F9228C1978A00673799 /* CreateFolderBuilder.swift */; };
+		C8842F9928C1978B00673799 /* CreateFolderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8842F9328C1978B00673799 /* CreateFolderViewController.xib */; };
+		C8842F9A28C1978B00673799 /* CreateFolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F9428C1978B00673799 /* CreateFolderViewController.swift */; };
+		C8842F9B28C1978B00673799 /* CreateFolderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F9528C1978B00673799 /* CreateFolderRouter.swift */; };
+		C8842FAC28C197C300673799 /* OpenFolderInteractor+SelectDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F9C28C197C200673799 /* OpenFolderInteractor+SelectDestination.swift */; };
+		C8842FAD28C197C300673799 /* OpenFolderComponent+SelectDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F9D28C197C200673799 /* OpenFolderComponent+SelectDestination.swift */; };
+		C8842FAE28C197C300673799 /* OpenFolderInteractor+CreateFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842F9E28C197C200673799 /* OpenFolderInteractor+CreateFolder.swift */; };
+		C8842FB128C197C300673799 /* OpenFolderComponent+AddFilePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FA128C197C200673799 /* OpenFolderComponent+AddFilePopup.swift */; };
+		C8842FB228C197C300673799 /* OpenFolderInteractor+RenameItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FA228C197C200673799 /* OpenFolderInteractor+RenameItem.swift */; };
+		C8842FB428C197C300673799 /* OpenFolderComponent+CreateFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FA428C197C200673799 /* OpenFolderComponent+CreateFolder.swift */; };
+		C8842FB628C197C300673799 /* OpenFolderComponent+RenameItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FA628C197C300673799 /* OpenFolderComponent+RenameItem.swift */; };
+		C8842FB728C197C300673799 /* OpenFolderComponent+FolderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FA728C197C300673799 /* OpenFolderComponent+FolderDetail.swift */; };
+		C8842FB828C197C300673799 /* OpenFolderInteractor+AddFilePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FA828C197C300673799 /* OpenFolderInteractor+AddFilePopup.swift */; };
+		C8842FBA28C197C300673799 /* OpenFolderInteractor+FolderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FAA28C197C300673799 /* OpenFolderInteractor+FolderDetail.swift */; };
+		C8842FC428C1984100673799 /* RenameItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FBE28C1984100673799 /* RenameItemViewModel.swift */; };
+		C8842FC528C1984100673799 /* RenameItemInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FBF28C1984100673799 /* RenameItemInteractor.swift */; };
+		C8842FC628C1984100673799 /* RenameItemRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FC028C1984100673799 /* RenameItemRouter.swift */; };
+		C8842FC728C1984100673799 /* RenameItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8842FC128C1984100673799 /* RenameItemViewController.xib */; };
+		C8842FC828C1984100673799 /* RenameItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FC228C1984100673799 /* RenameItemViewController.swift */; };
+		C8842FC928C1984100673799 /* RenameItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FC328C1984100673799 /* RenameItemBuilder.swift */; };
+		C8842FD028C1985A00673799 /* AddFilePopupInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FCB28C1985A00673799 /* AddFilePopupInteractor.swift */; };
+		C8842FD128C1985A00673799 /* AddFilePopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8842FCC28C1985A00673799 /* AddFilePopupViewController.xib */; };
+		C8842FD228C1985A00673799 /* AddFilePopupRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FCD28C1985A00673799 /* AddFilePopupRouter.swift */; };
+		C8842FD328C1985A00673799 /* AddFilePopupBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FCE28C1985A00673799 /* AddFilePopupBuilder.swift */; };
+		C8842FD428C1985A00673799 /* AddFilePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FCF28C1985A00673799 /* AddFilePopupViewController.swift */; };
+		C8842FE328C1994C00673799 /* SelectDestinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FD728C1994C00673799 /* SelectDestinationViewModel.swift */; };
+		C8842FE428C1994C00673799 /* SelectDestinationNavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FD828C1994C00673799 /* SelectDestinationNavigationViewModel.swift */; };
+		C8842FE528C1994C00673799 /* SelectDestinationComponent+FolderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FD928C1994C00673799 /* SelectDestinationComponent+FolderDetail.swift */; };
+		C8842FE628C1994C00673799 /* SelectDestinationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FDA28C1994C00673799 /* SelectDestinationInteractor.swift */; };
+		C8842FE728C1994C00673799 /* SelectDestinationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FDB28C1994C00673799 /* SelectDestinationBuilder.swift */; };
+		C8842FE828C1994C00673799 /* SelectDestinationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8842FDC28C1994C00673799 /* SelectDestinationViewController.xib */; };
+		C8842FE928C1994C00673799 /* SelectDestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FDD28C1994C00673799 /* SelectDestinationViewController.swift */; };
+		C8842FEA28C1994C00673799 /* SelectDestinationNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FDF28C1994C00673799 /* SelectDestinationNavigationView.swift */; };
+		C8842FEB28C1994C00673799 /* SelectDestinationNavigationItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FE028C1994C00673799 /* SelectDestinationNavigationItemView.swift */; };
+		C8842FEC28C1994C00673799 /* SelectDestinationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FE128C1994C00673799 /* SelectDestinationRouter.swift */; };
+		C8842FED28C1994C00673799 /* SelectDestionationInteractor+FolderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FE228C1994C00673799 /* SelectDestionationInteractor+FolderDetail.swift */; };
+		C8842FF028C19D1400673799 /* OptionActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FEF28C19D1400673799 /* OptionActionType.swift */; };
+		C8842FF328C19EA600673799 /* HomeComponent+OpenFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FF128C19EA600673799 /* HomeComponent+OpenFolder.swift */; };
+		C8842FF428C19EA600673799 /* HomeInteractor+OpenFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FF228C19EA600673799 /* HomeInteractor+OpenFolder.swift */; };
 		D27757A0AE49BF14D6C85C36 /* Pods_ZIP_APP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F45421FC8974ECBE141225 /* Pods_ZIP_APP.framework */; };
 /* End PBXBuildFile section */
 
@@ -275,6 +340,71 @@
 		C8842F1D28B9C66400673799 /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		C8842F1E28B9C66400673799 /* RootBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
 		C8842F3B28BA69B100673799 /* AppComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		C8842F5528C194DA00673799 /* OpenFolderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFolderRouter.swift; sourceTree = "<group>"; };
+		C8842F5628C194DA00673799 /* OpenFolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFolderViewController.swift; sourceTree = "<group>"; };
+		C8842F5728C194DA00673799 /* OpenFolderBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFolderBuilder.swift; sourceTree = "<group>"; };
+		C8842F5828C194DA00673799 /* OpenFolderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFolderInteractor.swift; sourceTree = "<group>"; };
+		C8842F6028C195C500673799 /* OpenFolderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenFolderViewController.xib; sourceTree = "<group>"; };
+		C8842F6328C195E400673799 /* OpenFolderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenFolderViewModel.swift; sourceTree = "<group>"; };
+		C8842F6428C195E400673799 /* OptionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionViewModel.swift; sourceTree = "<group>"; };
+		C8842F6528C195E400673799 /* OptionItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionItemViewModel.swift; sourceTree = "<group>"; };
+		C8842F6728C195E400673799 /* OptionItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionItemCell.swift; sourceTree = "<group>"; };
+		C8842F6828C195E400673799 /* OptionItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionItemCell.xib; sourceTree = "<group>"; };
+		C8842F6928C195E400673799 /* OptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionView.swift; sourceTree = "<group>"; };
+		C8842F6A28C195E400673799 /* OpenFolderNoDataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenFolderNoDataView.xib; sourceTree = "<group>"; };
+		C8842F6B28C195E400673799 /* OpenFolderNoDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenFolderNoDataView.swift; sourceTree = "<group>"; };
+		C8842F7628C1975800673799 /* FolderDetailCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderDetailCellViewModel.swift; sourceTree = "<group>"; };
+		C8842F7728C1975800673799 /* FolderDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderDetailViewModel.swift; sourceTree = "<group>"; };
+		C8842F7828C1975800673799 /* FolderDetailItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderDetailItemViewModel.swift; sourceTree = "<group>"; };
+		C8842F7928C1975800673799 /* FolderDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderDetailInteractor.swift; sourceTree = "<group>"; };
+		C8842F7B28C1975800673799 /* FileType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileType.swift; sourceTree = "<group>"; };
+		C8842F7C28C1975800673799 /* FolderDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FolderDetailViewController.xib; sourceTree = "<group>"; };
+		C8842F7D28C1975800673799 /* FolderDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderDetailRouter.swift; sourceTree = "<group>"; };
+		C8842F7F28C1975800673799 /* FolderDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderDetailCell.swift; sourceTree = "<group>"; };
+		C8842F8028C1975800673799 /* FolderDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FolderDetailCell.xib; sourceTree = "<group>"; };
+		C8842F8128C1975800673799 /* FolderDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderDetailViewController.swift; sourceTree = "<group>"; };
+		C8842F8228C1975800673799 /* FolderDetailBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderDetailBuilder.swift; sourceTree = "<group>"; };
+		C8842F9028C1978A00673799 /* CreateFolderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateFolderViewModel.swift; sourceTree = "<group>"; };
+		C8842F9128C1978A00673799 /* CreateFolderInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateFolderInteractor.swift; sourceTree = "<group>"; };
+		C8842F9228C1978A00673799 /* CreateFolderBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateFolderBuilder.swift; sourceTree = "<group>"; };
+		C8842F9328C1978B00673799 /* CreateFolderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateFolderViewController.xib; sourceTree = "<group>"; };
+		C8842F9428C1978B00673799 /* CreateFolderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateFolderViewController.swift; sourceTree = "<group>"; };
+		C8842F9528C1978B00673799 /* CreateFolderRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateFolderRouter.swift; sourceTree = "<group>"; };
+		C8842F9C28C197C200673799 /* OpenFolderInteractor+SelectDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenFolderInteractor+SelectDestination.swift"; sourceTree = "<group>"; };
+		C8842F9D28C197C200673799 /* OpenFolderComponent+SelectDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenFolderComponent+SelectDestination.swift"; sourceTree = "<group>"; };
+		C8842F9E28C197C200673799 /* OpenFolderInteractor+CreateFolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenFolderInteractor+CreateFolder.swift"; sourceTree = "<group>"; };
+		C8842FA128C197C200673799 /* OpenFolderComponent+AddFilePopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenFolderComponent+AddFilePopup.swift"; sourceTree = "<group>"; };
+		C8842FA228C197C200673799 /* OpenFolderInteractor+RenameItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenFolderInteractor+RenameItem.swift"; sourceTree = "<group>"; };
+		C8842FA428C197C200673799 /* OpenFolderComponent+CreateFolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenFolderComponent+CreateFolder.swift"; sourceTree = "<group>"; };
+		C8842FA628C197C300673799 /* OpenFolderComponent+RenameItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenFolderComponent+RenameItem.swift"; sourceTree = "<group>"; };
+		C8842FA728C197C300673799 /* OpenFolderComponent+FolderDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenFolderComponent+FolderDetail.swift"; sourceTree = "<group>"; };
+		C8842FA828C197C300673799 /* OpenFolderInteractor+AddFilePopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenFolderInteractor+AddFilePopup.swift"; sourceTree = "<group>"; };
+		C8842FAA28C197C300673799 /* OpenFolderInteractor+FolderDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenFolderInteractor+FolderDetail.swift"; sourceTree = "<group>"; };
+		C8842FBE28C1984100673799 /* RenameItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenameItemViewModel.swift; sourceTree = "<group>"; };
+		C8842FBF28C1984100673799 /* RenameItemInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenameItemInteractor.swift; sourceTree = "<group>"; };
+		C8842FC028C1984100673799 /* RenameItemRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenameItemRouter.swift; sourceTree = "<group>"; };
+		C8842FC128C1984100673799 /* RenameItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RenameItemViewController.xib; sourceTree = "<group>"; };
+		C8842FC228C1984100673799 /* RenameItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenameItemViewController.swift; sourceTree = "<group>"; };
+		C8842FC328C1984100673799 /* RenameItemBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenameItemBuilder.swift; sourceTree = "<group>"; };
+		C8842FCB28C1985A00673799 /* AddFilePopupInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFilePopupInteractor.swift; sourceTree = "<group>"; };
+		C8842FCC28C1985A00673799 /* AddFilePopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddFilePopupViewController.xib; sourceTree = "<group>"; };
+		C8842FCD28C1985A00673799 /* AddFilePopupRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFilePopupRouter.swift; sourceTree = "<group>"; };
+		C8842FCE28C1985A00673799 /* AddFilePopupBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFilePopupBuilder.swift; sourceTree = "<group>"; };
+		C8842FCF28C1985A00673799 /* AddFilePopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFilePopupViewController.swift; sourceTree = "<group>"; };
+		C8842FD728C1994C00673799 /* SelectDestinationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDestinationViewModel.swift; sourceTree = "<group>"; };
+		C8842FD828C1994C00673799 /* SelectDestinationNavigationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDestinationNavigationViewModel.swift; sourceTree = "<group>"; };
+		C8842FD928C1994C00673799 /* SelectDestinationComponent+FolderDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelectDestinationComponent+FolderDetail.swift"; sourceTree = "<group>"; };
+		C8842FDA28C1994C00673799 /* SelectDestinationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDestinationInteractor.swift; sourceTree = "<group>"; };
+		C8842FDB28C1994C00673799 /* SelectDestinationBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDestinationBuilder.swift; sourceTree = "<group>"; };
+		C8842FDC28C1994C00673799 /* SelectDestinationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectDestinationViewController.xib; sourceTree = "<group>"; };
+		C8842FDD28C1994C00673799 /* SelectDestinationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDestinationViewController.swift; sourceTree = "<group>"; };
+		C8842FDF28C1994C00673799 /* SelectDestinationNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDestinationNavigationView.swift; sourceTree = "<group>"; };
+		C8842FE028C1994C00673799 /* SelectDestinationNavigationItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDestinationNavigationItemView.swift; sourceTree = "<group>"; };
+		C8842FE128C1994C00673799 /* SelectDestinationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDestinationRouter.swift; sourceTree = "<group>"; };
+		C8842FE228C1994C00673799 /* SelectDestionationInteractor+FolderDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelectDestionationInteractor+FolderDetail.swift"; sourceTree = "<group>"; };
+		C8842FEF28C19D1400673799 /* OptionActionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionActionType.swift; sourceTree = "<group>"; };
+		C8842FF128C19EA600673799 /* HomeComponent+OpenFolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeComponent+OpenFolder.swift"; sourceTree = "<group>"; };
+		C8842FF228C19EA600673799 /* HomeInteractor+OpenFolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeInteractor+OpenFolder.swift"; sourceTree = "<group>"; };
 		ECA906848B2A8CD2650BD24C /* Pods-ZIP-APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZIP-APP.release.xcconfig"; path = "Target Support Files/Pods-ZIP-APP/Pods-ZIP-APP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -575,9 +705,15 @@
 		C8842EFE28B9C53100673799 /* Ribs */ = {
 			isa = PBXGroup;
 			children = (
+				C8842FD528C1994C00673799 /* SelectDestination */,
+				C8842FCA28C1985A00673799 /* AddFilePopup */,
+				C8842FBC28C1984100673799 /* RenameItem */,
+				C8842F8E28C1978A00673799 /* CreateFolder */,
+				C8842F7428C1975800673799 /* FolderDetail */,
 				C8842EFF28B9C5C600673799 /* DIConfiguration.swift */,
 				C8842F0128B9C66400673799 /* Home */,
 				C8842F1928B9C66400673799 /* Root */,
+				C8842F5F28C194E800673799 /* OpenFolder */,
 			);
 			path = Ribs;
 			sourceTree = "<group>";
@@ -585,6 +721,8 @@
 		C8842F0128B9C66400673799 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C8842FF128C19EA600673799 /* HomeComponent+OpenFolder.swift */,
+				C8842FF228C19EA600673799 /* HomeInteractor+OpenFolder.swift */,
 				C8842F0828B9C66400673799 /* HomeInteractor.swift */,
 				C8842F0D28B9C66400673799 /* HomeViewController.xib */,
 				C8842F0E28B9C66400673799 /* HomeViewController.swift */,
@@ -604,6 +742,191 @@
 				C8842F1E28B9C66400673799 /* RootBuilder.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		C8842F5F28C194E800673799 /* OpenFolder */ = {
+			isa = PBXGroup;
+			children = (
+				C8842FEE28C19D1400673799 /* Enum */,
+				C8842FA128C197C200673799 /* OpenFolderComponent+AddFilePopup.swift */,
+				C8842FA428C197C200673799 /* OpenFolderComponent+CreateFolder.swift */,
+				C8842FA728C197C300673799 /* OpenFolderComponent+FolderDetail.swift */,
+				C8842FA628C197C300673799 /* OpenFolderComponent+RenameItem.swift */,
+				C8842F9D28C197C200673799 /* OpenFolderComponent+SelectDestination.swift */,
+				C8842FA828C197C300673799 /* OpenFolderInteractor+AddFilePopup.swift */,
+				C8842F9E28C197C200673799 /* OpenFolderInteractor+CreateFolder.swift */,
+				C8842FAA28C197C300673799 /* OpenFolderInteractor+FolderDetail.swift */,
+				C8842FA228C197C200673799 /* OpenFolderInteractor+RenameItem.swift */,
+				C8842F9C28C197C200673799 /* OpenFolderInteractor+SelectDestination.swift */,
+				C8842F6628C195E400673799 /* View */,
+				C8842F6228C195E400673799 /* ViewModel */,
+				C8842F6028C195C500673799 /* OpenFolderViewController.xib */,
+				C8842F5528C194DA00673799 /* OpenFolderRouter.swift */,
+				C8842F5628C194DA00673799 /* OpenFolderViewController.swift */,
+				C8842F5728C194DA00673799 /* OpenFolderBuilder.swift */,
+				C8842F5828C194DA00673799 /* OpenFolderInteractor.swift */,
+			);
+			path = OpenFolder;
+			sourceTree = "<group>";
+		};
+		C8842F6228C195E400673799 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C8842F6328C195E400673799 /* OpenFolderViewModel.swift */,
+				C8842F6428C195E400673799 /* OptionViewModel.swift */,
+				C8842F6528C195E400673799 /* OptionItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C8842F6628C195E400673799 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8842F6728C195E400673799 /* OptionItemCell.swift */,
+				C8842F6828C195E400673799 /* OptionItemCell.xib */,
+				C8842F6928C195E400673799 /* OptionView.swift */,
+				C8842F6A28C195E400673799 /* OpenFolderNoDataView.xib */,
+				C8842F6B28C195E400673799 /* OpenFolderNoDataView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8842F7428C1975800673799 /* FolderDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C8842F7528C1975800673799 /* ViewModel */,
+				C8842F7928C1975800673799 /* FolderDetailInteractor.swift */,
+				C8842F7A28C1975800673799 /* Enum */,
+				C8842F7C28C1975800673799 /* FolderDetailViewController.xib */,
+				C8842F7D28C1975800673799 /* FolderDetailRouter.swift */,
+				C8842F7E28C1975800673799 /* Cell */,
+				C8842F8128C1975800673799 /* FolderDetailViewController.swift */,
+				C8842F8228C1975800673799 /* FolderDetailBuilder.swift */,
+			);
+			path = FolderDetail;
+			sourceTree = "<group>";
+		};
+		C8842F7528C1975800673799 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C8842F7628C1975800673799 /* FolderDetailCellViewModel.swift */,
+				C8842F7728C1975800673799 /* FolderDetailViewModel.swift */,
+				C8842F7828C1975800673799 /* FolderDetailItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C8842F7A28C1975800673799 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				C8842F7B28C1975800673799 /* FileType.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		C8842F7E28C1975800673799 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C8842F7F28C1975800673799 /* FolderDetailCell.swift */,
+				C8842F8028C1975800673799 /* FolderDetailCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C8842F8E28C1978A00673799 /* CreateFolder */ = {
+			isa = PBXGroup;
+			children = (
+				C8842F8F28C1978A00673799 /* ViewModel */,
+				C8842F9128C1978A00673799 /* CreateFolderInteractor.swift */,
+				C8842F9228C1978A00673799 /* CreateFolderBuilder.swift */,
+				C8842F9328C1978B00673799 /* CreateFolderViewController.xib */,
+				C8842F9428C1978B00673799 /* CreateFolderViewController.swift */,
+				C8842F9528C1978B00673799 /* CreateFolderRouter.swift */,
+			);
+			path = CreateFolder;
+			sourceTree = "<group>";
+		};
+		C8842F8F28C1978A00673799 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C8842F9028C1978A00673799 /* CreateFolderViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C8842FBC28C1984100673799 /* RenameItem */ = {
+			isa = PBXGroup;
+			children = (
+				C8842FBD28C1984100673799 /* ViewModel */,
+				C8842FBF28C1984100673799 /* RenameItemInteractor.swift */,
+				C8842FC028C1984100673799 /* RenameItemRouter.swift */,
+				C8842FC128C1984100673799 /* RenameItemViewController.xib */,
+				C8842FC228C1984100673799 /* RenameItemViewController.swift */,
+				C8842FC328C1984100673799 /* RenameItemBuilder.swift */,
+			);
+			path = RenameItem;
+			sourceTree = "<group>";
+		};
+		C8842FBD28C1984100673799 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C8842FBE28C1984100673799 /* RenameItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C8842FCA28C1985A00673799 /* AddFilePopup */ = {
+			isa = PBXGroup;
+			children = (
+				C8842FCB28C1985A00673799 /* AddFilePopupInteractor.swift */,
+				C8842FCC28C1985A00673799 /* AddFilePopupViewController.xib */,
+				C8842FCD28C1985A00673799 /* AddFilePopupRouter.swift */,
+				C8842FCE28C1985A00673799 /* AddFilePopupBuilder.swift */,
+				C8842FCF28C1985A00673799 /* AddFilePopupViewController.swift */,
+			);
+			path = AddFilePopup;
+			sourceTree = "<group>";
+		};
+		C8842FD528C1994C00673799 /* SelectDestination */ = {
+			isa = PBXGroup;
+			children = (
+				C8842FD628C1994C00673799 /* ViewModel */,
+				C8842FD928C1994C00673799 /* SelectDestinationComponent+FolderDetail.swift */,
+				C8842FDA28C1994C00673799 /* SelectDestinationInteractor.swift */,
+				C8842FDB28C1994C00673799 /* SelectDestinationBuilder.swift */,
+				C8842FDC28C1994C00673799 /* SelectDestinationViewController.xib */,
+				C8842FDD28C1994C00673799 /* SelectDestinationViewController.swift */,
+				C8842FDE28C1994C00673799 /* View */,
+				C8842FE128C1994C00673799 /* SelectDestinationRouter.swift */,
+				C8842FE228C1994C00673799 /* SelectDestionationInteractor+FolderDetail.swift */,
+			);
+			path = SelectDestination;
+			sourceTree = "<group>";
+		};
+		C8842FD628C1994C00673799 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C8842FD728C1994C00673799 /* SelectDestinationViewModel.swift */,
+				C8842FD828C1994C00673799 /* SelectDestinationNavigationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C8842FDE28C1994C00673799 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8842FDF28C1994C00673799 /* SelectDestinationNavigationView.swift */,
+				C8842FE028C1994C00673799 /* SelectDestinationNavigationItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8842FEE28C19D1400673799 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				C8842FEF28C19D1400673799 /* OptionActionType.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -715,6 +1038,7 @@
 				C8842E5128B9C44200673799 /* MontserratAlternates-BoldItalic.otf in Resources */,
 				C8842E5028B9C44200673799 /* MontserratAlternates-ExtraBold.otf in Resources */,
 				C8842E5628B9C44200673799 /* MontserratAlternates-Regular.otf in Resources */,
+				C8842FD128C1985A00673799 /* AddFilePopupViewController.xib in Resources */,
 				C8842E3928B9C44200673799 /* Montserrat-BlackItalic.otf in Resources */,
 				C8842E4928B9C44200673799 /* Montserrat-Medium.otf in Resources */,
 				C8842E4C28B9C44200673799 /* Montserrat-ExtraBoldItalic.otf in Resources */,
@@ -725,11 +1049,13 @@
 				C8842E5928B9C44200673799 /* MontserratAlternates-ExtraBoldItalic.otf in Resources */,
 				C8842E4B28B9C44200673799 /* Montserrat-SemiBoldItalic.otf in Resources */,
 				C8842E3728B9C44200673799 /* Montserrat-MediumItalic.otf in Resources */,
+				C8842F7228C195E400673799 /* OpenFolderNoDataView.xib in Resources */,
 				C8842E5428B9C44200673799 /* MontserratAlternates-Light.otf in Resources */,
 				C8842E4628B9C44200673799 /* MontserratAlternates-ExtraLightItalic.otf in Resources */,
 				C8842EB828B9C4B500673799 /* InputTextFragment.xib in Resources */,
 				C8842E6028B9C46400673799 /* gif_compress_loading.json in Resources */,
 				C8842E3C28B9C44200673799 /* MontserratAlternates-LightItalic.otf in Resources */,
+				C8842F9928C1978B00673799 /* CreateFolderViewController.xib in Resources */,
 				C8842E5B28B9C44200673799 /* Montserrat-SemiBold.otf in Resources */,
 				C8842E4528B9C44200673799 /* MontserratAlternates-Bold.otf in Resources */,
 				C8842E3B28B9C44200673799 /* MontserratAlternates-Black.otf in Resources */,
@@ -738,25 +1064,31 @@
 				C8842E4728B9C44200673799 /* MontserratAlternates-Thin.otf in Resources */,
 				C8842EB928B9C4B500673799 /* YesNoDialog.xib in Resources */,
 				C8842E4228B9C44200673799 /* MontserratAlternates-MediumItalic.otf in Resources */,
+				C8842F6128C195C500673799 /* OpenFolderViewController.xib in Resources */,
 				C8842E4828B9C44200673799 /* Montserrat-LightItalic.otf in Resources */,
 				C8842E4E28B9C44200673799 /* MontserratAlternates-SemiBold.otf in Resources */,
 				C8842E5828B9C44200673799 /* Montserrat-Black.otf in Resources */,
 				C8842E5328B9C44200673799 /* Montserrat-ExtraLightItalic.otf in Resources */,
+				C8842F8B28C1975800673799 /* FolderDetailCell.xib in Resources */,
 				C8842E4A28B9C44200673799 /* MontserratAlternates-SemiBoldItalic.otf in Resources */,
 				C8842E5A28B9C44200673799 /* MontserratAlternates-Italic.otf in Resources */,
 				C8842E3A28B9C44200673799 /* SIL Open Font License.txt in Resources */,
+				C8842F8828C1975800673799 /* FolderDetailViewController.xib in Resources */,
 				C8842E3828B9C44200673799 /* Montserrat-Bold.otf in Resources */,
 				C8842DE228B9BEB100673799 /* Assets.xcassets in Resources */,
 				C8842E4128B9C44200673799 /* Montserrat-Thin.otf in Resources */,
 				C8842E4428B9C44200673799 /* MontserratAlternates-BlackItalic.otf in Resources */,
 				C8842EBA28B9C4B500673799 /* AddFileMenuView.xib in Resources */,
 				C8842E3E28B9C44200673799 /* Montserrat-BoldItalic.otf in Resources */,
+				C8842FE828C1994C00673799 /* SelectDestinationViewController.xib in Resources */,
 				C8842E3528B9C44200673799 /* clarendon_blk_bt-regular.ttf in Resources */,
 				C8842E4F28B9C44200673799 /* Montserrat-Regular.otf in Resources */,
 				C8842E4D28B9C44200673799 /* Montserrat-Italic.otf in Resources */,
 				C8842E3D28B9C44200673799 /* MontserratAlternates-Medium.otf in Resources */,
+				C8842F7028C195E400673799 /* OptionItemCell.xib in Resources */,
 				C8842E3628B9C44200673799 /* clarendon_blk_bt-black.ttf in Resources */,
 				C8842E4328B9C44200673799 /* Montserrat-ExtraLight.otf in Resources */,
+				C8842FC728C1984100673799 /* RenameItemViewController.xib in Resources */,
 				C8842E4028B9C44200673799 /* Montserrat-ThinItalic.otf in Resources */,
 				C8842F2A28B9C66400673799 /* HomeViewController.xib in Resources */,
 			);
@@ -826,73 +1158,129 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8842EE928B9C4B500673799 /* UIViewControllerExtensions.swift in Sources */,
+				C8842F8928C1975800673799 /* FolderDetailRouter.swift in Sources */,
 				C8842EFA28B9C4B500673799 /* ViewControllableExtensions.swift in Sources */,
 				C8842EDF28B9C4B500673799 /* DeviceExtensions.swift in Sources */,
 				C8842EC628B9C4B500673799 /* TapableView.swift in Sources */,
 				C8842EFC28B9C4B500673799 /* BaseViewController.swift in Sources */,
 				C8842EDA28B9C4B500673799 /* FontExtensions.swift in Sources */,
+				C8842FE528C1994C00673799 /* SelectDestinationComponent+FolderDetail.swift in Sources */,
+				C8842F5D28C194DA00673799 /* OpenFolderInteractor.swift in Sources */,
+				C8842FD328C1985A00673799 /* AddFilePopupBuilder.swift in Sources */,
+				C8842FE628C1994C00673799 /* SelectDestinationInteractor.swift in Sources */,
 				C8842EDB28B9C4B500673799 /* CIImageExtensions.swift in Sources */,
+				C8842FB228C197C300673799 /* OpenFolderInteractor+RenameItem.swift in Sources */,
 				C8842EEC28B9C4B500673799 /* UserDefaultExtensions.swift in Sources */,
+				C8842F8C28C1975800673799 /* FolderDetailViewController.swift in Sources */,
 				C8842EC328B9C4B500673799 /* HighlightableButton.swift in Sources */,
 				C8842EC228B9C4B500673799 /* SkippedInteractiveView.swift in Sources */,
 				C8842ED928B9C4B500673799 /* AVMutableCompositionExtensions.swift in Sources */,
 				C8842F2E28B9C66400673799 /* HomeBuilder.swift in Sources */,
 				C8842EE128B9C4B500673799 /* TimeIntervalExtensions.swift in Sources */,
+				C8842FD028C1985A00673799 /* AddFilePopupInteractor.swift in Sources */,
 				C8842EBF28B9C4B500673799 /* YesNoDialog.swift in Sources */,
 				C8842EF328B9C4B500673799 /* CollectionViewExtensions.swift in Sources */,
 				C8842EFD28B9C4B500673799 /* BaseNavigationController.swift in Sources */,
 				C8842ED128B9C4B500673799 /* BezierPathExtensions.swift in Sources */,
+				C8842FAD28C197C300673799 /* OpenFolderComponent+SelectDestination.swift in Sources */,
 				C8842EED28B9C4B500673799 /* BundleExtensions.swift in Sources */,
 				C8842F3828B9C66400673799 /* RootViewController.swift in Sources */,
 				C8842EDC28B9C4B500673799 /* AVAudioPlayerNodeExtensions.swift in Sources */,
+				C8842F5A28C194DA00673799 /* OpenFolderRouter.swift in Sources */,
 				C8842ECE28B9C4B500673799 /* AVAudioSessionExtensions.swift in Sources */,
 				C8842E6428B9C48500673799 /* DIConnector.swift in Sources */,
 				C8842ED528B9C4B500673799 /* AVAssetExtension.swift in Sources */,
 				C8842ED828B9C4B500673799 /* FloatExtensions.swift in Sources */,
 				C8842EE228B9C4B500673799 /* URLRequestExtensions.swift in Sources */,
+				C8842F5C28C194DA00673799 /* OpenFolderBuilder.swift in Sources */,
 				C8842ED328B9C4B500673799 /* CLPlacemarkExtensions.swift in Sources */,
 				C8842EBE28B9C4B500673799 /* SolarTextField.swift in Sources */,
 				C8842EC128B9C4B500673799 /* PlayerView.swift in Sources */,
+				C8842FC528C1984100673799 /* RenameItemInteractor.swift in Sources */,
+				C8842F8328C1975800673799 /* FolderDetailCellViewModel.swift in Sources */,
 				C8842F3A28B9C66400673799 /* RootBuilder.swift in Sources */,
 				C8842EE628B9C4B500673799 /* UIWindow+Extensions.swift in Sources */,
 				C8842E6528B9C48500673799 /* DIContainer.swift in Sources */,
 				C8842EBB28B9C4B500673799 /* ExtensibleTouchView.swift in Sources */,
+				C8842FEC28C1994C00673799 /* SelectDestinationRouter.swift in Sources */,
 				C8842F2D28B9C66400673799 /* HomeRouter.swift in Sources */,
 				C8842F3728B9C66400673799 /* RootInteractor.swift in Sources */,
+				C8842F7328C195E400673799 /* OpenFolderNoDataView.swift in Sources */,
+				C8842FD228C1985A00673799 /* AddFilePopupRouter.swift in Sources */,
 				C8842EE428B9C4B500673799 /* FileManagerExtensions.swift in Sources */,
 				C8842F2B28B9C66400673799 /* HomeViewController.swift in Sources */,
+				C8842FB728C197C300673799 /* OpenFolderComponent+FolderDetail.swift in Sources */,
 				C8842ED628B9C4B500673799 /* AVAudioFileExtensions.swift in Sources */,
+				C8842FD428C1985A00673799 /* AddFilePopupViewController.swift in Sources */,
+				C8842F8528C1975800673799 /* FolderDetailItemViewModel.swift in Sources */,
+				C8842FB428C197C300673799 /* OpenFolderComponent+CreateFolder.swift in Sources */,
 				C8842ECF28B9C4B500673799 /* CGRectExtensions.swift in Sources */,
+				C8842FF028C19D1400673799 /* OptionActionType.swift in Sources */,
+				C8842F9B28C1978B00673799 /* CreateFolderRouter.swift in Sources */,
+				C8842FF328C19EA600673799 /* HomeComponent+OpenFolder.swift in Sources */,
+				C8842F9628C1978B00673799 /* CreateFolderViewModel.swift in Sources */,
 				C8842EE828B9C4B500673799 /* URLExtensions.swift in Sources */,
+				C8842FB828C197C300673799 /* OpenFolderInteractor+AddFilePopup.swift in Sources */,
+				C8842FAC28C197C300673799 /* OpenFolderInteractor+SelectDestination.swift in Sources */,
 				C8842EBD28B9C4B500673799 /* InputTextFragment.swift in Sources */,
+				C8842FB628C197C300673799 /* OpenFolderComponent+RenameItem.swift in Sources */,
+				C8842FE928C1994C00673799 /* SelectDestinationViewController.swift in Sources */,
+				C8842FC928C1984100673799 /* RenameItemBuilder.swift in Sources */,
 				C8842EC428B9C4B500673799 /* AddFileMenuView.swift in Sources */,
+				C8842F8728C1975800673799 /* FileType.swift in Sources */,
 				C8842EEA28B9C4B500673799 /* UIImageExtensions.swift in Sources */,
 				C8842EF428B9C4B500673799 /* CalendarExtensions.swift in Sources */,
 				C8842ED428B9C4B500673799 /* CMTimeExtensions.swift in Sources */,
 				C8842EEB28B9C4B500673799 /* UIViewExtensions.swift in Sources */,
+				C8842F5B28C194DA00673799 /* OpenFolderViewController.swift in Sources */,
 				C8842EF028B9C4B500673799 /* String+Mime.swift in Sources */,
+				C8842F8628C1975800673799 /* FolderDetailInteractor.swift in Sources */,
+				C8842F7128C195E400673799 /* OptionView.swift in Sources */,
+				C8842F9828C1978B00673799 /* CreateFolderBuilder.swift in Sources */,
+				C8842F6E28C195E400673799 /* OptionItemViewModel.swift in Sources */,
+				C8842F6C28C195E400673799 /* OpenFolderViewModel.swift in Sources */,
 				C8842EE028B9C4B500673799 /* PHAssetExtension.swift in Sources */,
+				C8842FBA28C197C300673799 /* OpenFolderInteractor+FolderDetail.swift in Sources */,
+				C8842FE728C1994C00673799 /* SelectDestinationBuilder.swift in Sources */,
 				C8842F2528B9C66400673799 /* HomeInteractor.swift in Sources */,
+				C8842F6D28C195E400673799 /* OptionViewModel.swift in Sources */,
 				C8842ED728B9C4B500673799 /* CGSizeExtensions.swift in Sources */,
+				C8842FB128C197C300673799 /* OpenFolderComponent+AddFilePopup.swift in Sources */,
 				C8842EC528B9C4B500673799 /* SolarBlurView.swift in Sources */,
+				C8842FE428C1994C00673799 /* SelectDestinationNavigationViewModel.swift in Sources */,
 				C8842EB728B9C4B500673799 /* PasswordTextField.swift in Sources */,
 				C8842ED028B9C4B500673799 /* CGFloatExtensions.swift in Sources */,
+				C8842FF428C19EA600673799 /* HomeInteractor+OpenFolder.swift in Sources */,
+				C8842FC628C1984100673799 /* RenameItemRouter.swift in Sources */,
 				C8842EEF28B9C4B500673799 /* DateExtensions.swift in Sources */,
 				C8842EDE28B9C4B500673799 /* StringExtensions.swift in Sources */,
+				C8842FED28C1994C00673799 /* SelectDestionationInteractor+FolderDetail.swift in Sources */,
+				C8842FAE28C197C300673799 /* OpenFolderInteractor+CreateFolder.swift in Sources */,
 				C8842DD928B9BEAF00673799 /* AppDelegate.swift in Sources */,
 				C8842EFB28B9C4B500673799 /* PresentableExtension.swift in Sources */,
 				C8842ED228B9C4B500673799 /* ArrayExtensions.swift in Sources */,
 				C8842EE528B9C4B500673799 /* DoubleExtensions.swift in Sources */,
+				C8842F8D28C1975800673799 /* FolderDetailBuilder.swift in Sources */,
 				C8842EBC28B9C4B500673799 /* NotificationBannerView.swift in Sources */,
 				C8842F0028B9C5C600673799 /* DIConfiguration.swift in Sources */,
 				C8842EEE28B9C4B500673799 /* IntExtensions.swift in Sources */,
 				C8842F3928B9C66400673799 /* RootRouter.swift in Sources */,
+				C8842FEB28C1994C00673799 /* SelectDestinationNavigationItemView.swift in Sources */,
+				C8842FE328C1994C00673799 /* SelectDestinationViewModel.swift in Sources */,
 				C8842EF128B9C4B500673799 /* DictionaryExtension.swift in Sources */,
+				C8842F8428C1975800673799 /* FolderDetailViewModel.swift in Sources */,
 				C8842EE328B9C4B500673799 /* ColorExtensions.swift in Sources */,
+				C8842F8A28C1975800673799 /* FolderDetailCell.swift in Sources */,
+				C8842F6F28C195E400673799 /* OptionItemCell.swift in Sources */,
+				C8842F9A28C1978B00673799 /* CreateFolderViewController.swift in Sources */,
+				C8842FC828C1984100673799 /* RenameItemViewController.swift in Sources */,
 				C8842EE728B9C4B500673799 /* TableViewExtensions.swift in Sources */,
+				C8842F9728C1978B00673799 /* CreateFolderInteractor.swift in Sources */,
 				C8842F3C28BA69B100673799 /* AppComponent.swift in Sources */,
+				C8842FC428C1984100673799 /* RenameItemViewModel.swift in Sources */,
 				C8842EDD28B9C4B500673799 /* CGPointExtensions.swift in Sources */,
 				C8842EF228B9C4B500673799 /* UIImageViewExtensions.swift in Sources */,
+				C8842FEA28C1994C00673799 /* SelectDestinationNavigationView.swift in Sources */,
 				C8842EC028B9C4B500673799 /* PaddingTextField.swift in Sources */,
 				C8842F3628B9C66400673799 /* RootComponent+Home.swift in Sources */,
 			);

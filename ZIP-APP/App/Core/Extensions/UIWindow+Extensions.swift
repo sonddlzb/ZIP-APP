@@ -2,7 +2,6 @@
 //  UIWindow+Extensions.swift
 //  Zip
 //
-//  Created by Linh Nguyen Duc on 11/07/2022.
 //
 
 import UIKit

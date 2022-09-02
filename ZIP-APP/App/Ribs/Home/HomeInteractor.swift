@@ -2,7 +2,6 @@
 //  HomeInteractor.swift
 //  Zip
 //
-//  Created by Linh Nguyen Duc on 20/06/2022.
 //
 
 import RIBs
@@ -17,7 +16,6 @@ protocol HomeRouting: ViewableRouting {
     func resetMyFileScreen(highlightedItemURL: URL?)
     func openFolder(url: URL)
     func openFolderDismissOpenZip()
-    func openFolderHighlightItem(url: URL)
 
     func routeToSelectMedia()
     func dismissSelectMedia(animated: Bool)
