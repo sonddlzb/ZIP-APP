@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateFolderViewController">
+            <connections>
+                <outlet property="bottomBackgroundViewConstraint" destination="wt2-6o-jvI" id="Jme-dy-RNt"/>
+                <outlet property="containerInputTextFragment" destination="b8a-VZ-1Z0" id="h5e-1H-4j0"/>
+                <outlet property="view" destination="iN0-l3-epB" id="jYO-eb-xeE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IFD-9t-J80">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b8a-VZ-1Z0">
+                            <rect key="frame" x="35" y="359" width="344" height="178"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="178" id="gVd-ia-XQ4"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="17"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="b8a-VZ-1Z0" firstAttribute="leading" secondItem="IFD-9t-J80" secondAttribute="leading" constant="35" id="RLY-05-ViZ"/>
+                        <constraint firstAttribute="trailing" secondItem="b8a-VZ-1Z0" secondAttribute="trailing" constant="35" id="vNu-N6-lmI"/>
+                        <constraint firstItem="b8a-VZ-1Z0" firstAttribute="centerY" secondItem="IFD-9t-J80" secondAttribute="centerY" id="ylI-EM-h3Y"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="IFD-9t-J80" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EAj-D1-RhA"/>
+                <constraint firstAttribute="trailing" secondItem="IFD-9t-J80" secondAttribute="trailing" id="VuE-lW-mQD"/>
+                <constraint firstItem="IFD-9t-J80" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Vxz-pW-Mfa"/>
+                <constraint firstAttribute="bottom" secondItem="IFD-9t-J80" secondAttribute="bottom" id="wt2-6o-jvI"/>
+            </constraints>
+            <point key="canvasLocation" x="-394.20289855072468" y="73.660714285714278"/>
+        </view>
+    </objects>
+</document>

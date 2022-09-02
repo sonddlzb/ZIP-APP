@@ -2,8 +2,6 @@
 //  UserDefaultExtensions.swift
 //  KiteVid
 //
-//  Created by Thanh Vu on 22/04/2021.
-//  Copyright © 2021 Thanh Vu. All rights reserved.
 //
 
 import Foundation

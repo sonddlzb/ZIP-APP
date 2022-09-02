@@ -2,7 +2,6 @@
 //  HomeBuilder.swift
 //  Zip
 //
-//  Created by Linh Nguyen Duc on 20/06/2022.
 //
 
 import RIBs
@@ -38,17 +37,10 @@ final class HomeBuilder: Builder<HomeDependency>, HomeBuildable {
         let interactor = HomeInteractor(presenter: viewController)
         interactor.listener = listener
 
-//        let selectMediaBuilder = DIContainer.resolve(SelectMediaBuildable.self, agrument: component)
-//        let settingBuilder = DIContainer.resolve(SettingBuildable.self, agrument: component)
-//        let openFolderBuilder = DIContainer.resolve(OpenFolderBuildable.self, agrument: component)
-//        let selectCategoryAudioBuilder = DIContainer.resolve(SelectCategoryAudioBuildable.self, agrument: component)
-//        let compressBuilder = DIContainer.resolve(CompressBuildable.self, agrument: component)
-//        let extractBuilder = DIContainer.resolve(ExtractBuildable.self, agrument: component)
-//        let addFileFromGoogleDriveBuilder = DIContainer.resolve(AddFileFromGoogleDriveBuildable.self, agrument: component)
-//        let addFileFromDropboxBuilder = DIContainer.resolve(AddFileFromDropboxBuildable.self, agrument: component)
-//        let addFileFromOneDriveBuilder = DIContainer.resolve(AddFileFromOneDriveBuildable.self, agrument: component)
+        let openFolderBuilder = DIContainer.resolve(OpenFolderBuildable.self, agrument: component)
 
         return HomeRouter(interactor: interactor,
-                          viewController: viewController)
+                          viewController: viewController,
+                            openFolderBuilder: openFolderBuilder)
     }
 }
