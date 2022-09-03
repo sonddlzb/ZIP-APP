@@ -9,7 +9,7 @@ import MediaPlayer
 import RIBs
 import TLLogging
 
-protocol HomeInteractable: Interactable, OpenFolderListener {
+protocol HomeInteractable: Interactable, OpenFolderListener, SelectMediaListener {
     var router: HomeRouting? { get set }
     var listener: HomeListener? { get set }
 }
@@ -22,8 +22,15 @@ final class HomeRouter: ViewableRouter<HomeInteractable, HomeViewControllable> {
     var openFolderBuilder: OpenFolderBuildable
     var openFolderRouter: OpenFolderRouting?
 
-    init(interactor: HomeInteractable, viewController: HomeViewControllable, openFolderBuilder: OpenFolderBuildable) {
+    var selectMediaRouter: SelectMediaRouting?
+    var selectMediaBuilder: SelectMediaBuildable
+
+    init(interactor: HomeInteractable,
+         viewController: HomeViewControllable,
+         openFolderBuilder: OpenFolderBuildable,
+         selectMediaBuilder: SelectMediaBuildable) {
         self.openFolderBuilder = openFolderBuilder
+        self.selectMediaBuilder = selectMediaBuilder
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
     }
@@ -32,15 +39,37 @@ final class HomeRouter: ViewableRouter<HomeInteractable, HomeViewControllable> {
 // MARK: - HomeRouting
 extension HomeRouter: HomeRouting {
     func openFolderDismissOpenZip() {
+        guard let router = selectMediaRouter else {
+            return
+        }
 
+        self.detachChild(router)
+        self.selectMediaRouter = nil
+        self.viewControllable.popToBefore(viewControllable: router.viewControllable)
     }
 
     func routeToSelectMedia() {
-
+        let selectMediaRouter = selectMediaBuilder.build(withListener: interactor)
+        self.viewControllable.push(viewControllable: selectMediaRouter.viewControllable)
+        attachChild(selectMediaRouter)
+        self.selectMediaRouter = selectMediaRouter
     }
 
     func dismissSelectMedia(animated: Bool) {
+        guard let router = selectMediaRouter else {
+            return
+        }
 
+        let detachBlock = {
+            self.detachChild(router)
+            self.selectMediaRouter = nil
+        }
+
+        if animated {
+            self.viewControllable.popToBefore(viewControllable: router.viewControllable)
+        }
+
+        detachBlock()
     }
 
     func routeToMyFile(animated: Bool) {
