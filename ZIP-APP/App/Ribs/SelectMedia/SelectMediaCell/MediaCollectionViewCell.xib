@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MediaCollectionViewCell" customModule="Zip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t4l-eo-AG8">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nwe-2v-qmM">
+                        <rect key="frame" x="0.0" y="180" width="200" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Mqw-1c-fyn"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOC-JV-l6v">
+                        <rect key="frame" x="0.0" y="184" width="197" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="3Un-lT-bg2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selected-icon" translatesAutoresizingMaskIntoConstraints="NO" id="wXP-pP-t5B">
+                        <rect key="frame" x="175" y="11" width="17" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="17" id="JJd-dn-fII"/>
+                            <constraint firstAttribute="height" constant="17" id="aVL-cg-cjM"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="t4l-eo-AG8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4kK-cW-cL2"/>
+                <constraint firstAttribute="trailing" secondItem="t4l-eo-AG8" secondAttribute="trailing" id="4sO-Pq-bs1"/>
+                <constraint firstItem="wXP-pP-t5B" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="11" id="A7S-LO-dzL"/>
+                <constraint firstAttribute="bottom" secondItem="XOC-JV-l6v" secondAttribute="bottom" constant="1" id="FrV-gy-luS"/>
+                <constraint firstAttribute="bottom" secondItem="nwe-2v-qmM" secondAttribute="bottom" id="GOt-ZP-Q56"/>
+                <constraint firstItem="t4l-eo-AG8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OEw-MX-FuZ"/>
+                <constraint firstAttribute="trailing" secondItem="nwe-2v-qmM" secondAttribute="trailing" id="VBW-VO-Mmf"/>
+                <constraint firstItem="nwe-2v-qmM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YOn-Hl-N2R"/>
+                <constraint firstAttribute="trailing" secondItem="wXP-pP-t5B" secondAttribute="trailing" constant="8" id="bb9-3H-BZ6"/>
+                <constraint firstAttribute="bottom" secondItem="t4l-eo-AG8" secondAttribute="bottom" id="gXx-RZ-zXe"/>
+                <constraint firstItem="XOC-JV-l6v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="j6X-mj-TK4"/>
+                <constraint firstAttribute="trailing" secondItem="XOC-JV-l6v" secondAttribute="trailing" constant="3" id="pzf-9N-K6e"/>
+            </constraints>
+            <connections>
+                <outlet property="checkedImageView" destination="wXP-pP-t5B" id="P9t-7g-txS"/>
+                <outlet property="durationLabel" destination="XOC-JV-l6v" id="E3B-c4-DXb"/>
+                <outlet property="gradientView" destination="nwe-2v-qmM" id="lsh-wV-KJv"/>
+                <outlet property="mediaImageView" destination="t4l-eo-AG8" id="q3k-KE-4k8"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="81"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="selected-icon" width="17" height="17"/>
+    </resources>
+</document>

@@ -40,5 +40,17 @@ extension DIConnector {
         DIContainer.register(AddFilePopupBuildable.self) { _, args in
             return AddFilePopupBuilder(dependency: args.get())
         }
+
+        DIContainer.register(SelectMediaBuildable.self) { _, args in
+            return SelectMediaBuilder(dependency: args.get())
+        }
+
+        DIContainer.register(PreviewVideoBuildable.self) { _, args in
+            return PreviewVideoBuilder(dependency: args.get())
+        }
+
+        DIContainer.register(PreviewImageBuildable.self) { _, args in
+            return PreviewImageBuilder(dependency: args.get())
+        }
     }
 }

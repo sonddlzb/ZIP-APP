@@ -192,6 +192,38 @@
 		C8842FF028C19D1400673799 /* OptionActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FEF28C19D1400673799 /* OptionActionType.swift */; };
 		C8842FF328C19EA600673799 /* HomeComponent+OpenFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FF128C19EA600673799 /* HomeComponent+OpenFolder.swift */; };
 		C8842FF428C19EA600673799 /* HomeInteractor+OpenFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FF228C19EA600673799 /* HomeInteractor+OpenFolder.swift */; };
+		C884300A28C1E3EB00673799 /* SelectMediaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8842FF628C1E3EB00673799 /* SelectMediaViewController.xib */; };
+		C884300B28C1E3EB00673799 /* SelectMediaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FF728C1E3EB00673799 /* SelectMediaInteractor.swift */; };
+		C884300C28C1E3EB00673799 /* SelectMediaInteractor+PreviewVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FF828C1E3EB00673799 /* SelectMediaInteractor+PreviewVideo.swift */; };
+		C884300D28C1E3EB00673799 /* SelectMediaBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FF928C1E3EB00673799 /* SelectMediaBuilder.swift */; };
+		C884300E28C1E3EB00673799 /* MediaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8842FFB28C1E3EB00673799 /* MediaCollectionViewCell.xib */; };
+		C884300F28C1E3EB00673799 /* MediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FFC28C1E3EB00673799 /* MediaCollectionViewCell.swift */; };
+		C884301028C1E3EB00673799 /* SelectMediaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FFD28C1E3EB00673799 /* SelectMediaRouter.swift */; };
+		C884301128C1E3EB00673799 /* SelectMediaInteractor+PreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FFE28C1E3EB00673799 /* SelectMediaInteractor+PreviewImage.swift */; };
+		C884301228C1E3EB00673799 /* SelectMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842FFF28C1E3EB00673799 /* SelectMediaViewController.swift */; };
+		C884301328C1E3EB00673799 /* SelectMediaItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884300128C1E3EB00673799 /* SelectMediaItemViewModel.swift */; };
+		C884301428C1E3EB00673799 /* SelectMediaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884300228C1E3EB00673799 /* SelectMediaViewModel.swift */; };
+		C884301528C1E3EB00673799 /* SelectMediaNoPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884300428C1E3EB00673799 /* SelectMediaNoPermissionView.swift */; };
+		C884301628C1E3EB00673799 /* SelectMediaNoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884300528C1E3EB00673799 /* SelectMediaNoDataView.swift */; };
+		C884301728C1E3EB00673799 /* SelectMediaNoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C884300628C1E3EB00673799 /* SelectMediaNoDataView.xib */; };
+		C884301828C1E3EB00673799 /* SelectMediaNoPermissionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C884300728C1E3EB00673799 /* SelectMediaNoPermissionView.xib */; };
+		C884301928C1E3EB00673799 /* SelectMediaComponet+PreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884300828C1E3EB00673799 /* SelectMediaComponet+PreviewImage.swift */; };
+		C884301A28C1E3EB00673799 /* SelectMediaComponent+PreviewVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884300928C1E3EB00673799 /* SelectMediaComponent+PreviewVideo.swift */; };
+		C884302D28C1E46100673799 /* PreviewVideoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884301C28C1E46100673799 /* PreviewVideoBuilder.swift */; };
+		C884302E28C1E46100673799 /* PreviewVideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884301E28C1E46100673799 /* PreviewVideoViewModel.swift */; };
+		C884302F28C1E46100673799 /* PreviewVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884301F28C1E46100673799 /* PreviewVideoViewController.swift */; };
+		C884303028C1E46100673799 /* PreviewVideoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884302028C1E46100673799 /* PreviewVideoRouter.swift */; };
+		C884303128C1E46100673799 /* SeekBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884302228C1E46100673799 /* SeekBarView.swift */; };
+		C884303228C1E46100673799 /* PreviewVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C884302328C1E46100673799 /* PreviewVideoViewController.xib */; };
+		C884303328C1E46100673799 /* PreviewVideoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884302428C1E46100673799 /* PreviewVideoInteractor.swift */; };
+		C884303428C1E46100673799 /* PreviewImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884302728C1E46100673799 /* PreviewImageViewModel.swift */; };
+		C884303528C1E46100673799 /* PreviewImageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884302828C1E46100673799 /* PreviewImageBuilder.swift */; };
+		C884303628C1E46100673799 /* PreviewImageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884302928C1E46100673799 /* PreviewImageRouter.swift */; };
+		C884303728C1E46100673799 /* PreviewImageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884302A28C1E46100673799 /* PreviewImageInteractor.swift */; };
+		C884303828C1E46100673799 /* PreviewImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884302B28C1E46100673799 /* PreviewImageViewController.swift */; };
+		C884303928C1E46100673799 /* PreviewImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C884302C28C1E46100673799 /* PreviewImageViewController.xib */; };
+		C884303C28C1E5AC00673799 /* HomeInteractor+SelectMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884303A28C1E5AB00673799 /* HomeInteractor+SelectMedia.swift */; };
+		C884303D28C1E5AC00673799 /* HomeComponent+SelectMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884303B28C1E5AB00673799 /* HomeComponent+SelectMedia.swift */; };
 		D27757A0AE49BF14D6C85C36 /* Pods_ZIP_APP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F45421FC8974ECBE141225 /* Pods_ZIP_APP.framework */; };
 /* End PBXBuildFile section */
 
@@ -405,6 +437,38 @@
 		C8842FEF28C19D1400673799 /* OptionActionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionActionType.swift; sourceTree = "<group>"; };
 		C8842FF128C19EA600673799 /* HomeComponent+OpenFolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeComponent+OpenFolder.swift"; sourceTree = "<group>"; };
 		C8842FF228C19EA600673799 /* HomeInteractor+OpenFolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeInteractor+OpenFolder.swift"; sourceTree = "<group>"; };
+		C8842FF628C1E3EB00673799 /* SelectMediaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectMediaViewController.xib; sourceTree = "<group>"; };
+		C8842FF728C1E3EB00673799 /* SelectMediaInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectMediaInteractor.swift; sourceTree = "<group>"; };
+		C8842FF828C1E3EB00673799 /* SelectMediaInteractor+PreviewVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelectMediaInteractor+PreviewVideo.swift"; sourceTree = "<group>"; };
+		C8842FF928C1E3EB00673799 /* SelectMediaBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectMediaBuilder.swift; sourceTree = "<group>"; };
+		C8842FFB28C1E3EB00673799 /* MediaCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaCollectionViewCell.xib; sourceTree = "<group>"; };
+		C8842FFC28C1E3EB00673799 /* MediaCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaCollectionViewCell.swift; sourceTree = "<group>"; };
+		C8842FFD28C1E3EB00673799 /* SelectMediaRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectMediaRouter.swift; sourceTree = "<group>"; };
+		C8842FFE28C1E3EB00673799 /* SelectMediaInteractor+PreviewImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelectMediaInteractor+PreviewImage.swift"; sourceTree = "<group>"; };
+		C8842FFF28C1E3EB00673799 /* SelectMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectMediaViewController.swift; sourceTree = "<group>"; };
+		C884300128C1E3EB00673799 /* SelectMediaItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectMediaItemViewModel.swift; sourceTree = "<group>"; };
+		C884300228C1E3EB00673799 /* SelectMediaViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectMediaViewModel.swift; sourceTree = "<group>"; };
+		C884300428C1E3EB00673799 /* SelectMediaNoPermissionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectMediaNoPermissionView.swift; sourceTree = "<group>"; };
+		C884300528C1E3EB00673799 /* SelectMediaNoDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectMediaNoDataView.swift; sourceTree = "<group>"; };
+		C884300628C1E3EB00673799 /* SelectMediaNoDataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectMediaNoDataView.xib; sourceTree = "<group>"; };
+		C884300728C1E3EB00673799 /* SelectMediaNoPermissionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectMediaNoPermissionView.xib; sourceTree = "<group>"; };
+		C884300828C1E3EB00673799 /* SelectMediaComponet+PreviewImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelectMediaComponet+PreviewImage.swift"; sourceTree = "<group>"; };
+		C884300928C1E3EB00673799 /* SelectMediaComponent+PreviewVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelectMediaComponent+PreviewVideo.swift"; sourceTree = "<group>"; };
+		C884301C28C1E46100673799 /* PreviewVideoBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewVideoBuilder.swift; sourceTree = "<group>"; };
+		C884301E28C1E46100673799 /* PreviewVideoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewVideoViewModel.swift; sourceTree = "<group>"; };
+		C884301F28C1E46100673799 /* PreviewVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewVideoViewController.swift; sourceTree = "<group>"; };
+		C884302028C1E46100673799 /* PreviewVideoRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewVideoRouter.swift; sourceTree = "<group>"; };
+		C884302228C1E46100673799 /* SeekBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeekBarView.swift; sourceTree = "<group>"; };
+		C884302328C1E46100673799 /* PreviewVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewVideoViewController.xib; sourceTree = "<group>"; };
+		C884302428C1E46100673799 /* PreviewVideoInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewVideoInteractor.swift; sourceTree = "<group>"; };
+		C884302728C1E46100673799 /* PreviewImageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewImageViewModel.swift; sourceTree = "<group>"; };
+		C884302828C1E46100673799 /* PreviewImageBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewImageBuilder.swift; sourceTree = "<group>"; };
+		C884302928C1E46100673799 /* PreviewImageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewImageRouter.swift; sourceTree = "<group>"; };
+		C884302A28C1E46100673799 /* PreviewImageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewImageInteractor.swift; sourceTree = "<group>"; };
+		C884302B28C1E46100673799 /* PreviewImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewImageViewController.swift; sourceTree = "<group>"; };
+		C884302C28C1E46100673799 /* PreviewImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewImageViewController.xib; sourceTree = "<group>"; };
+		C884303A28C1E5AB00673799 /* HomeInteractor+SelectMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeInteractor+SelectMedia.swift"; sourceTree = "<group>"; };
+		C884303B28C1E5AB00673799 /* HomeComponent+SelectMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeComponent+SelectMedia.swift"; sourceTree = "<group>"; };
 		ECA906848B2A8CD2650BD24C /* Pods-ZIP-APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZIP-APP.release.xcconfig"; path = "Target Support Files/Pods-ZIP-APP/Pods-ZIP-APP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -705,6 +769,9 @@
 		C8842EFE28B9C53100673799 /* Ribs */ = {
 			isa = PBXGroup;
 			children = (
+				C884302528C1E46100673799 /* PreviewImage */,
+				C884301B28C1E46100673799 /* PreviewVideo */,
+				C8842FF528C1E3EB00673799 /* SelectMedia */,
 				C8842FD528C1994C00673799 /* SelectDestination */,
 				C8842FCA28C1985A00673799 /* AddFilePopup */,
 				C8842FBC28C1984100673799 /* RenameItem */,
@@ -721,6 +788,8 @@
 		C8842F0128B9C66400673799 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C884303B28C1E5AB00673799 /* HomeComponent+SelectMedia.swift */,
+				C884303A28C1E5AB00673799 /* HomeInteractor+SelectMedia.swift */,
 				C8842FF128C19EA600673799 /* HomeComponent+OpenFolder.swift */,
 				C8842FF228C19EA600673799 /* HomeInteractor+OpenFolder.swift */,
 				C8842F0828B9C66400673799 /* HomeInteractor.swift */,
@@ -929,6 +998,105 @@
 			path = Enum;
 			sourceTree = "<group>";
 		};
+		C8842FF528C1E3EB00673799 /* SelectMedia */ = {
+			isa = PBXGroup;
+			children = (
+				C8842FF628C1E3EB00673799 /* SelectMediaViewController.xib */,
+				C8842FF728C1E3EB00673799 /* SelectMediaInteractor.swift */,
+				C8842FF828C1E3EB00673799 /* SelectMediaInteractor+PreviewVideo.swift */,
+				C8842FF928C1E3EB00673799 /* SelectMediaBuilder.swift */,
+				C8842FFA28C1E3EB00673799 /* SelectMediaCell */,
+				C8842FFD28C1E3EB00673799 /* SelectMediaRouter.swift */,
+				C8842FFE28C1E3EB00673799 /* SelectMediaInteractor+PreviewImage.swift */,
+				C8842FFF28C1E3EB00673799 /* SelectMediaViewController.swift */,
+				C884300028C1E3EB00673799 /* SelectMediaViewModel */,
+				C884300328C1E3EB00673799 /* View */,
+				C884300828C1E3EB00673799 /* SelectMediaComponet+PreviewImage.swift */,
+				C884300928C1E3EB00673799 /* SelectMediaComponent+PreviewVideo.swift */,
+			);
+			path = SelectMedia;
+			sourceTree = "<group>";
+		};
+		C8842FFA28C1E3EB00673799 /* SelectMediaCell */ = {
+			isa = PBXGroup;
+			children = (
+				C8842FFB28C1E3EB00673799 /* MediaCollectionViewCell.xib */,
+				C8842FFC28C1E3EB00673799 /* MediaCollectionViewCell.swift */,
+			);
+			path = SelectMediaCell;
+			sourceTree = "<group>";
+		};
+		C884300028C1E3EB00673799 /* SelectMediaViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C884300128C1E3EB00673799 /* SelectMediaItemViewModel.swift */,
+				C884300228C1E3EB00673799 /* SelectMediaViewModel.swift */,
+			);
+			path = SelectMediaViewModel;
+			sourceTree = "<group>";
+		};
+		C884300328C1E3EB00673799 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C884300428C1E3EB00673799 /* SelectMediaNoPermissionView.swift */,
+				C884300528C1E3EB00673799 /* SelectMediaNoDataView.swift */,
+				C884300628C1E3EB00673799 /* SelectMediaNoDataView.xib */,
+				C884300728C1E3EB00673799 /* SelectMediaNoPermissionView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C884301B28C1E46100673799 /* PreviewVideo */ = {
+			isa = PBXGroup;
+			children = (
+				C884301C28C1E46100673799 /* PreviewVideoBuilder.swift */,
+				C884301D28C1E46100673799 /* ViewModel */,
+				C884301F28C1E46100673799 /* PreviewVideoViewController.swift */,
+				C884302028C1E46100673799 /* PreviewVideoRouter.swift */,
+				C884302128C1E46100673799 /* View */,
+				C884302328C1E46100673799 /* PreviewVideoViewController.xib */,
+				C884302428C1E46100673799 /* PreviewVideoInteractor.swift */,
+			);
+			path = PreviewVideo;
+			sourceTree = "<group>";
+		};
+		C884301D28C1E46100673799 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C884301E28C1E46100673799 /* PreviewVideoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C884302128C1E46100673799 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C884302228C1E46100673799 /* SeekBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C884302528C1E46100673799 /* PreviewImage */ = {
+			isa = PBXGroup;
+			children = (
+				C884302628C1E46100673799 /* ViewModel */,
+				C884302828C1E46100673799 /* PreviewImageBuilder.swift */,
+				C884302928C1E46100673799 /* PreviewImageRouter.swift */,
+				C884302A28C1E46100673799 /* PreviewImageInteractor.swift */,
+				C884302B28C1E46100673799 /* PreviewImageViewController.swift */,
+				C884302C28C1E46100673799 /* PreviewImageViewController.xib */,
+			);
+			path = PreviewImage;
+			sourceTree = "<group>";
+		};
+		C884302628C1E46100673799 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C884302728C1E46100673799 /* PreviewImageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1044,6 +1212,7 @@
 				C8842E4C28B9C44200673799 /* Montserrat-ExtraBoldItalic.otf in Resources */,
 				C8842E5728B9C44200673799 /* MontserratAlternates-ThinItalic.otf in Resources */,
 				C8842E5528B9C44200673799 /* MontserratAlternates-ExtraLight.otf in Resources */,
+				C884301728C1E3EB00673799 /* SelectMediaNoDataView.xib in Resources */,
 				C8842DE528B9BEB100673799 /* LaunchScreen.storyboard in Resources */,
 				C8842E5F28B9C46400673799 /* gif_extract_loading.json in Resources */,
 				C8842E5928B9C44200673799 /* MontserratAlternates-ExtraBoldItalic.otf in Resources */,
@@ -1058,6 +1227,7 @@
 				C8842F9928C1978B00673799 /* CreateFolderViewController.xib in Resources */,
 				C8842E5B28B9C44200673799 /* Montserrat-SemiBold.otf in Resources */,
 				C8842E4528B9C44200673799 /* MontserratAlternates-Bold.otf in Resources */,
+				C884303228C1E46100673799 /* PreviewVideoViewController.xib in Resources */,
 				C8842E3B28B9C44200673799 /* MontserratAlternates-Black.otf in Resources */,
 				C8842E5228B9C44200673799 /* Montserrat-ExtraBold.otf in Resources */,
 				C8842E3F28B9C44200673799 /* Montserrat-Light.otf in Resources */,
@@ -1067,9 +1237,12 @@
 				C8842F6128C195C500673799 /* OpenFolderViewController.xib in Resources */,
 				C8842E4828B9C44200673799 /* Montserrat-LightItalic.otf in Resources */,
 				C8842E4E28B9C44200673799 /* MontserratAlternates-SemiBold.otf in Resources */,
+				C884300A28C1E3EB00673799 /* SelectMediaViewController.xib in Resources */,
+				C884303928C1E46100673799 /* PreviewImageViewController.xib in Resources */,
 				C8842E5828B9C44200673799 /* Montserrat-Black.otf in Resources */,
 				C8842E5328B9C44200673799 /* Montserrat-ExtraLightItalic.otf in Resources */,
 				C8842F8B28C1975800673799 /* FolderDetailCell.xib in Resources */,
+				C884301828C1E3EB00673799 /* SelectMediaNoPermissionView.xib in Resources */,
 				C8842E4A28B9C44200673799 /* MontserratAlternates-SemiBoldItalic.otf in Resources */,
 				C8842E5A28B9C44200673799 /* MontserratAlternates-Italic.otf in Resources */,
 				C8842E3A28B9C44200673799 /* SIL Open Font License.txt in Resources */,
@@ -1081,6 +1254,7 @@
 				C8842EBA28B9C4B500673799 /* AddFileMenuView.xib in Resources */,
 				C8842E3E28B9C44200673799 /* Montserrat-BoldItalic.otf in Resources */,
 				C8842FE828C1994C00673799 /* SelectDestinationViewController.xib in Resources */,
+				C884300E28C1E3EB00673799 /* MediaCollectionViewCell.xib in Resources */,
 				C8842E3528B9C44200673799 /* clarendon_blk_bt-regular.ttf in Resources */,
 				C8842E4F28B9C44200673799 /* Montserrat-Regular.otf in Resources */,
 				C8842E4D28B9C44200673799 /* Montserrat-Italic.otf in Resources */,
@@ -1184,22 +1358,28 @@
 				C8842ED128B9C4B500673799 /* BezierPathExtensions.swift in Sources */,
 				C8842FAD28C197C300673799 /* OpenFolderComponent+SelectDestination.swift in Sources */,
 				C8842EED28B9C4B500673799 /* BundleExtensions.swift in Sources */,
+				C884303428C1E46100673799 /* PreviewImageViewModel.swift in Sources */,
 				C8842F3828B9C66400673799 /* RootViewController.swift in Sources */,
 				C8842EDC28B9C4B500673799 /* AVAudioPlayerNodeExtensions.swift in Sources */,
+				C884300D28C1E3EB00673799 /* SelectMediaBuilder.swift in Sources */,
 				C8842F5A28C194DA00673799 /* OpenFolderRouter.swift in Sources */,
 				C8842ECE28B9C4B500673799 /* AVAudioSessionExtensions.swift in Sources */,
 				C8842E6428B9C48500673799 /* DIConnector.swift in Sources */,
 				C8842ED528B9C4B500673799 /* AVAssetExtension.swift in Sources */,
 				C8842ED828B9C4B500673799 /* FloatExtensions.swift in Sources */,
 				C8842EE228B9C4B500673799 /* URLRequestExtensions.swift in Sources */,
+				C884300B28C1E3EB00673799 /* SelectMediaInteractor.swift in Sources */,
 				C8842F5C28C194DA00673799 /* OpenFolderBuilder.swift in Sources */,
+				C884303528C1E46100673799 /* PreviewImageBuilder.swift in Sources */,
 				C8842ED328B9C4B500673799 /* CLPlacemarkExtensions.swift in Sources */,
 				C8842EBE28B9C4B500673799 /* SolarTextField.swift in Sources */,
 				C8842EC128B9C4B500673799 /* PlayerView.swift in Sources */,
 				C8842FC528C1984100673799 /* RenameItemInteractor.swift in Sources */,
+				C884303828C1E46100673799 /* PreviewImageViewController.swift in Sources */,
 				C8842F8328C1975800673799 /* FolderDetailCellViewModel.swift in Sources */,
 				C8842F3A28B9C66400673799 /* RootBuilder.swift in Sources */,
 				C8842EE628B9C4B500673799 /* UIWindow+Extensions.swift in Sources */,
+				C884303328C1E46100673799 /* PreviewVideoInteractor.swift in Sources */,
 				C8842E6528B9C48500673799 /* DIContainer.swift in Sources */,
 				C8842EBB28B9C4B500673799 /* ExtensibleTouchView.swift in Sources */,
 				C8842FEC28C1994C00673799 /* SelectDestinationRouter.swift in Sources */,
@@ -1207,30 +1387,40 @@
 				C8842F3728B9C66400673799 /* RootInteractor.swift in Sources */,
 				C8842F7328C195E400673799 /* OpenFolderNoDataView.swift in Sources */,
 				C8842FD228C1985A00673799 /* AddFilePopupRouter.swift in Sources */,
+				C884302F28C1E46100673799 /* PreviewVideoViewController.swift in Sources */,
+				C884301028C1E3EB00673799 /* SelectMediaRouter.swift in Sources */,
 				C8842EE428B9C4B500673799 /* FileManagerExtensions.swift in Sources */,
 				C8842F2B28B9C66400673799 /* HomeViewController.swift in Sources */,
+				C884301528C1E3EB00673799 /* SelectMediaNoPermissionView.swift in Sources */,
 				C8842FB728C197C300673799 /* OpenFolderComponent+FolderDetail.swift in Sources */,
+				C884300F28C1E3EB00673799 /* MediaCollectionViewCell.swift in Sources */,
 				C8842ED628B9C4B500673799 /* AVAudioFileExtensions.swift in Sources */,
 				C8842FD428C1985A00673799 /* AddFilePopupViewController.swift in Sources */,
 				C8842F8528C1975800673799 /* FolderDetailItemViewModel.swift in Sources */,
 				C8842FB428C197C300673799 /* OpenFolderComponent+CreateFolder.swift in Sources */,
 				C8842ECF28B9C4B500673799 /* CGRectExtensions.swift in Sources */,
 				C8842FF028C19D1400673799 /* OptionActionType.swift in Sources */,
+				C884302D28C1E46100673799 /* PreviewVideoBuilder.swift in Sources */,
 				C8842F9B28C1978B00673799 /* CreateFolderRouter.swift in Sources */,
 				C8842FF328C19EA600673799 /* HomeComponent+OpenFolder.swift in Sources */,
 				C8842F9628C1978B00673799 /* CreateFolderViewModel.swift in Sources */,
 				C8842EE828B9C4B500673799 /* URLExtensions.swift in Sources */,
+				C884301928C1E3EB00673799 /* SelectMediaComponet+PreviewImage.swift in Sources */,
 				C8842FB828C197C300673799 /* OpenFolderInteractor+AddFilePopup.swift in Sources */,
 				C8842FAC28C197C300673799 /* OpenFolderInteractor+SelectDestination.swift in Sources */,
+				C884303C28C1E5AC00673799 /* HomeInteractor+SelectMedia.swift in Sources */,
 				C8842EBD28B9C4B500673799 /* InputTextFragment.swift in Sources */,
 				C8842FB628C197C300673799 /* OpenFolderComponent+RenameItem.swift in Sources */,
+				C884301428C1E3EB00673799 /* SelectMediaViewModel.swift in Sources */,
 				C8842FE928C1994C00673799 /* SelectDestinationViewController.swift in Sources */,
 				C8842FC928C1984100673799 /* RenameItemBuilder.swift in Sources */,
+				C884303028C1E46100673799 /* PreviewVideoRouter.swift in Sources */,
 				C8842EC428B9C4B500673799 /* AddFileMenuView.swift in Sources */,
 				C8842F8728C1975800673799 /* FileType.swift in Sources */,
 				C8842EEA28B9C4B500673799 /* UIImageExtensions.swift in Sources */,
 				C8842EF428B9C4B500673799 /* CalendarExtensions.swift in Sources */,
 				C8842ED428B9C4B500673799 /* CMTimeExtensions.swift in Sources */,
+				C884303D28C1E5AC00673799 /* HomeComponent+SelectMedia.swift in Sources */,
 				C8842EEB28B9C4B500673799 /* UIViewExtensions.swift in Sources */,
 				C8842F5B28C194DA00673799 /* OpenFolderViewController.swift in Sources */,
 				C8842EF028B9C4B500673799 /* String+Mime.swift in Sources */,
@@ -1247,20 +1437,26 @@
 				C8842ED728B9C4B500673799 /* CGSizeExtensions.swift in Sources */,
 				C8842FB128C197C300673799 /* OpenFolderComponent+AddFilePopup.swift in Sources */,
 				C8842EC528B9C4B500673799 /* SolarBlurView.swift in Sources */,
+				C884303128C1E46100673799 /* SeekBarView.swift in Sources */,
 				C8842FE428C1994C00673799 /* SelectDestinationNavigationViewModel.swift in Sources */,
 				C8842EB728B9C4B500673799 /* PasswordTextField.swift in Sources */,
 				C8842ED028B9C4B500673799 /* CGFloatExtensions.swift in Sources */,
 				C8842FF428C19EA600673799 /* HomeInteractor+OpenFolder.swift in Sources */,
 				C8842FC628C1984100673799 /* RenameItemRouter.swift in Sources */,
 				C8842EEF28B9C4B500673799 /* DateExtensions.swift in Sources */,
+				C884301328C1E3EB00673799 /* SelectMediaItemViewModel.swift in Sources */,
 				C8842EDE28B9C4B500673799 /* StringExtensions.swift in Sources */,
+				C884300C28C1E3EB00673799 /* SelectMediaInteractor+PreviewVideo.swift in Sources */,
 				C8842FED28C1994C00673799 /* SelectDestionationInteractor+FolderDetail.swift in Sources */,
 				C8842FAE28C197C300673799 /* OpenFolderInteractor+CreateFolder.swift in Sources */,
 				C8842DD928B9BEAF00673799 /* AppDelegate.swift in Sources */,
 				C8842EFB28B9C4B500673799 /* PresentableExtension.swift in Sources */,
 				C8842ED228B9C4B500673799 /* ArrayExtensions.swift in Sources */,
+				C884301228C1E3EB00673799 /* SelectMediaViewController.swift in Sources */,
+				C884301628C1E3EB00673799 /* SelectMediaNoDataView.swift in Sources */,
 				C8842EE528B9C4B500673799 /* DoubleExtensions.swift in Sources */,
 				C8842F8D28C1975800673799 /* FolderDetailBuilder.swift in Sources */,
+				C884301A28C1E3EB00673799 /* SelectMediaComponent+PreviewVideo.swift in Sources */,
 				C8842EBC28B9C4B500673799 /* NotificationBannerView.swift in Sources */,
 				C8842F0028B9C5C600673799 /* DIConfiguration.swift in Sources */,
 				C8842EEE28B9C4B500673799 /* IntExtensions.swift in Sources */,
@@ -1273,16 +1469,20 @@
 				C8842F8A28C1975800673799 /* FolderDetailCell.swift in Sources */,
 				C8842F6F28C195E400673799 /* OptionItemCell.swift in Sources */,
 				C8842F9A28C1978B00673799 /* CreateFolderViewController.swift in Sources */,
+				C884303728C1E46100673799 /* PreviewImageInteractor.swift in Sources */,
 				C8842FC828C1984100673799 /* RenameItemViewController.swift in Sources */,
+				C884301128C1E3EB00673799 /* SelectMediaInteractor+PreviewImage.swift in Sources */,
 				C8842EE728B9C4B500673799 /* TableViewExtensions.swift in Sources */,
 				C8842F9728C1978B00673799 /* CreateFolderInteractor.swift in Sources */,
 				C8842F3C28BA69B100673799 /* AppComponent.swift in Sources */,
 				C8842FC428C1984100673799 /* RenameItemViewModel.swift in Sources */,
+				C884303628C1E46100673799 /* PreviewImageRouter.swift in Sources */,
 				C8842EDD28B9C4B500673799 /* CGPointExtensions.swift in Sources */,
 				C8842EF228B9C4B500673799 /* UIImageViewExtensions.swift in Sources */,
 				C8842FEA28C1994C00673799 /* SelectDestinationNavigationView.swift in Sources */,
 				C8842EC028B9C4B500673799 /* PaddingTextField.swift in Sources */,
 				C8842F3628B9C66400673799 /* RootComponent+Home.swift in Sources */,
+				C884302E28C1E46100673799 /* PreviewVideoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
