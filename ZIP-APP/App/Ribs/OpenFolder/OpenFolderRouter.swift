@@ -7,7 +7,7 @@
 import RIBs
 import Foundation
 
-protocol OpenFolderInteractable: Interactable, FolderDetailListener, RenameItemListener, SelectDestinationListener, CreateFolderListener, AddFilePopupListener {
+protocol OpenFolderInteractable: Interactable, FolderDetailListener, RenameItemListener, SelectDestinationListener, CreateFolderListener, AddFilePopupListener, PreviewImageListener, PreviewVideoListener, OpenZipListener {
     var router: OpenFolderRouting? { get set }
     var listener: OpenFolderListener? { get set }
     func resetScreen(highlightedItemURL: URL?)
@@ -34,18 +34,33 @@ final class OpenFolderRouter: ViewableRouter<OpenFolderInteractable, OpenFolderV
     var addFilePopupBuilder: AddFilePopupBuildable
     var addFilePopupRouter: AddFilePopupRouting?
 
+    var previewImageBuilder: PreviewImageBuildable
+    var previewImageRouter: PreviewImageRouting?
+
+    var previewVideoBuilder: PreviewVideoBuildable
+    var previewVideoRouter: PreviewVideoRouting?
+
+    var openZipBuilder: OpenZipBuildable
+    var openZipRouter: OpenZipRouting?
+
     init(interactor: OpenFolderInteractable,
          viewController: OpenFolderViewControllable,
          folderDetailBuilder: FolderDetailBuildable,
          renameItemBuilder: RenameItemBuildable,
          selectDestinationBuilder: SelectDestinationBuildable,
          createFolderBuilder: CreateFolderBuildable,
-         addFilePopupBuilder: AddFilePopupBuildable) {
+         addFilePopupBuilder: AddFilePopupBuildable,
+         previewImageBuilder: PreviewImageBuildable,
+         previewVideoBuilder: PreviewVideoBuildable,
+         openZipBuilder: OpenZipBuildable) {
         self.folderDetailBuilder = folderDetailBuilder
         self.renameItemBuilder = renameItemBuilder
         self.selectDestinationBuilder = selectDestinationBuilder
         self.createFolderBuilder = createFolderBuilder
         self.addFilePopupBuilder = addFilePopupBuilder
+        self.previewImageBuilder = previewImageBuilder
+        self.previewVideoBuilder = previewVideoBuilder
+        self.openZipBuilder = openZipBuilder
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
     }
@@ -64,12 +79,12 @@ final class OpenFolderRouter: ViewableRouter<OpenFolderInteractable, OpenFolderV
 // MARK: - OpenFolderRouting
 extension OpenFolderRouter: OpenFolderRouting {
     func routeToCreateFolder(inputURL: URL) {
-        let router = createFolderBuilder.build(withListener: self.interactor, inputURL: inputURL)
-        let topNavigation = self.topNavigation()
-        topNavigation.present(router.viewControllable.uiviewController, animated: true)
-        attachChild(router)
-        self.createFolderRouter = router
-    }
+            let router = createFolderBuilder.build(withListener: self.interactor, inputURL: inputURL)
+            let topNavigation = self.topNavigation()
+            topNavigation.present(router.viewControllable.uiviewController, animated: true)
+            attachChild(router)
+            self.createFolderRouter = router
+        }
 
     func dismissCreateFolder() {
         guard let router = self.createFolderRouter else {
@@ -134,6 +149,58 @@ extension OpenFolderRouter: OpenFolderRouting {
         router.viewControllable.dismiss(animated: false, completion: completion)
         detachChild(router)
         self.addFilePopupRouter = nil
+    }
+
+    func routeToPreviewImage(imageURL: URL) {
+        let router = previewImageBuilder.build(withListener: self.interactor, imageURL: imageURL)
+        self.viewController.present(viewControllable: router.viewControllable)
+        attachChild(router)
+        self.previewImageRouter = router
+    }
+
+    func dismissPreviewImage() {
+        guard let router = previewImageRouter else {
+            return
+        }
+
+        router.viewControllable.dismiss()
+        detachChild(router)
+        self.previewImageRouter = nil
+    }
+
+    func routeToPreviewVideo(videoURL: URL) {
+        let router = self.previewVideoBuilder.build(withListener: self.interactor, videoURL: videoURL)
+        self.viewController.present(viewControllable: router.viewControllable)
+        attachChild(router)
+        self.previewVideoRouter = router
+    }
+
+    func dismissPreviewVideo() {
+        guard let router = self.previewVideoRouter else {
+            return
+        }
+
+        router.viewControllable.dismiss()
+        detachChild(router)
+        self.previewVideoRouter = nil
+    }
+
+    func routeToOpenZip(url: URL) {
+        let router = self.openZipBuilder.build(withListener: self.interactor, zipURL: url)
+        self.viewController.push(viewControllable: router.viewControllable, animated: false)
+        attachChild(router)
+        self.openZipRouter = router
+    }
+
+    func dismissOpenZip(animated: Bool) {
+        guard let router = self.openZipRouter else {
+            return
+        }
+
+        self.openZipRouter = nil
+        self.viewController.popToBefore(viewControllable: router.viewControllable, animated: animated) {
+            self.detachChild(router)
+        }
     }
 
     func displaySharingURLs(_ urls: [URL]) {

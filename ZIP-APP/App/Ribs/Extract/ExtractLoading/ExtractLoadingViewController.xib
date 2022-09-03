@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20037"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExtractLoadingViewController">
+            <connections>
+                <outlet property="blurView" destination="Xtc-70-WcJ" id="1pN-pJ-4zH"/>
+                <outlet property="gifView" destination="DDk-OL-URf" id="J4b-jT-arD"/>
+                <outlet property="view" destination="iN0-l3-epB" id="jYO-eb-xeE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xtc-70-WcJ" customClass="SolarBlurView" customModule="Zip" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDk-OL-URf" customClass="AnimationView" customModule="Lottie">
+                    <rect key="frame" x="35" y="276" width="344" height="344"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="DDk-OL-URf" secondAttribute="height" multiplier="1:1" id="C48-pd-hM2"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="gif_extract_loading"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Xtc-70-WcJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="59J-jF-E7f"/>
+                <constraint firstAttribute="trailing" secondItem="Xtc-70-WcJ" secondAttribute="trailing" id="5NH-Wr-H4k"/>
+                <constraint firstItem="Xtc-70-WcJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Bqh-u8-MYG"/>
+                <constraint firstItem="DDk-OL-URf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="35" id="aFF-88-NnI"/>
+                <constraint firstAttribute="bottom" secondItem="Xtc-70-WcJ" secondAttribute="bottom" id="bsc-5J-2ib"/>
+                <constraint firstItem="DDk-OL-URf" firstAttribute="width" secondItem="DDk-OL-URf" secondAttribute="height" multiplier="1:1" id="eno-bV-UtV"/>
+                <constraint firstItem="DDk-OL-URf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hgQ-Kv-c8J"/>
+                <constraint firstAttribute="trailing" secondItem="DDk-OL-URf" secondAttribute="trailing" constant="35" id="tSj-CS-ek0"/>
+            </constraints>
+            <point key="canvasLocation" x="-394" y="74"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="DDk-OL-URf"/>
+    </designables>
+</document>

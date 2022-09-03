@@ -41,7 +41,6 @@ target 'ZIP-APP' do
   binary_pod 'Resolver'
   binary_pod 'RxSwift'
   binary_pod 'RxCocoa'
-
   binary_pod 'Alamofire'
 
   binary_pod 'lottie-ios'

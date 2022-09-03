@@ -52,5 +52,37 @@ extension DIConnector {
         DIContainer.register(PreviewImageBuildable.self) { _, args in
             return PreviewImageBuilder(dependency: args.get())
         }
+
+        DIContainer.register(CompressBuildable.self) { _, args in
+            return CompressBuilder(dependency: args.get())
+        }
+
+        DIContainer.register(ExtractBuildable.self) { _, args in
+            return ExtractBuilder(dependency: args.get())
+        }
+
+        DIContainer.register(InputPasswordBuildable.self) { _, args in
+            return InputPasswordBuilder(dependency: args.get())
+        }
+
+        DIContainer.register(SettingBuildable.self) { _, args in
+            return SettingBuilder(dependency: args.get())
+        }
+
+        DIContainer.register(InputToCompressBuildable.self) { _, args in
+                 return InputToCompressBuilder(dependency: args.get())
+        }
+
+        DIContainer.register(CompressLoadingBuildable.self) { _, args in
+             return CompressLoadingBuilder(dependency: args.get())
+        }
+
+        DIContainer.register(OpenFolderBuildable.self) { _, args in
+             return OpenFolderBuilder(dependency: args.get())
+        }
+
+        DIContainer.register(OpenZipBuildable.self) { _, args in
+             return OpenZipBuilder(dependency: args.get())
+        }
     }
 }
