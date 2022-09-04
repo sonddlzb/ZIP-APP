@@ -16,6 +16,8 @@ protocol OpenFolderRoutingAndFolderDetailBridge {
     func openFolderWantToUnselectAllItem()
     func openFolderDidMoveItem(fromURL: URL, toURL: URL)
     func openFolderDidDeleteSelectedItems()
+    func routeToPreviewVideo(videoURL: URL)
+    func dismissPreviewVideo()
 }
 
 protocol OpenFolderRouting: ViewableRouting, OpenFolderRoutingAndFolderDetailBridge {
@@ -28,6 +30,10 @@ protocol OpenFolderRouting: ViewableRouting, OpenFolderRoutingAndFolderDetailBri
     func dismissCreateFolder()
     func routeToAddFilePopup()
     func dismissAddFilePopup(completion: (() -> Void)?)
+    func routeToPreviewImage(imageURL: URL)
+    func dismissPreviewImage()
+    func routeToOpenZip(url: URL)
+    func dismissOpenZip(animated: Bool)
 
     func resetScreen(highlightedItemURL: URL?)
     func displaySharingURLs(_ urls: [URL])
@@ -48,8 +54,8 @@ protocol OpenFolderListener: AnyObject {
 //    func openFolderWantToAddFileFromGoogleDrive(folderURL: URL)
 //    func openFolderWantToAddFileFromOnedrive(folderURL: URL)
 //    func openFolderWantToAddFileFromDropbox(folderURL: URL)
-//    func openFolderWantToCompress(inputURLs: [URL], outputFolderURL: URL)
-//    func openFolderWantToExtract(zipURL: URL, outputFolderURL: URL)
+    func openFolderWantToCompress(inputURLs: [URL], outputFolderURL: URL)
+    func openFolderWantToExtract(zipURL: URL, outputFolderURL: URL)
 }
 
 final class OpenFolderInteractor: PresentableInteractor<OpenFolderPresentable> {
@@ -200,6 +206,15 @@ extension OpenFolderInteractor: OpenFolderPresentableListener {
             if !self.viewModel.selectedURLs.isEmpty {
                 self.router?.displaySharingURLs(self.viewModel.selectedURLs)
             }
+
+        case .extract:
+            if let firstSelectedURL = self.viewModel.selectedURLs.first,
+               FileType.make(extensionPath: firstSelectedURL.pathExtension) == .zip {
+                listener?.openFolderWantToExtract(zipURL: firstSelectedURL, outputFolderURL: self.viewModel.url)
+            }
+
+        case .compress:
+            listener?.openFolderWantToCompress(inputURLs: self.viewModel.selectedURLs, outputFolderURL: self.viewModel.url)
 
         case .delete:
             self.presenter.displayDeleteDialog(viewModel: self.viewModel)

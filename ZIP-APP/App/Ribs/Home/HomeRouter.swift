@@ -9,13 +9,13 @@ import MediaPlayer
 import RIBs
 import TLLogging
 
-protocol HomeInteractable: Interactable, OpenFolderListener, SelectMediaListener {
+protocol HomeInteractable: Interactable, OpenFolderListener, SelectMediaListener, CompressListener, ExtractListener {
     var router: HomeRouting? { get set }
     var listener: HomeListener? { get set }
 }
 
 
-protocol HomeViewControllable: ViewControllable{
+protocol HomeViewControllable: ViewControllable, ExtractViewControllable, CompressViewControllable{
 }
 
 final class HomeRouter: ViewableRouter<HomeInteractable, HomeViewControllable> {
@@ -25,12 +25,27 @@ final class HomeRouter: ViewableRouter<HomeInteractable, HomeViewControllable> {
     var selectMediaRouter: SelectMediaRouting?
     var selectMediaBuilder: SelectMediaBuildable
 
+    var compressBuilder: CompressBuildable
+    var compressRouter: CompressRouting?
+
+    var extractBuilder: ExtractBuildable
+    var extractRouter: ExtractRouting?
+
+    var settingRouter: SettingRouting?
+    var settingBuilder: SettingBuildable
+
     init(interactor: HomeInteractable,
          viewController: HomeViewControllable,
          openFolderBuilder: OpenFolderBuildable,
-         selectMediaBuilder: SelectMediaBuildable) {
+         selectMediaBuilder: SelectMediaBuildable,
+         settingBuilder: SettingBuildable,
+         compressBuilder: CompressBuildable,
+         extractBuilder: ExtractBuildable) {
         self.openFolderBuilder = openFolderBuilder
         self.selectMediaBuilder = selectMediaBuilder
+        self.compressBuilder = compressBuilder
+        self.extractBuilder = extractBuilder
+        self.settingBuilder = settingBuilder
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
     }
@@ -120,27 +135,56 @@ extension HomeRouter: HomeRouting {
     }
 
     func routeToCompress(inputURLs: [URL], outputFolderURL: URL) {
+        guard compressRouter == nil else {
+            DCHECK(false)
+            return
+        }
 
+        let router = compressBuilder.build(withListener: self.interactor, inputURLs: inputURLs, outputFolderURL: outputFolderURL)
+        attachChild(router)
+        self.compressRouter = router
     }
 
     func routeToCompress(audios: [MPMediaItem], outputFolderURL: URL) {
+        guard compressRouter == nil else {
+            DCHECK(false)
+            return
+        }
 
+        let router = compressBuilder.build(withListener: self.interactor, audios: audios, outputFolderURL: outputFolderURL)
+        attachChild(router)
+        self.compressRouter = router
     }
 
     func routeToCompress(assets: [PHAsset], outputFolderURL: URL) {
-
+        DCHECK(compressRouter == nil)
+        let router = compressBuilder.build(withListener: self.interactor, assets: assets, outputFolderURL: outputFolderURL)
+        attachChild(router)
+        self.compressRouter = router
     }
 
     func dismissCompress() {
+        guard let router = compressRouter else {
+            return
+        }
 
+        detachChild(router)
+        self.compressRouter = nil
     }
 
     func routeToExtract(zipURL: URL, outputFolderURL: URL) {
-
+        let router = extractBuilder.build(withListener: self.interactor, zipURL: zipURL, outputFolderURL: outputFolderURL)
+        attachChild(router)
+        self.extractRouter = router
     }
 
     func dismissExtract() {
+        guard let router = extractRouter else {
+            return
+        }
 
+        detachChild(router)
+        self.extractRouter = nil
     }
 
     func routeToAddFileFromGoogleDrive(folderURL: URL) {

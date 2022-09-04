@@ -115,3 +115,24 @@ extension HomeViewController: UIDocumentPickerDelegate {
         listener?.didSelectDocumentBrowser(urls: urls)
     }
 }
+
+// MARK: - CompressViewControllable
+extension HomeViewController: CompressViewControllable {
+    func showAlert(title: String, message: String, action: (() -> Void)?, cancelAction: (() -> Void)?) {
+        YesNoDialog.show(title: title,
+                         message: message,
+                         actionType: .normal,
+                         action: action,
+                         cancelAction: cancelAction)
+    }
+}
+
+// MARK: - ExtractViewControllable
+extension HomeViewController: ExtractViewControllable {
+    func showAskBeforeExtractingDialog(action: (() -> Void)?, cancelAction: (() -> Void)?) {
+        self.showAlert(title: "Extract file ZIP",
+                       message: "Do you want to extract this file immediately?",
+                       action: action,
+                       cancelAction: cancelAction)
+    }
+}

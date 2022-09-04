@@ -42,6 +42,9 @@ final class OpenFolderBuilder: Builder<OpenFolderDependency>, OpenFolderBuildabl
         let selectDestinationBuilder = DIContainer.resolve(SelectDestinationBuildable.self, agrument: component)
         let createFolderBuilder = DIContainer.resolve(CreateFolderBuildable.self, agrument: component)
         let addFilePopupBuilder = DIContainer.resolve(AddFilePopupBuildable.self, agrument: component)
+        let previewImageBuilder = DIContainer.resolve(PreviewImageBuildable.self, agrument: component)
+        let previewVideoBuilder = DIContainer.resolve(PreviewVideoBuildable.self, agrument: component)
+        let openZipBuilder = DIContainer.resolve(OpenZipBuildable.self, agrument: component)
 
         return OpenFolderRouter(interactor: interactor,
                                 viewController: viewController,
@@ -49,6 +52,9 @@ final class OpenFolderBuilder: Builder<OpenFolderDependency>, OpenFolderBuildabl
                                 renameItemBuilder: renameItemBuilder,
                                 selectDestinationBuilder: selectDestinationBuilder,
                                 createFolderBuilder: createFolderBuilder,
-                                addFilePopupBuilder: addFilePopupBuilder)
+                                addFilePopupBuilder: addFilePopupBuilder,
+                                previewImageBuilder: previewImageBuilder,
+                                previewVideoBuilder: previewVideoBuilder,
+                                openZipBuilder: openZipBuilder)
     }
 }

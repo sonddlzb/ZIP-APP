@@ -39,10 +39,16 @@ final class HomeBuilder: Builder<HomeDependency>, HomeBuildable {
 
         let openFolderBuilder = DIContainer.resolve(OpenFolderBuildable.self, agrument: component)
         let selectMediaBuilder = DIContainer.resolve(SelectMediaBuildable.self, agrument: component)
+        let compressBuilder = DIContainer.resolve(CompressBuildable.self, agrument: component)
+        let extractBuilder = DIContainer.resolve(ExtractBuildable.self, agrument: component)
+        let settingBuilder = DIContainer.resolve(SettingBuildable.self, agrument: component)
 
         return HomeRouter(interactor: interactor,
                           viewController: viewController,
                           openFolderBuilder: openFolderBuilder,
-                          selectMediaBuilder: selectMediaBuilder)
+                          selectMediaBuilder: selectMediaBuilder,
+                          settingBuilder: settingBuilder,
+                          compressBuilder: compressBuilder,
+                          extractBuilder: extractBuilder)
     }
 }

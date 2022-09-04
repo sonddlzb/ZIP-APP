@@ -224,6 +224,114 @@
 		C884303928C1E46100673799 /* PreviewImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C884302C28C1E46100673799 /* PreviewImageViewController.xib */; };
 		C884303C28C1E5AC00673799 /* HomeInteractor+SelectMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884303A28C1E5AB00673799 /* HomeInteractor+SelectMedia.swift */; };
 		C884303D28C1E5AC00673799 /* HomeComponent+SelectMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884303B28C1E5AB00673799 /* HomeComponent+SelectMedia.swift */; };
+		C884306628C3450F00673799 /* InputToCompressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884304028C3450F00673799 /* InputToCompressViewModel.swift */; };
+		C884306728C3450F00673799 /* InputToCompressBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884304228C3450F00673799 /* InputToCompressBuilder.swift */; };
+		C884306828C3450F00673799 /* InputToCompressInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884304328C3450F00673799 /* InputToCompressInteractor.swift */; };
+		C884306928C3450F00673799 /* InputToCompressRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884304428C3450F00673799 /* InputToCompressRouter.swift */; };
+		C884306A28C3450F00673799 /* InputToCompressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884304528C3450F00673799 /* InputToCompressViewController.swift */; };
+		C884306B28C3450F00673799 /* InputToCompressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C884304628C3450F00673799 /* InputToCompressViewController.xib */; };
+		C884306C28C3450F00673799 /* CompressRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884304728C3450F00673799 /* CompressRouter.swift */; };
+		C884306D28C3450F00673799 /* CompressInputValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884304928C3450F00673799 /* CompressInputValue.swift */; };
+		C884306E28C3450F00673799 /* CompressComponent+InputPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884304A28C3450F00673799 /* CompressComponent+InputPassword.swift */; };
+		C884306F28C3450F00673799 /* CompressInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884304B28C3450F00673799 /* CompressInteractor.swift */; };
+		C884307028C3450F00673799 /* CompressInteractor+InputPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884304C28C3450F00673799 /* CompressInteractor+InputPassword.swift */; };
+		C884307128C3450F00673799 /* CompressBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884304D28C3450F00673799 /* CompressBuilder.swift */; };
+		C884307228C3450F00673799 /* CompressLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C884304F28C3450F00673799 /* CompressLoadingViewController.xib */; };
+		C884307328C3450F00673799 /* CompressLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884305028C3450F00673799 /* CompressLoadingViewController.swift */; };
+		C884307428C3450F00673799 /* CompressLoadingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884305128C3450F00673799 /* CompressLoadingRouter.swift */; };
+		C884307528C3450F00673799 /* CompressLoadingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884305228C3450F00673799 /* CompressLoadingInteractor.swift */; };
+		C884307628C3450F00673799 /* CompressLoadingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884305328C3450F00673799 /* CompressLoadingBuilder.swift */; };
+		C884307728C3450F00673799 /* CompressComponent+InputToCompress.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884305428C3450F00673799 /* CompressComponent+InputToCompress.swift */; };
+		C884307828C3450F00673799 /* CompressComponent+CompressLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884305528C3450F00673799 /* CompressComponent+CompressLoading.swift */; };
+		C884307928C3450F00673799 /* CompressInteractor+InputToCompress.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884305628C3450F00673799 /* CompressInteractor+InputToCompress.swift */; };
+		C884307A28C3450F00673799 /* CompressInteractor+CompressLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884305728C3450F00673799 /* CompressInteractor+CompressLoading.swift */; };
+		C884307B28C3450F00673799 /* ExtractLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884305A28C3450F00673799 /* ExtractLoadingViewController.swift */; };
+		C884307C28C3450F00673799 /* ExtractLoadingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884305B28C3450F00673799 /* ExtractLoadingInteractor.swift */; };
+		C884307D28C3450F00673799 /* ExtractLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C884305C28C3450F00673799 /* ExtractLoadingViewController.xib */; };
+		C884307E28C3450F00673799 /* ExtractLoadingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884305D28C3450F00673799 /* ExtractLoadingBuilder.swift */; };
+		C884307F28C3450F00673799 /* ExtractLoadingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884305E28C3450F00673799 /* ExtractLoadingRouter.swift */; };
+		C884308028C3450F00673799 /* ExtractComponent+InputPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884305F28C3450F00673799 /* ExtractComponent+InputPassword.swift */; };
+		C884308128C3450F00673799 /* ExtractInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884306028C3450F00673799 /* ExtractInteractor.swift */; };
+		C884308228C3450F00673799 /* ExtractInteractor+InputPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884306128C3450F00673799 /* ExtractInteractor+InputPassword.swift */; };
+		C884308328C3450F00673799 /* ExtractRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884306228C3450F00673799 /* ExtractRouter.swift */; };
+		C884308428C3450F00673799 /* ExtractComponent+ExtractLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884306328C3450F00673799 /* ExtractComponent+ExtractLoading.swift */; };
+		C884308528C3450F00673799 /* ExtractBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884306428C3450F00673799 /* ExtractBuilder.swift */; };
+		C884308628C3450F00673799 /* ExtractInteractor+ExtractLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884306528C3450F00673799 /* ExtractInteractor+ExtractLoading.swift */; };
+		C884308B28C3453000673799 /* HomeInteractor+Extract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884308728C3452F00673799 /* HomeInteractor+Extract.swift */; };
+		C884308C28C3453000673799 /* HomeComponent+Compress.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884308828C3452F00673799 /* HomeComponent+Compress.swift */; };
+		C884308D28C3453000673799 /* HomeInteractor+Compress.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884308928C3452F00673799 /* HomeInteractor+Compress.swift */; };
+		C884308E28C3453000673799 /* HomeComponent+Extract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884308A28C3452F00673799 /* HomeComponent+Extract.swift */; };
+		C88430D628C3478300673799 /* InputPasswordBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430CD28C3478300673799 /* InputPasswordBuilder.swift */; };
+		C88430D728C3478300673799 /* InputPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430CF28C3478300673799 /* InputPasswordViewModel.swift */; };
+		C88430D828C3478300673799 /* InputPasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430D028C3478300673799 /* InputPasswordInteractor.swift */; };
+		C88430D928C3478300673799 /* InputPasswordPurpose.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430D228C3478300673799 /* InputPasswordPurpose.swift */; };
+		C88430DA28C3478300673799 /* InputPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C88430D328C3478300673799 /* InputPasswordViewController.xib */; };
+		C88430DB28C3478300673799 /* InputPasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430D428C3478300673799 /* InputPasswordRouter.swift */; };
+		C88430DC28C3478300673799 /* InputPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430D528C3478300673799 /* InputPasswordViewController.swift */; };
+		C88430EC28C347B000673799 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430DF28C347B000673799 /* SettingViewModel.swift */; };
+		C88430ED28C347B000673799 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430E028C347B000673799 /* SettingViewController.swift */; };
+		C88430EE28C347B000673799 /* SettingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430E128C347B000673799 /* SettingRouter.swift */; };
+		C88430EF28C347B000673799 /* SettingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430E228C347B000673799 /* SettingBuilder.swift */; };
+		C88430F028C347B000673799 /* SettingComponent+ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430E328C347B000673799 /* SettingComponent+ChangePassword.swift */; };
+		C88430F128C347B000673799 /* SettingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430E428C347B000673799 /* SettingManager.swift */; };
+		C88430F228C347B000673799 /* SettingInteractor+ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430E528C347B000673799 /* SettingInteractor+ChangePassword.swift */; };
+		C88430F328C347B000673799 /* DefaultPhotoSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430E728C347B000673799 /* DefaultPhotoSize.swift */; };
+		C88430F428C347B000673799 /* SettingComponent+CreatePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430E828C347B000673799 /* SettingComponent+CreatePassword.swift */; };
+		C88430F528C347B000673799 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C88430E928C347B000673799 /* SettingViewController.xib */; };
+		C88430F628C347B000673799 /* SettingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430EA28C347B000673799 /* SettingInteractor.swift */; };
+		C88430F728C347B000673799 /* SettingInterator+CreatePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430EB28C347B000673799 /* SettingInterator+CreatePassword.swift */; };
+		C884310828C347D800673799 /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430FA28C347D800673799 /* ChangePasswordViewModel.swift */; };
+		C884310928C347D800673799 /* ChangePasswordBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430FB28C347D800673799 /* ChangePasswordBuilder.swift */; };
+		C884310A28C347D800673799 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430FC28C347D800673799 /* ChangePasswordViewController.swift */; };
+		C884310B28C347D800673799 /* ChangePasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430FD28C347D800673799 /* ChangePasswordRouter.swift */; };
+		C884310C28C347D800673799 /* ChangePasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88430FE28C347D800673799 /* ChangePasswordInteractor.swift */; };
+		C884310D28C347D800673799 /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C88430FF28C347D800673799 /* ChangePasswordViewController.xib */; };
+		C884310E28C347D800673799 /* CreatePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884310228C347D800673799 /* CreatePasswordViewModel.swift */; };
+		C884310F28C347D800673799 /* CreatePasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884310328C347D800673799 /* CreatePasswordRouter.swift */; };
+		C884311028C347D800673799 /* CreatePasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884310428C347D800673799 /* CreatePasswordInteractor.swift */; };
+		C884311128C347D800673799 /* CreatePasswordBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884310528C347D800673799 /* CreatePasswordBuilder.swift */; };
+		C884311228C347D800673799 /* CreatePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C884310628C347D800673799 /* CreatePasswordViewController.xib */; };
+		C884311328C347D800673799 /* CreatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884310728C347D800673799 /* CreatePasswordViewController.swift */; };
+		C884311A28C3488D00673799 /* ExportAudioOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884311528C3488C00673799 /* ExportAudioOperation.swift */; };
+		C884311B28C3488D00673799 /* ExportAudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884311628C3488C00673799 /* ExportAudioSession.swift */; };
+		C884311C28C3488D00673799 /* MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884311728C3488C00673799 /* MimeType.swift */; };
+		C884311D28C3488D00673799 /* ExportAssetOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884311828C3488C00673799 /* ExportAssetOperation.swift */; };
+		C884311E28C3488D00673799 /* ExportAssetSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884311928C3488C00673799 /* ExportAssetSession.swift */; };
+		C884312428C34E3F00673799 /* HomeInteractor+Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884312228C34E3F00673799 /* HomeInteractor+Setting.swift */; };
+		C884312528C34E3F00673799 /* HomeComponent+Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884312328C34E3F00673799 /* HomeComponent+Setting.swift */; };
+		C884313228C3536900673799 /* OpenZipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884312828C3536800673799 /* OpenZipViewModel.swift */; };
+		C884313328C3536900673799 /* OpenZipItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884312928C3536800673799 /* OpenZipItemViewModel.swift */; };
+		C884313428C3536900673799 /* OpenZipRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884312A28C3536800673799 /* OpenZipRouter.swift */; };
+		C884313528C3536900673799 /* OpenZipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884312B28C3536800673799 /* OpenZipViewController.swift */; };
+		C884313628C3536900673799 /* OpenZipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884312D28C3536800673799 /* OpenZipCell.swift */; };
+		C884313728C3536900673799 /* OpenZipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C884312E28C3536800673799 /* OpenZipCell.xib */; };
+		C884313828C3536900673799 /* OpenZipInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884312F28C3536800673799 /* OpenZipInteractor.swift */; };
+		C884313928C3536900673799 /* OpenZipBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884313028C3536800673799 /* OpenZipBuilder.swift */; };
+		C884313A28C3536900673799 /* OpenZipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C884313128C3536800673799 /* OpenZipViewController.xib */; };
+		C884316628C3545600673799 /* crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = C884313E28C3545500673799 /* crypt.c */; };
+		C884316728C3545600673799 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = C884313F28C3545500673799 /* unzip.c */; };
+		C884316828C3545600673799 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = C884314028C3545500673799 /* zip.c */; };
+		C884316928C3545600673799 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = C884314228C3545500673799 /* ioapi.c */; };
+		C884316A28C3545600673799 /* ioapi_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = C884314428C3545500673799 /* ioapi_buf.c */; };
+		C884316B28C3545600673799 /* ioapi_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = C884314828C3545600673799 /* ioapi_mem.c */; };
+		C884316C28C3545600673799 /* minishared.c in Sources */ = {isa = PBXBuildFile; fileRef = C884314928C3545600673799 /* minishared.c */; };
+		C884316D28C3545600673799 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = C884314F28C3545600673799 /* aeskey.c */; };
+		C884316E28C3545600673799 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = C884315028C3545600673799 /* hmac.c */; };
+		C884316F28C3545600673799 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = C884315328C3545600673799 /* aescrypt.c */; };
+		C884317028C3545600673799 /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = C884315428C3545600673799 /* fileenc.c */; };
+		C884317128C3545600673799 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = C884315628C3545600673799 /* sha1.c */; };
+		C884317228C3545600673799 /* aes_ni.c in Sources */ = {isa = PBXBuildFile; fileRef = C884315928C3545600673799 /* aes_ni.c */; };
+		C884317328C3545600673799 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = C884315B28C3545600673799 /* prng.c */; };
+		C884317428C3545600673799 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = C884315D28C3545600673799 /* pwd2key.c */; };
+		C884317528C3545600673799 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = C884315E28C3545600673799 /* aestab.c */; };
+		C884317628C3545600673799 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = C884316428C3545600673799 /* SSZipArchive.m */; };
+		C884317728C3545600673799 /* UZKFileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C884316528C3545600673799 /* UZKFileInfo.m */; };
+		C884318028C35E2800673799 /* OpenFolderInteractor+PreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884317A28C35E2700673799 /* OpenFolderInteractor+PreviewImage.swift */; };
+		C884318128C35E2800673799 /* OpenFolderComponent+PreviewVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884317B28C35E2800673799 /* OpenFolderComponent+PreviewVideo.swift */; };
+		C884318228C35E2800673799 /* OpenFolderInteractor+PreviewVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884317C28C35E2800673799 /* OpenFolderInteractor+PreviewVideo.swift */; };
+		C884318328C35E2800673799 /* OpenFolderComponent+OpenZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884317D28C35E2800673799 /* OpenFolderComponent+OpenZip.swift */; };
+		C884318428C35E2800673799 /* OpenFolderComponent+PreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884317E28C35E2800673799 /* OpenFolderComponent+PreviewImage.swift */; };
+		C884318528C35E2800673799 /* OpenFolderInteractor+OpenZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884317F28C35E2800673799 /* OpenFolderInteractor+OpenZip.swift */; };
 		D27757A0AE49BF14D6C85C36 /* Pods_ZIP_APP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F45421FC8974ECBE141225 /* Pods_ZIP_APP.framework */; };
 /* End PBXBuildFile section */
 
@@ -469,6 +577,135 @@
 		C884302C28C1E46100673799 /* PreviewImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewImageViewController.xib; sourceTree = "<group>"; };
 		C884303A28C1E5AB00673799 /* HomeInteractor+SelectMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeInteractor+SelectMedia.swift"; sourceTree = "<group>"; };
 		C884303B28C1E5AB00673799 /* HomeComponent+SelectMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeComponent+SelectMedia.swift"; sourceTree = "<group>"; };
+		C884304028C3450F00673799 /* InputToCompressViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputToCompressViewModel.swift; sourceTree = "<group>"; };
+		C884304228C3450F00673799 /* InputToCompressBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputToCompressBuilder.swift; sourceTree = "<group>"; };
+		C884304328C3450F00673799 /* InputToCompressInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputToCompressInteractor.swift; sourceTree = "<group>"; };
+		C884304428C3450F00673799 /* InputToCompressRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputToCompressRouter.swift; sourceTree = "<group>"; };
+		C884304528C3450F00673799 /* InputToCompressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputToCompressViewController.swift; sourceTree = "<group>"; };
+		C884304628C3450F00673799 /* InputToCompressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputToCompressViewController.xib; sourceTree = "<group>"; };
+		C884304728C3450F00673799 /* CompressRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompressRouter.swift; sourceTree = "<group>"; };
+		C884304928C3450F00673799 /* CompressInputValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompressInputValue.swift; sourceTree = "<group>"; };
+		C884304A28C3450F00673799 /* CompressComponent+InputPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CompressComponent+InputPassword.swift"; sourceTree = "<group>"; };
+		C884304B28C3450F00673799 /* CompressInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompressInteractor.swift; sourceTree = "<group>"; };
+		C884304C28C3450F00673799 /* CompressInteractor+InputPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CompressInteractor+InputPassword.swift"; sourceTree = "<group>"; };
+		C884304D28C3450F00673799 /* CompressBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompressBuilder.swift; sourceTree = "<group>"; };
+		C884304F28C3450F00673799 /* CompressLoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompressLoadingViewController.xib; sourceTree = "<group>"; };
+		C884305028C3450F00673799 /* CompressLoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompressLoadingViewController.swift; sourceTree = "<group>"; };
+		C884305128C3450F00673799 /* CompressLoadingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompressLoadingRouter.swift; sourceTree = "<group>"; };
+		C884305228C3450F00673799 /* CompressLoadingInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompressLoadingInteractor.swift; sourceTree = "<group>"; };
+		C884305328C3450F00673799 /* CompressLoadingBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompressLoadingBuilder.swift; sourceTree = "<group>"; };
+		C884305428C3450F00673799 /* CompressComponent+InputToCompress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CompressComponent+InputToCompress.swift"; sourceTree = "<group>"; };
+		C884305528C3450F00673799 /* CompressComponent+CompressLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CompressComponent+CompressLoading.swift"; sourceTree = "<group>"; };
+		C884305628C3450F00673799 /* CompressInteractor+InputToCompress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CompressInteractor+InputToCompress.swift"; sourceTree = "<group>"; };
+		C884305728C3450F00673799 /* CompressInteractor+CompressLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CompressInteractor+CompressLoading.swift"; sourceTree = "<group>"; };
+		C884305A28C3450F00673799 /* ExtractLoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractLoadingViewController.swift; sourceTree = "<group>"; };
+		C884305B28C3450F00673799 /* ExtractLoadingInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractLoadingInteractor.swift; sourceTree = "<group>"; };
+		C884305C28C3450F00673799 /* ExtractLoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExtractLoadingViewController.xib; sourceTree = "<group>"; };
+		C884305D28C3450F00673799 /* ExtractLoadingBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractLoadingBuilder.swift; sourceTree = "<group>"; };
+		C884305E28C3450F00673799 /* ExtractLoadingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractLoadingRouter.swift; sourceTree = "<group>"; };
+		C884305F28C3450F00673799 /* ExtractComponent+InputPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtractComponent+InputPassword.swift"; sourceTree = "<group>"; };
+		C884306028C3450F00673799 /* ExtractInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractInteractor.swift; sourceTree = "<group>"; };
+		C884306128C3450F00673799 /* ExtractInteractor+InputPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtractInteractor+InputPassword.swift"; sourceTree = "<group>"; };
+		C884306228C3450F00673799 /* ExtractRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractRouter.swift; sourceTree = "<group>"; };
+		C884306328C3450F00673799 /* ExtractComponent+ExtractLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtractComponent+ExtractLoading.swift"; sourceTree = "<group>"; };
+		C884306428C3450F00673799 /* ExtractBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtractBuilder.swift; sourceTree = "<group>"; };
+		C884306528C3450F00673799 /* ExtractInteractor+ExtractLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtractInteractor+ExtractLoading.swift"; sourceTree = "<group>"; };
+		C884308728C3452F00673799 /* HomeInteractor+Extract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeInteractor+Extract.swift"; sourceTree = "<group>"; };
+		C884308828C3452F00673799 /* HomeComponent+Compress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeComponent+Compress.swift"; sourceTree = "<group>"; };
+		C884308928C3452F00673799 /* HomeInteractor+Compress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeInteractor+Compress.swift"; sourceTree = "<group>"; };
+		C884308A28C3452F00673799 /* HomeComponent+Extract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeComponent+Extract.swift"; sourceTree = "<group>"; };
+		C88430CD28C3478300673799 /* InputPasswordBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputPasswordBuilder.swift; sourceTree = "<group>"; };
+		C88430CF28C3478300673799 /* InputPasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputPasswordViewModel.swift; sourceTree = "<group>"; };
+		C88430D028C3478300673799 /* InputPasswordInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputPasswordInteractor.swift; sourceTree = "<group>"; };
+		C88430D228C3478300673799 /* InputPasswordPurpose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputPasswordPurpose.swift; sourceTree = "<group>"; };
+		C88430D328C3478300673799 /* InputPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputPasswordViewController.xib; sourceTree = "<group>"; };
+		C88430D428C3478300673799 /* InputPasswordRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputPasswordRouter.swift; sourceTree = "<group>"; };
+		C88430D528C3478300673799 /* InputPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputPasswordViewController.swift; sourceTree = "<group>"; };
+		C88430DF28C347B000673799 /* SettingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		C88430E028C347B000673799 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		C88430E128C347B000673799 /* SettingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingRouter.swift; sourceTree = "<group>"; };
+		C88430E228C347B000673799 /* SettingBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingBuilder.swift; sourceTree = "<group>"; };
+		C88430E328C347B000673799 /* SettingComponent+ChangePassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SettingComponent+ChangePassword.swift"; sourceTree = "<group>"; };
+		C88430E428C347B000673799 /* SettingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingManager.swift; sourceTree = "<group>"; };
+		C88430E528C347B000673799 /* SettingInteractor+ChangePassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SettingInteractor+ChangePassword.swift"; sourceTree = "<group>"; };
+		C88430E728C347B000673799 /* DefaultPhotoSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPhotoSize.swift; sourceTree = "<group>"; };
+		C88430E828C347B000673799 /* SettingComponent+CreatePassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SettingComponent+CreatePassword.swift"; sourceTree = "<group>"; };
+		C88430E928C347B000673799 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		C88430EA28C347B000673799 /* SettingInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingInteractor.swift; sourceTree = "<group>"; };
+		C88430EB28C347B000673799 /* SettingInterator+CreatePassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SettingInterator+CreatePassword.swift"; sourceTree = "<group>"; };
+		C88430FA28C347D800673799 /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
+		C88430FB28C347D800673799 /* ChangePasswordBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordBuilder.swift; sourceTree = "<group>"; };
+		C88430FC28C347D800673799 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		C88430FD28C347D800673799 /* ChangePasswordRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordRouter.swift; sourceTree = "<group>"; };
+		C88430FE28C347D800673799 /* ChangePasswordInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordInteractor.swift; sourceTree = "<group>"; };
+		C88430FF28C347D800673799 /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
+		C884310228C347D800673799 /* CreatePasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePasswordViewModel.swift; sourceTree = "<group>"; };
+		C884310328C347D800673799 /* CreatePasswordRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePasswordRouter.swift; sourceTree = "<group>"; };
+		C884310428C347D800673799 /* CreatePasswordInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePasswordInteractor.swift; sourceTree = "<group>"; };
+		C884310528C347D800673799 /* CreatePasswordBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePasswordBuilder.swift; sourceTree = "<group>"; };
+		C884310628C347D800673799 /* CreatePasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreatePasswordViewController.xib; sourceTree = "<group>"; };
+		C884310728C347D800673799 /* CreatePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePasswordViewController.swift; sourceTree = "<group>"; };
+		C884311528C3488C00673799 /* ExportAudioOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportAudioOperation.swift; sourceTree = "<group>"; };
+		C884311628C3488C00673799 /* ExportAudioSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportAudioSession.swift; sourceTree = "<group>"; };
+		C884311728C3488C00673799 /* MimeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimeType.swift; sourceTree = "<group>"; };
+		C884311828C3488C00673799 /* ExportAssetOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportAssetOperation.swift; sourceTree = "<group>"; };
+		C884311928C3488C00673799 /* ExportAssetSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportAssetSession.swift; sourceTree = "<group>"; };
+		C884312228C34E3F00673799 /* HomeInteractor+Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeInteractor+Setting.swift"; sourceTree = "<group>"; };
+		C884312328C34E3F00673799 /* HomeComponent+Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeComponent+Setting.swift"; sourceTree = "<group>"; };
+		C884312828C3536800673799 /* OpenZipViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenZipViewModel.swift; sourceTree = "<group>"; };
+		C884312928C3536800673799 /* OpenZipItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenZipItemViewModel.swift; sourceTree = "<group>"; };
+		C884312A28C3536800673799 /* OpenZipRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenZipRouter.swift; sourceTree = "<group>"; };
+		C884312B28C3536800673799 /* OpenZipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenZipViewController.swift; sourceTree = "<group>"; };
+		C884312D28C3536800673799 /* OpenZipCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenZipCell.swift; sourceTree = "<group>"; };
+		C884312E28C3536800673799 /* OpenZipCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenZipCell.xib; sourceTree = "<group>"; };
+		C884312F28C3536800673799 /* OpenZipInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenZipInteractor.swift; sourceTree = "<group>"; };
+		C884313028C3536800673799 /* OpenZipBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenZipBuilder.swift; sourceTree = "<group>"; };
+		C884313128C3536800673799 /* OpenZipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenZipViewController.xib; sourceTree = "<group>"; };
+		C884313E28C3545500673799 /* crypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypt.c; sourceTree = "<group>"; };
+		C884313F28C3545500673799 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		C884314028C3545500673799 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		C884314128C3545500673799 /* minishared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = minishared.h; sourceTree = "<group>"; };
+		C884314228C3545500673799 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		C884314328C3545500673799 /* ioapi_mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi_mem.h; sourceTree = "<group>"; };
+		C884314428C3545500673799 /* ioapi_buf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi_buf.c; sourceTree = "<group>"; };
+		C884314528C3545600673799 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		C884314628C3545600673799 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		C884314728C3545600673799 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		C884314828C3545600673799 /* ioapi_mem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi_mem.c; sourceTree = "<group>"; };
+		C884314928C3545600673799 /* minishared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = minishared.c; sourceTree = "<group>"; };
+		C884314A28C3545600673799 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		C884314B28C3545600673799 /* ioapi_buf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi_buf.h; sourceTree = "<group>"; };
+		C884314D28C3545600673799 /* prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prng.h; sourceTree = "<group>"; };
+		C884314E28C3545600673799 /* aes_ni.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_ni.h; sourceTree = "<group>"; };
+		C884314F28C3545600673799 /* aeskey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
+		C884315028C3545600673799 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		C884315128C3545600673799 /* aestab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
+		C884315228C3545600673799 /* pwd2key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pwd2key.h; sourceTree = "<group>"; };
+		C884315328C3545600673799 /* aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
+		C884315428C3545600673799 /* fileenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileenc.c; sourceTree = "<group>"; };
+		C884315528C3545600673799 /* aesopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
+		C884315628C3545600673799 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		C884315728C3545600673799 /* brg_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_types.h; sourceTree = "<group>"; };
+		C884315828C3545600673799 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		C884315928C3545600673799 /* aes_ni.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aes_ni.c; sourceTree = "<group>"; };
+		C884315A28C3545600673799 /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
+		C884315B28C3545600673799 /* prng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prng.c; sourceTree = "<group>"; };
+		C884315C28C3545600673799 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		C884315D28C3545600673799 /* pwd2key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwd2key.c; sourceTree = "<group>"; };
+		C884315E28C3545600673799 /* aestab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
+		C884315F28C3545600673799 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		C884316028C3545600673799 /* fileenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileenc.h; sourceTree = "<group>"; };
+		C884316128C3545600673799 /* UZKFileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UZKFileInfo.h; sourceTree = "<group>"; };
+		C884316228C3545600673799 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		C884316328C3545600673799 /* SSZipCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipCommon.h; sourceTree = "<group>"; };
+		C884316428C3545600673799 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		C884316528C3545600673799 /* UZKFileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UZKFileInfo.m; sourceTree = "<group>"; };
+		C884317A28C35E2700673799 /* OpenFolderInteractor+PreviewImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenFolderInteractor+PreviewImage.swift"; sourceTree = "<group>"; };
+		C884317B28C35E2800673799 /* OpenFolderComponent+PreviewVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenFolderComponent+PreviewVideo.swift"; sourceTree = "<group>"; };
+		C884317C28C35E2800673799 /* OpenFolderInteractor+PreviewVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenFolderInteractor+PreviewVideo.swift"; sourceTree = "<group>"; };
+		C884317D28C35E2800673799 /* OpenFolderComponent+OpenZip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenFolderComponent+OpenZip.swift"; sourceTree = "<group>"; };
+		C884317E28C35E2800673799 /* OpenFolderComponent+PreviewImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenFolderComponent+PreviewImage.swift"; sourceTree = "<group>"; };
+		C884317F28C35E2800673799 /* OpenFolderInteractor+OpenZip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenFolderInteractor+OpenZip.swift"; sourceTree = "<group>"; };
 		ECA906848B2A8CD2650BD24C /* Pods-ZIP-APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZIP-APP.release.xcconfig"; path = "Target Support Files/Pods-ZIP-APP/Pods-ZIP-APP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -540,6 +777,7 @@
 		C8842DD728B9BEAF00673799 /* ZIP-APP */ = {
 			isa = PBXGroup;
 			children = (
+				C884313B28C3545500673799 /* Thirdparty */,
 				C8842E0A28B9C3DB00673799 /* App */,
 			);
 			path = "ZIP-APP";
@@ -663,6 +901,7 @@
 		C8842E6728B9C4B500673799 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				C884311428C3488C00673799 /* CompressHelper */,
 				C8842E6828B9C4B500673799 /* CommonView */,
 				C8842E8328B9C4B500673799 /* Extensions */,
 				C8842EB128B9C4B500673799 /* RIBsExtensions */,
@@ -769,6 +1008,13 @@
 		C8842EFE28B9C53100673799 /* Ribs */ = {
 			isa = PBXGroup;
 			children = (
+				C884312628C3536800673799 /* OpenZip */,
+				C88430F828C347D800673799 /* ChangePassword */,
+				C884310028C347D800673799 /* CreatePassword */,
+				C88430DD28C347B000673799 /* Setting */,
+				C88430CC28C3478300673799 /* InputPassword */,
+				C884303E28C3450F00673799 /* Compress */,
+				C884305828C3450F00673799 /* Extract */,
 				C884302528C1E46100673799 /* PreviewImage */,
 				C884301B28C1E46100673799 /* PreviewVideo */,
 				C8842FF528C1E3EB00673799 /* SelectMedia */,
@@ -788,6 +1034,12 @@
 		C8842F0128B9C66400673799 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C884312328C34E3F00673799 /* HomeComponent+Setting.swift */,
+				C884312228C34E3F00673799 /* HomeInteractor+Setting.swift */,
+				C884308828C3452F00673799 /* HomeComponent+Compress.swift */,
+				C884308A28C3452F00673799 /* HomeComponent+Extract.swift */,
+				C884308928C3452F00673799 /* HomeInteractor+Compress.swift */,
+				C884308728C3452F00673799 /* HomeInteractor+Extract.swift */,
 				C884303B28C1E5AB00673799 /* HomeComponent+SelectMedia.swift */,
 				C884303A28C1E5AB00673799 /* HomeInteractor+SelectMedia.swift */,
 				C8842FF128C19EA600673799 /* HomeComponent+OpenFolder.swift */,
@@ -816,6 +1068,12 @@
 		C8842F5F28C194E800673799 /* OpenFolder */ = {
 			isa = PBXGroup;
 			children = (
+				C884317D28C35E2800673799 /* OpenFolderComponent+OpenZip.swift */,
+				C884317E28C35E2800673799 /* OpenFolderComponent+PreviewImage.swift */,
+				C884317B28C35E2800673799 /* OpenFolderComponent+PreviewVideo.swift */,
+				C884317F28C35E2800673799 /* OpenFolderInteractor+OpenZip.swift */,
+				C884317A28C35E2700673799 /* OpenFolderInteractor+PreviewImage.swift */,
+				C884317C28C35E2800673799 /* OpenFolderInteractor+PreviewVideo.swift */,
 				C8842FEE28C19D1400673799 /* Enum */,
 				C8842FA128C197C200673799 /* OpenFolderComponent+AddFilePopup.swift */,
 				C8842FA428C197C200673799 /* OpenFolderComponent+CreateFolder.swift */,
@@ -1097,6 +1355,314 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		C884303E28C3450F00673799 /* Compress */ = {
+			isa = PBXGroup;
+			children = (
+				C884303F28C3450F00673799 /* ViewModel */,
+				C884304128C3450F00673799 /* InputToCompress */,
+				C884304728C3450F00673799 /* CompressRouter.swift */,
+				C884304828C3450F00673799 /* Enum */,
+				C884304A28C3450F00673799 /* CompressComponent+InputPassword.swift */,
+				C884304B28C3450F00673799 /* CompressInteractor.swift */,
+				C884304C28C3450F00673799 /* CompressInteractor+InputPassword.swift */,
+				C884304D28C3450F00673799 /* CompressBuilder.swift */,
+				C884304E28C3450F00673799 /* CompressLoading */,
+				C884305428C3450F00673799 /* CompressComponent+InputToCompress.swift */,
+				C884305528C3450F00673799 /* CompressComponent+CompressLoading.swift */,
+				C884305628C3450F00673799 /* CompressInteractor+InputToCompress.swift */,
+				C884305728C3450F00673799 /* CompressInteractor+CompressLoading.swift */,
+			);
+			path = Compress;
+			sourceTree = "<group>";
+		};
+		C884303F28C3450F00673799 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C884304028C3450F00673799 /* InputToCompressViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C884304128C3450F00673799 /* InputToCompress */ = {
+			isa = PBXGroup;
+			children = (
+				C884304228C3450F00673799 /* InputToCompressBuilder.swift */,
+				C884304328C3450F00673799 /* InputToCompressInteractor.swift */,
+				C884304428C3450F00673799 /* InputToCompressRouter.swift */,
+				C884304528C3450F00673799 /* InputToCompressViewController.swift */,
+				C884304628C3450F00673799 /* InputToCompressViewController.xib */,
+			);
+			path = InputToCompress;
+			sourceTree = "<group>";
+		};
+		C884304828C3450F00673799 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				C884304928C3450F00673799 /* CompressInputValue.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		C884304E28C3450F00673799 /* CompressLoading */ = {
+			isa = PBXGroup;
+			children = (
+				C884304F28C3450F00673799 /* CompressLoadingViewController.xib */,
+				C884305028C3450F00673799 /* CompressLoadingViewController.swift */,
+				C884305128C3450F00673799 /* CompressLoadingRouter.swift */,
+				C884305228C3450F00673799 /* CompressLoadingInteractor.swift */,
+				C884305328C3450F00673799 /* CompressLoadingBuilder.swift */,
+			);
+			path = CompressLoading;
+			sourceTree = "<group>";
+		};
+		C884305828C3450F00673799 /* Extract */ = {
+			isa = PBXGroup;
+			children = (
+				C884305928C3450F00673799 /* ExtractLoading */,
+				C884305F28C3450F00673799 /* ExtractComponent+InputPassword.swift */,
+				C884306028C3450F00673799 /* ExtractInteractor.swift */,
+				C884306128C3450F00673799 /* ExtractInteractor+InputPassword.swift */,
+				C884306228C3450F00673799 /* ExtractRouter.swift */,
+				C884306328C3450F00673799 /* ExtractComponent+ExtractLoading.swift */,
+				C884306428C3450F00673799 /* ExtractBuilder.swift */,
+				C884306528C3450F00673799 /* ExtractInteractor+ExtractLoading.swift */,
+			);
+			path = Extract;
+			sourceTree = "<group>";
+		};
+		C884305928C3450F00673799 /* ExtractLoading */ = {
+			isa = PBXGroup;
+			children = (
+				C884305A28C3450F00673799 /* ExtractLoadingViewController.swift */,
+				C884305B28C3450F00673799 /* ExtractLoadingInteractor.swift */,
+				C884305C28C3450F00673799 /* ExtractLoadingViewController.xib */,
+				C884305D28C3450F00673799 /* ExtractLoadingBuilder.swift */,
+				C884305E28C3450F00673799 /* ExtractLoadingRouter.swift */,
+			);
+			path = ExtractLoading;
+			sourceTree = "<group>";
+		};
+		C88430CC28C3478300673799 /* InputPassword */ = {
+			isa = PBXGroup;
+			children = (
+				C88430CD28C3478300673799 /* InputPasswordBuilder.swift */,
+				C88430CE28C3478300673799 /* ViewModel */,
+				C88430D028C3478300673799 /* InputPasswordInteractor.swift */,
+				C88430D128C3478300673799 /* Enum */,
+				C88430D328C3478300673799 /* InputPasswordViewController.xib */,
+				C88430D428C3478300673799 /* InputPasswordRouter.swift */,
+				C88430D528C3478300673799 /* InputPasswordViewController.swift */,
+			);
+			path = InputPassword;
+			sourceTree = "<group>";
+		};
+		C88430CE28C3478300673799 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C88430CF28C3478300673799 /* InputPasswordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C88430D128C3478300673799 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				C88430D228C3478300673799 /* InputPasswordPurpose.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		C88430DD28C347B000673799 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				C88430DE28C347B000673799 /* ViewModel */,
+				C88430E028C347B000673799 /* SettingViewController.swift */,
+				C88430E128C347B000673799 /* SettingRouter.swift */,
+				C88430E228C347B000673799 /* SettingBuilder.swift */,
+				C88430E328C347B000673799 /* SettingComponent+ChangePassword.swift */,
+				C88430E428C347B000673799 /* SettingManager.swift */,
+				C88430E528C347B000673799 /* SettingInteractor+ChangePassword.swift */,
+				C88430E628C347B000673799 /* Enum */,
+				C88430E828C347B000673799 /* SettingComponent+CreatePassword.swift */,
+				C88430E928C347B000673799 /* SettingViewController.xib */,
+				C88430EA28C347B000673799 /* SettingInteractor.swift */,
+				C88430EB28C347B000673799 /* SettingInterator+CreatePassword.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		C88430DE28C347B000673799 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C88430DF28C347B000673799 /* SettingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C88430E628C347B000673799 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				C88430E728C347B000673799 /* DefaultPhotoSize.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		C88430F828C347D800673799 /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				C88430F928C347D800673799 /* ViewModel */,
+				C88430FB28C347D800673799 /* ChangePasswordBuilder.swift */,
+				C88430FC28C347D800673799 /* ChangePasswordViewController.swift */,
+				C88430FD28C347D800673799 /* ChangePasswordRouter.swift */,
+				C88430FE28C347D800673799 /* ChangePasswordInteractor.swift */,
+				C88430FF28C347D800673799 /* ChangePasswordViewController.xib */,
+			);
+			path = ChangePassword;
+			sourceTree = "<group>";
+		};
+		C88430F928C347D800673799 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C88430FA28C347D800673799 /* ChangePasswordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C884310028C347D800673799 /* CreatePassword */ = {
+			isa = PBXGroup;
+			children = (
+				C884310128C347D800673799 /* ViewModel */,
+				C884310328C347D800673799 /* CreatePasswordRouter.swift */,
+				C884310428C347D800673799 /* CreatePasswordInteractor.swift */,
+				C884310528C347D800673799 /* CreatePasswordBuilder.swift */,
+				C884310628C347D800673799 /* CreatePasswordViewController.xib */,
+				C884310728C347D800673799 /* CreatePasswordViewController.swift */,
+			);
+			path = CreatePassword;
+			sourceTree = "<group>";
+		};
+		C884310128C347D800673799 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C884310228C347D800673799 /* CreatePasswordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C884311428C3488C00673799 /* CompressHelper */ = {
+			isa = PBXGroup;
+			children = (
+				C884311528C3488C00673799 /* ExportAudioOperation.swift */,
+				C884311628C3488C00673799 /* ExportAudioSession.swift */,
+				C884311728C3488C00673799 /* MimeType.swift */,
+				C884311828C3488C00673799 /* ExportAssetOperation.swift */,
+				C884311928C3488C00673799 /* ExportAssetSession.swift */,
+			);
+			path = CompressHelper;
+			sourceTree = "<group>";
+		};
+		C884312628C3536800673799 /* OpenZip */ = {
+			isa = PBXGroup;
+			children = (
+				C884312728C3536800673799 /* ViewModel */,
+				C884312A28C3536800673799 /* OpenZipRouter.swift */,
+				C884312B28C3536800673799 /* OpenZipViewController.swift */,
+				C884312C28C3536800673799 /* Cell */,
+				C884312F28C3536800673799 /* OpenZipInteractor.swift */,
+				C884313028C3536800673799 /* OpenZipBuilder.swift */,
+				C884313128C3536800673799 /* OpenZipViewController.xib */,
+			);
+			path = OpenZip;
+			sourceTree = "<group>";
+		};
+		C884312728C3536800673799 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C884312828C3536800673799 /* OpenZipViewModel.swift */,
+				C884312928C3536800673799 /* OpenZipItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C884312C28C3536800673799 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C884312D28C3536800673799 /* OpenZipCell.swift */,
+				C884312E28C3536800673799 /* OpenZipCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C884313B28C3545500673799 /* Thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+				C884313C28C3545500673799 /* SSZipArchive */,
+			);
+			path = Thirdparty;
+			sourceTree = "<group>";
+		};
+		C884313C28C3545500673799 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				C884313D28C3545500673799 /* minizip */,
+				C884316128C3545600673799 /* UZKFileInfo.h */,
+				C884316228C3545600673799 /* SSZipArchive.h */,
+				C884316328C3545600673799 /* SSZipCommon.h */,
+				C884316428C3545600673799 /* SSZipArchive.m */,
+				C884316528C3545600673799 /* UZKFileInfo.m */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		C884313D28C3545500673799 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				C884313E28C3545500673799 /* crypt.c */,
+				C884313F28C3545500673799 /* unzip.c */,
+				C884314028C3545500673799 /* zip.c */,
+				C884314128C3545500673799 /* minishared.h */,
+				C884314228C3545500673799 /* ioapi.c */,
+				C884314328C3545500673799 /* ioapi_mem.h */,
+				C884314428C3545500673799 /* ioapi_buf.c */,
+				C884314528C3545600673799 /* crypt.h */,
+				C884314628C3545600673799 /* zip.h */,
+				C884314728C3545600673799 /* unzip.h */,
+				C884314828C3545600673799 /* ioapi_mem.c */,
+				C884314928C3545600673799 /* minishared.c */,
+				C884314A28C3545600673799 /* ioapi.h */,
+				C884314B28C3545600673799 /* ioapi_buf.h */,
+				C884314C28C3545600673799 /* aes */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		C884314C28C3545600673799 /* aes */ = {
+			isa = PBXGroup;
+			children = (
+				C884314D28C3545600673799 /* prng.h */,
+				C884314E28C3545600673799 /* aes_ni.h */,
+				C884314F28C3545600673799 /* aeskey.c */,
+				C884315028C3545600673799 /* hmac.c */,
+				C884315128C3545600673799 /* aestab.h */,
+				C884315228C3545600673799 /* pwd2key.h */,
+				C884315328C3545600673799 /* aescrypt.c */,
+				C884315428C3545600673799 /* fileenc.c */,
+				C884315528C3545600673799 /* aesopt.h */,
+				C884315628C3545600673799 /* sha1.c */,
+				C884315728C3545600673799 /* brg_types.h */,
+				C884315828C3545600673799 /* hmac.h */,
+				C884315928C3545600673799 /* aes_ni.c */,
+				C884315A28C3545600673799 /* brg_endian.h */,
+				C884315B28C3545600673799 /* prng.c */,
+				C884315C28C3545600673799 /* aes.h */,
+				C884315D28C3545600673799 /* pwd2key.c */,
+				C884315E28C3545600673799 /* aestab.c */,
+				C884315F28C3545600673799 /* sha1.h */,
+				C884316028C3545600673799 /* fileenc.h */,
+			);
+			path = aes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1220,11 +1786,15 @@
 				C8842E3728B9C44200673799 /* Montserrat-MediumItalic.otf in Resources */,
 				C8842F7228C195E400673799 /* OpenFolderNoDataView.xib in Resources */,
 				C8842E5428B9C44200673799 /* MontserratAlternates-Light.otf in Resources */,
+				C884307D28C3450F00673799 /* ExtractLoadingViewController.xib in Resources */,
+				C884310D28C347D800673799 /* ChangePasswordViewController.xib in Resources */,
+				C884307228C3450F00673799 /* CompressLoadingViewController.xib in Resources */,
 				C8842E4628B9C44200673799 /* MontserratAlternates-ExtraLightItalic.otf in Resources */,
 				C8842EB828B9C4B500673799 /* InputTextFragment.xib in Resources */,
 				C8842E6028B9C46400673799 /* gif_compress_loading.json in Resources */,
 				C8842E3C28B9C44200673799 /* MontserratAlternates-LightItalic.otf in Resources */,
 				C8842F9928C1978B00673799 /* CreateFolderViewController.xib in Resources */,
+				C884313728C3536900673799 /* OpenZipCell.xib in Resources */,
 				C8842E5B28B9C44200673799 /* Montserrat-SemiBold.otf in Resources */,
 				C8842E4528B9C44200673799 /* MontserratAlternates-Bold.otf in Resources */,
 				C884303228C1E46100673799 /* PreviewVideoViewController.xib in Resources */,
@@ -1233,6 +1803,7 @@
 				C8842E3F28B9C44200673799 /* Montserrat-Light.otf in Resources */,
 				C8842E4728B9C44200673799 /* MontserratAlternates-Thin.otf in Resources */,
 				C8842EB928B9C4B500673799 /* YesNoDialog.xib in Resources */,
+				C884313A28C3536900673799 /* OpenZipViewController.xib in Resources */,
 				C8842E4228B9C44200673799 /* MontserratAlternates-MediumItalic.otf in Resources */,
 				C8842F6128C195C500673799 /* OpenFolderViewController.xib in Resources */,
 				C8842E4828B9C44200673799 /* Montserrat-LightItalic.otf in Resources */,
@@ -1246,6 +1817,7 @@
 				C8842E4A28B9C44200673799 /* MontserratAlternates-SemiBoldItalic.otf in Resources */,
 				C8842E5A28B9C44200673799 /* MontserratAlternates-Italic.otf in Resources */,
 				C8842E3A28B9C44200673799 /* SIL Open Font License.txt in Resources */,
+				C884311228C347D800673799 /* CreatePasswordViewController.xib in Resources */,
 				C8842F8828C1975800673799 /* FolderDetailViewController.xib in Resources */,
 				C8842E3828B9C44200673799 /* Montserrat-Bold.otf in Resources */,
 				C8842DE228B9BEB100673799 /* Assets.xcassets in Resources */,
@@ -1256,7 +1828,10 @@
 				C8842FE828C1994C00673799 /* SelectDestinationViewController.xib in Resources */,
 				C884300E28C1E3EB00673799 /* MediaCollectionViewCell.xib in Resources */,
 				C8842E3528B9C44200673799 /* clarendon_blk_bt-regular.ttf in Resources */,
+				C88430F528C347B000673799 /* SettingViewController.xib in Resources */,
 				C8842E4F28B9C44200673799 /* Montserrat-Regular.otf in Resources */,
+				C88430DA28C3478300673799 /* InputPasswordViewController.xib in Resources */,
+				C884306B28C3450F00673799 /* InputToCompressViewController.xib in Resources */,
 				C8842E4D28B9C44200673799 /* Montserrat-Italic.otf in Resources */,
 				C8842E3D28B9C44200673799 /* MontserratAlternates-Medium.otf in Resources */,
 				C8842F7028C195E400673799 /* OptionItemCell.xib in Resources */,
@@ -1331,18 +1906,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C884310928C347D800673799 /* ChangePasswordBuilder.swift in Sources */,
 				C8842EE928B9C4B500673799 /* UIViewControllerExtensions.swift in Sources */,
 				C8842F8928C1975800673799 /* FolderDetailRouter.swift in Sources */,
+				C884313428C3536900673799 /* OpenZipRouter.swift in Sources */,
+				C884317528C3545600673799 /* aestab.c in Sources */,
 				C8842EFA28B9C4B500673799 /* ViewControllableExtensions.swift in Sources */,
 				C8842EDF28B9C4B500673799 /* DeviceExtensions.swift in Sources */,
 				C8842EC628B9C4B500673799 /* TapableView.swift in Sources */,
 				C8842EFC28B9C4B500673799 /* BaseViewController.swift in Sources */,
+				C88430F128C347B000673799 /* SettingManager.swift in Sources */,
 				C8842EDA28B9C4B500673799 /* FontExtensions.swift in Sources */,
 				C8842FE528C1994C00673799 /* SelectDestinationComponent+FolderDetail.swift in Sources */,
+				C88430EF28C347B000673799 /* SettingBuilder.swift in Sources */,
 				C8842F5D28C194DA00673799 /* OpenFolderInteractor.swift in Sources */,
 				C8842FD328C1985A00673799 /* AddFilePopupBuilder.swift in Sources */,
 				C8842FE628C1994C00673799 /* SelectDestinationInteractor.swift in Sources */,
 				C8842EDB28B9C4B500673799 /* CIImageExtensions.swift in Sources */,
+				C884306628C3450F00673799 /* InputToCompressViewModel.swift in Sources */,
+				C884311328C347D800673799 /* CreatePasswordViewController.swift in Sources */,
+				C884306D28C3450F00673799 /* CompressInputValue.swift in Sources */,
+				C884318428C35E2800673799 /* OpenFolderComponent+PreviewImage.swift in Sources */,
+				C884310828C347D800673799 /* ChangePasswordViewModel.swift in Sources */,
 				C8842FB228C197C300673799 /* OpenFolderInteractor+RenameItem.swift in Sources */,
 				C8842EEC28B9C4B500673799 /* UserDefaultExtensions.swift in Sources */,
 				C8842F8C28C1975800673799 /* FolderDetailViewController.swift in Sources */,
@@ -1351,137 +1936,226 @@
 				C8842ED928B9C4B500673799 /* AVMutableCompositionExtensions.swift in Sources */,
 				C8842F2E28B9C66400673799 /* HomeBuilder.swift in Sources */,
 				C8842EE128B9C4B500673799 /* TimeIntervalExtensions.swift in Sources */,
+				C88430F328C347B000673799 /* DefaultPhotoSize.swift in Sources */,
 				C8842FD028C1985A00673799 /* AddFilePopupInteractor.swift in Sources */,
+				C884306A28C3450F00673799 /* InputToCompressViewController.swift in Sources */,
 				C8842EBF28B9C4B500673799 /* YesNoDialog.swift in Sources */,
+				C884308528C3450F00673799 /* ExtractBuilder.swift in Sources */,
+				C884307828C3450F00673799 /* CompressComponent+CompressLoading.swift in Sources */,
 				C8842EF328B9C4B500673799 /* CollectionViewExtensions.swift in Sources */,
 				C8842EFD28B9C4B500673799 /* BaseNavigationController.swift in Sources */,
+				C884311C28C3488D00673799 /* MimeType.swift in Sources */,
+				C884307928C3450F00673799 /* CompressInteractor+InputToCompress.swift in Sources */,
+				C884318028C35E2800673799 /* OpenFolderInteractor+PreviewImage.swift in Sources */,
+				C884310C28C347D800673799 /* ChangePasswordInteractor.swift in Sources */,
+				C884310A28C347D800673799 /* ChangePasswordViewController.swift in Sources */,
+				C884317228C3545600673799 /* aes_ni.c in Sources */,
 				C8842ED128B9C4B500673799 /* BezierPathExtensions.swift in Sources */,
+				C884308128C3450F00673799 /* ExtractInteractor.swift in Sources */,
+				C884311028C347D800673799 /* CreatePasswordInteractor.swift in Sources */,
 				C8842FAD28C197C300673799 /* OpenFolderComponent+SelectDestination.swift in Sources */,
+				C884306728C3450F00673799 /* InputToCompressBuilder.swift in Sources */,
 				C8842EED28B9C4B500673799 /* BundleExtensions.swift in Sources */,
 				C884303428C1E46100673799 /* PreviewImageViewModel.swift in Sources */,
 				C8842F3828B9C66400673799 /* RootViewController.swift in Sources */,
+				C884312528C34E3F00673799 /* HomeComponent+Setting.swift in Sources */,
 				C8842EDC28B9C4B500673799 /* AVAudioPlayerNodeExtensions.swift in Sources */,
 				C884300D28C1E3EB00673799 /* SelectMediaBuilder.swift in Sources */,
+				C884310F28C347D800673799 /* CreatePasswordRouter.swift in Sources */,
+				C88430F728C347B000673799 /* SettingInterator+CreatePassword.swift in Sources */,
+				C884307B28C3450F00673799 /* ExtractLoadingViewController.swift in Sources */,
 				C8842F5A28C194DA00673799 /* OpenFolderRouter.swift in Sources */,
 				C8842ECE28B9C4B500673799 /* AVAudioSessionExtensions.swift in Sources */,
+				C884308328C3450F00673799 /* ExtractRouter.swift in Sources */,
 				C8842E6428B9C48500673799 /* DIConnector.swift in Sources */,
 				C8842ED528B9C4B500673799 /* AVAssetExtension.swift in Sources */,
 				C8842ED828B9C4B500673799 /* FloatExtensions.swift in Sources */,
+				C884308028C3450F00673799 /* ExtractComponent+InputPassword.swift in Sources */,
 				C8842EE228B9C4B500673799 /* URLRequestExtensions.swift in Sources */,
 				C884300B28C1E3EB00673799 /* SelectMediaInteractor.swift in Sources */,
 				C8842F5C28C194DA00673799 /* OpenFolderBuilder.swift in Sources */,
+				C884316D28C3545600673799 /* aeskey.c in Sources */,
 				C884303528C1E46100673799 /* PreviewImageBuilder.swift in Sources */,
 				C8842ED328B9C4B500673799 /* CLPlacemarkExtensions.swift in Sources */,
 				C8842EBE28B9C4B500673799 /* SolarTextField.swift in Sources */,
+				C884317028C3545600673799 /* fileenc.c in Sources */,
+				C884307028C3450F00673799 /* CompressInteractor+InputPassword.swift in Sources */,
 				C8842EC128B9C4B500673799 /* PlayerView.swift in Sources */,
 				C8842FC528C1984100673799 /* RenameItemInteractor.swift in Sources */,
+				C884310E28C347D800673799 /* CreatePasswordViewModel.swift in Sources */,
 				C884303828C1E46100673799 /* PreviewImageViewController.swift in Sources */,
 				C8842F8328C1975800673799 /* FolderDetailCellViewModel.swift in Sources */,
+				C88430D728C3478300673799 /* InputPasswordViewModel.swift in Sources */,
 				C8842F3A28B9C66400673799 /* RootBuilder.swift in Sources */,
 				C8842EE628B9C4B500673799 /* UIWindow+Extensions.swift in Sources */,
 				C884303328C1E46100673799 /* PreviewVideoInteractor.swift in Sources */,
+				C884306C28C3450F00673799 /* CompressRouter.swift in Sources */,
 				C8842E6528B9C48500673799 /* DIContainer.swift in Sources */,
 				C8842EBB28B9C4B500673799 /* ExtensibleTouchView.swift in Sources */,
+				C884306F28C3450F00673799 /* CompressInteractor.swift in Sources */,
 				C8842FEC28C1994C00673799 /* SelectDestinationRouter.swift in Sources */,
+				C884316728C3545600673799 /* unzip.c in Sources */,
 				C8842F2D28B9C66400673799 /* HomeRouter.swift in Sources */,
 				C8842F3728B9C66400673799 /* RootInteractor.swift in Sources */,
 				C8842F7328C195E400673799 /* OpenFolderNoDataView.swift in Sources */,
 				C8842FD228C1985A00673799 /* AddFilePopupRouter.swift in Sources */,
 				C884302F28C1E46100673799 /* PreviewVideoViewController.swift in Sources */,
+				C884317728C3545600673799 /* UZKFileInfo.m in Sources */,
+				C884308428C3450F00673799 /* ExtractComponent+ExtractLoading.swift in Sources */,
 				C884301028C1E3EB00673799 /* SelectMediaRouter.swift in Sources */,
+				C884307528C3450F00673799 /* CompressLoadingInteractor.swift in Sources */,
 				C8842EE428B9C4B500673799 /* FileManagerExtensions.swift in Sources */,
 				C8842F2B28B9C66400673799 /* HomeViewController.swift in Sources */,
+				C884313328C3536900673799 /* OpenZipItemViewModel.swift in Sources */,
 				C884301528C1E3EB00673799 /* SelectMediaNoPermissionView.swift in Sources */,
 				C8842FB728C197C300673799 /* OpenFolderComponent+FolderDetail.swift in Sources */,
 				C884300F28C1E3EB00673799 /* MediaCollectionViewCell.swift in Sources */,
+				C884317428C3545600673799 /* pwd2key.c in Sources */,
 				C8842ED628B9C4B500673799 /* AVAudioFileExtensions.swift in Sources */,
+				C884307328C3450F00673799 /* CompressLoadingViewController.swift in Sources */,
 				C8842FD428C1985A00673799 /* AddFilePopupViewController.swift in Sources */,
 				C8842F8528C1975800673799 /* FolderDetailItemViewModel.swift in Sources */,
 				C8842FB428C197C300673799 /* OpenFolderComponent+CreateFolder.swift in Sources */,
 				C8842ECF28B9C4B500673799 /* CGRectExtensions.swift in Sources */,
+				C884316E28C3545600673799 /* hmac.c in Sources */,
 				C8842FF028C19D1400673799 /* OptionActionType.swift in Sources */,
+				C884312428C34E3F00673799 /* HomeInteractor+Setting.swift in Sources */,
+				C884313628C3536900673799 /* OpenZipCell.swift in Sources */,
 				C884302D28C1E46100673799 /* PreviewVideoBuilder.swift in Sources */,
 				C8842F9B28C1978B00673799 /* CreateFolderRouter.swift in Sources */,
 				C8842FF328C19EA600673799 /* HomeComponent+OpenFolder.swift in Sources */,
 				C8842F9628C1978B00673799 /* CreateFolderViewModel.swift in Sources */,
 				C8842EE828B9C4B500673799 /* URLExtensions.swift in Sources */,
+				C88430D928C3478300673799 /* InputPasswordPurpose.swift in Sources */,
 				C884301928C1E3EB00673799 /* SelectMediaComponet+PreviewImage.swift in Sources */,
 				C8842FB828C197C300673799 /* OpenFolderInteractor+AddFilePopup.swift in Sources */,
+				C884318528C35E2800673799 /* OpenFolderInteractor+OpenZip.swift in Sources */,
 				C8842FAC28C197C300673799 /* OpenFolderInteractor+SelectDestination.swift in Sources */,
+				C88430F428C347B000673799 /* SettingComponent+CreatePassword.swift in Sources */,
 				C884303C28C1E5AC00673799 /* HomeInteractor+SelectMedia.swift in Sources */,
+				C884307128C3450F00673799 /* CompressBuilder.swift in Sources */,
 				C8842EBD28B9C4B500673799 /* InputTextFragment.swift in Sources */,
 				C8842FB628C197C300673799 /* OpenFolderComponent+RenameItem.swift in Sources */,
 				C884301428C1E3EB00673799 /* SelectMediaViewModel.swift in Sources */,
 				C8842FE928C1994C00673799 /* SelectDestinationViewController.swift in Sources */,
 				C8842FC928C1984100673799 /* RenameItemBuilder.swift in Sources */,
 				C884303028C1E46100673799 /* PreviewVideoRouter.swift in Sources */,
+				C884313528C3536900673799 /* OpenZipViewController.swift in Sources */,
 				C8842EC428B9C4B500673799 /* AddFileMenuView.swift in Sources */,
 				C8842F8728C1975800673799 /* FileType.swift in Sources */,
 				C8842EEA28B9C4B500673799 /* UIImageExtensions.swift in Sources */,
 				C8842EF428B9C4B500673799 /* CalendarExtensions.swift in Sources */,
+				C884306928C3450F00673799 /* InputToCompressRouter.swift in Sources */,
 				C8842ED428B9C4B500673799 /* CMTimeExtensions.swift in Sources */,
 				C884303D28C1E5AC00673799 /* HomeComponent+SelectMedia.swift in Sources */,
 				C8842EEB28B9C4B500673799 /* UIViewExtensions.swift in Sources */,
+				C884316C28C3545600673799 /* minishared.c in Sources */,
+				C884316828C3545600673799 /* zip.c in Sources */,
+				C88430D828C3478300673799 /* InputPasswordInteractor.swift in Sources */,
 				C8842F5B28C194DA00673799 /* OpenFolderViewController.swift in Sources */,
+				C884308228C3450F00673799 /* ExtractInteractor+InputPassword.swift in Sources */,
 				C8842EF028B9C4B500673799 /* String+Mime.swift in Sources */,
+				C884308628C3450F00673799 /* ExtractInteractor+ExtractLoading.swift in Sources */,
 				C8842F8628C1975800673799 /* FolderDetailInteractor.swift in Sources */,
 				C8842F7128C195E400673799 /* OptionView.swift in Sources */,
+				C884317628C3545600673799 /* SSZipArchive.m in Sources */,
+				C884307628C3450F00673799 /* CompressLoadingBuilder.swift in Sources */,
+				C884307E28C3450F00673799 /* ExtractLoadingBuilder.swift in Sources */,
 				C8842F9828C1978B00673799 /* CreateFolderBuilder.swift in Sources */,
+				C884311A28C3488D00673799 /* ExportAudioOperation.swift in Sources */,
 				C8842F6E28C195E400673799 /* OptionItemViewModel.swift in Sources */,
+				C88430DC28C3478300673799 /* InputPasswordViewController.swift in Sources */,
 				C8842F6C28C195E400673799 /* OpenFolderViewModel.swift in Sources */,
 				C8842EE028B9C4B500673799 /* PHAssetExtension.swift in Sources */,
 				C8842FBA28C197C300673799 /* OpenFolderInteractor+FolderDetail.swift in Sources */,
 				C8842FE728C1994C00673799 /* SelectDestinationBuilder.swift in Sources */,
 				C8842F2528B9C66400673799 /* HomeInteractor.swift in Sources */,
+				C88430D628C3478300673799 /* InputPasswordBuilder.swift in Sources */,
 				C8842F6D28C195E400673799 /* OptionViewModel.swift in Sources */,
+				C884306E28C3450F00673799 /* CompressComponent+InputPassword.swift in Sources */,
 				C8842ED728B9C4B500673799 /* CGSizeExtensions.swift in Sources */,
 				C8842FB128C197C300673799 /* OpenFolderComponent+AddFilePopup.swift in Sources */,
 				C8842EC528B9C4B500673799 /* SolarBlurView.swift in Sources */,
+				C884308C28C3453000673799 /* HomeComponent+Compress.swift in Sources */,
+				C88430ED28C347B000673799 /* SettingViewController.swift in Sources */,
+				C884311128C347D800673799 /* CreatePasswordBuilder.swift in Sources */,
+				C884317328C3545600673799 /* prng.c in Sources */,
+				C884311B28C3488D00673799 /* ExportAudioSession.swift in Sources */,
+				C884318128C35E2800673799 /* OpenFolderComponent+PreviewVideo.swift in Sources */,
 				C884303128C1E46100673799 /* SeekBarView.swift in Sources */,
+				C884318228C35E2800673799 /* OpenFolderInteractor+PreviewVideo.swift in Sources */,
+				C88430DB28C3478300673799 /* InputPasswordRouter.swift in Sources */,
 				C8842FE428C1994C00673799 /* SelectDestinationNavigationViewModel.swift in Sources */,
+				C884313228C3536900673799 /* OpenZipViewModel.swift in Sources */,
+				C88430EC28C347B000673799 /* SettingViewModel.swift in Sources */,
 				C8842EB728B9C4B500673799 /* PasswordTextField.swift in Sources */,
 				C8842ED028B9C4B500673799 /* CGFloatExtensions.swift in Sources */,
 				C8842FF428C19EA600673799 /* HomeInteractor+OpenFolder.swift in Sources */,
+				C884316A28C3545600673799 /* ioapi_buf.c in Sources */,
 				C8842FC628C1984100673799 /* RenameItemRouter.swift in Sources */,
+				C88430EE28C347B000673799 /* SettingRouter.swift in Sources */,
 				C8842EEF28B9C4B500673799 /* DateExtensions.swift in Sources */,
 				C884301328C1E3EB00673799 /* SelectMediaItemViewModel.swift in Sources */,
 				C8842EDE28B9C4B500673799 /* StringExtensions.swift in Sources */,
+				C884307428C3450F00673799 /* CompressLoadingRouter.swift in Sources */,
+				C884316628C3545600673799 /* crypt.c in Sources */,
 				C884300C28C1E3EB00673799 /* SelectMediaInteractor+PreviewVideo.swift in Sources */,
 				C8842FED28C1994C00673799 /* SelectDestionationInteractor+FolderDetail.swift in Sources */,
 				C8842FAE28C197C300673799 /* OpenFolderInteractor+CreateFolder.swift in Sources */,
 				C8842DD928B9BEAF00673799 /* AppDelegate.swift in Sources */,
 				C8842EFB28B9C4B500673799 /* PresentableExtension.swift in Sources */,
+				C884317128C3545600673799 /* sha1.c in Sources */,
+				C884307A28C3450F00673799 /* CompressInteractor+CompressLoading.swift in Sources */,
 				C8842ED228B9C4B500673799 /* ArrayExtensions.swift in Sources */,
 				C884301228C1E3EB00673799 /* SelectMediaViewController.swift in Sources */,
 				C884301628C1E3EB00673799 /* SelectMediaNoDataView.swift in Sources */,
 				C8842EE528B9C4B500673799 /* DoubleExtensions.swift in Sources */,
+				C884311E28C3488D00673799 /* ExportAssetSession.swift in Sources */,
 				C8842F8D28C1975800673799 /* FolderDetailBuilder.swift in Sources */,
+				C884316F28C3545600673799 /* aescrypt.c in Sources */,
+				C884307728C3450F00673799 /* CompressComponent+InputToCompress.swift in Sources */,
 				C884301A28C1E3EB00673799 /* SelectMediaComponent+PreviewVideo.swift in Sources */,
+				C884307C28C3450F00673799 /* ExtractLoadingInteractor.swift in Sources */,
+				C884318328C35E2800673799 /* OpenFolderComponent+OpenZip.swift in Sources */,
 				C8842EBC28B9C4B500673799 /* NotificationBannerView.swift in Sources */,
+				C884316B28C3545600673799 /* ioapi_mem.c in Sources */,
+				C884313828C3536900673799 /* OpenZipInteractor.swift in Sources */,
+				C88430F028C347B000673799 /* SettingComponent+ChangePassword.swift in Sources */,
+				C884316928C3545600673799 /* ioapi.c in Sources */,
 				C8842F0028B9C5C600673799 /* DIConfiguration.swift in Sources */,
 				C8842EEE28B9C4B500673799 /* IntExtensions.swift in Sources */,
 				C8842F3928B9C66400673799 /* RootRouter.swift in Sources */,
 				C8842FEB28C1994C00673799 /* SelectDestinationNavigationItemView.swift in Sources */,
+				C884308E28C3453000673799 /* HomeComponent+Extract.swift in Sources */,
 				C8842FE328C1994C00673799 /* SelectDestinationViewModel.swift in Sources */,
 				C8842EF128B9C4B500673799 /* DictionaryExtension.swift in Sources */,
 				C8842F8428C1975800673799 /* FolderDetailViewModel.swift in Sources */,
 				C8842EE328B9C4B500673799 /* ColorExtensions.swift in Sources */,
 				C8842F8A28C1975800673799 /* FolderDetailCell.swift in Sources */,
+				C88430F228C347B000673799 /* SettingInteractor+ChangePassword.swift in Sources */,
+				C884306828C3450F00673799 /* InputToCompressInteractor.swift in Sources */,
+				C884307F28C3450F00673799 /* ExtractLoadingRouter.swift in Sources */,
 				C8842F6F28C195E400673799 /* OptionItemCell.swift in Sources */,
+				C884313928C3536900673799 /* OpenZipBuilder.swift in Sources */,
 				C8842F9A28C1978B00673799 /* CreateFolderViewController.swift in Sources */,
 				C884303728C1E46100673799 /* PreviewImageInteractor.swift in Sources */,
 				C8842FC828C1984100673799 /* RenameItemViewController.swift in Sources */,
+				C88430F628C347B000673799 /* SettingInteractor.swift in Sources */,
 				C884301128C1E3EB00673799 /* SelectMediaInteractor+PreviewImage.swift in Sources */,
 				C8842EE728B9C4B500673799 /* TableViewExtensions.swift in Sources */,
 				C8842F9728C1978B00673799 /* CreateFolderInteractor.swift in Sources */,
 				C8842F3C28BA69B100673799 /* AppComponent.swift in Sources */,
 				C8842FC428C1984100673799 /* RenameItemViewModel.swift in Sources */,
+				C884308B28C3453000673799 /* HomeInteractor+Extract.swift in Sources */,
 				C884303628C1E46100673799 /* PreviewImageRouter.swift in Sources */,
 				C8842EDD28B9C4B500673799 /* CGPointExtensions.swift in Sources */,
 				C8842EF228B9C4B500673799 /* UIImageViewExtensions.swift in Sources */,
+				C884310B28C347D800673799 /* ChangePasswordRouter.swift in Sources */,
+				C884308D28C3453000673799 /* HomeInteractor+Compress.swift in Sources */,
 				C8842FEA28C1994C00673799 /* SelectDestinationNavigationView.swift in Sources */,
 				C8842EC028B9C4B500673799 /* PaddingTextField.swift in Sources */,
 				C8842F3628B9C66400673799 /* RootComponent+Home.swift in Sources */,
+				C884311D28C3488D00673799 /* ExportAssetOperation.swift in Sources */,
 				C884302E28C1E46100673799 /* PreviewVideoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1666,9 +2340,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.ZIP-APP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Zip-App/Zip-BridgeHeader.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1696,9 +2372,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.ZIP-APP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Zip-App/Zip-BridgeHeader.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
