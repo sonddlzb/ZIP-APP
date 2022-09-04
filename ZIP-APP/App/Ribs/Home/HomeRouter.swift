@@ -9,7 +9,7 @@ import MediaPlayer
 import RIBs
 import TLLogging
 
-protocol HomeInteractable: Interactable, OpenFolderListener, SelectMediaListener, CompressListener, ExtractListener {
+protocol HomeInteractable: Interactable, OpenFolderListener, SelectMediaListener, CompressListener, ExtractListener, SelectCategoryAudioListener {
     var router: HomeRouting? { get set }
     var listener: HomeListener? { get set }
 }
@@ -34,18 +34,23 @@ final class HomeRouter: ViewableRouter<HomeInteractable, HomeViewControllable> {
     var settingRouter: SettingRouting?
     var settingBuilder: SettingBuildable
 
+    var selectCategoryAudioBuilder: SelectCategoryAudioBuildable
+    var selectCategoryAudioRouter: SelectCategoryAudioRouting?
+
     init(interactor: HomeInteractable,
          viewController: HomeViewControllable,
          openFolderBuilder: OpenFolderBuildable,
          selectMediaBuilder: SelectMediaBuildable,
          settingBuilder: SettingBuildable,
          compressBuilder: CompressBuildable,
-         extractBuilder: ExtractBuildable) {
+         extractBuilder: ExtractBuildable,
+         selectCategoryAudioBuilder: SelectCategoryAudioBuildable) {
         self.openFolderBuilder = openFolderBuilder
         self.selectMediaBuilder = selectMediaBuilder
         self.compressBuilder = compressBuilder
         self.extractBuilder = extractBuilder
         self.settingBuilder = settingBuilder
+        self.selectCategoryAudioBuilder = selectCategoryAudioBuilder
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
     }
@@ -127,11 +132,27 @@ extension HomeRouter: HomeRouting {
     }
 
     func routeToSelectCategoryAudio() {
-
+        let router = selectCategoryAudioBuilder.build(withListener: self.interactor)
+        self.viewController.push(viewControllable: router.viewControllable)
+        attachChild(router)
+        self.selectCategoryAudioRouter = router
     }
 
     func dismissSelectCategoryAudio(animated: Bool) {
+        guard let router = self.selectCategoryAudioRouter else {
+            return
+        }
 
+        let detachRouterBlock = {
+            self.detachChild(router)
+            self.selectCategoryAudioRouter = nil
+        }
+
+        if animated {
+            self.viewController.popToBefore(viewControllable: router.viewControllable, completion: detachRouterBlock)
+        } else {
+            detachRouterBlock()
+        }
     }
 
     func routeToCompress(inputURLs: [URL], outputFolderURL: URL) {

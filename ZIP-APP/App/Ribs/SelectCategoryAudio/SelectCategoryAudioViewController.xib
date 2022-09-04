@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="clarendon_blk_bt-black.ttf">
+            <string>ClarendonBT-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectCategoryAudioViewController">
+            <connections>
+                <outlet property="collectionView" destination="TA8-0n-nCy" id="KGh-Dc-IlB"/>
+                <outlet property="contentView" destination="k1S-KB-LYm" id="q7J-UU-WN7"/>
+                <outlet property="view" destination="iN0-l3-epB" id="jYO-eb-xeE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWn-Se-kfz" userLabel="Navigation View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJ1-c9-pHd">
+                            <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSx-yA-goH">
+                                    <rect key="frame" x="10" y="7" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="bpr-b9-TSk"/>
+                                        <constraint firstAttribute="height" constant="30" id="eX7-Hj-5qr"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="ic_back"/>
+                                    <connections>
+                                        <action selector="backButtonDidTap:" destination="-1" eventType="touchUpInside" id="GEd-fr-ve1"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3SO-f4-IVq">
+                                    <rect key="frame" x="170" y="7" width="74" height="30"/>
+                                    <fontDescription key="fontDescription" name="ClarendonBT-Bold" family="Clarendon BT" pointSize="25"/>
+                                    <color key="textColor" red="0.99607843139999996" green="0.94117647059999998" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="853-JM-q9E"/>
+                                <constraint firstItem="3SO-f4-IVq" firstAttribute="centerX" secondItem="BJ1-c9-pHd" secondAttribute="centerX" id="PCG-7V-DfM"/>
+                                <constraint firstItem="SSx-yA-goH" firstAttribute="leading" secondItem="BJ1-c9-pHd" secondAttribute="leading" constant="10" id="ioa-o8-Kmv"/>
+                                <constraint firstItem="3SO-f4-IVq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SSx-yA-goH" secondAttribute="trailing" constant="20" id="qHR-HU-whJ"/>
+                                <constraint firstItem="3SO-f4-IVq" firstAttribute="centerY" secondItem="BJ1-c9-pHd" secondAttribute="centerY" id="sIq-dY-hYt"/>
+                                <constraint firstItem="SSx-yA-goH" firstAttribute="centerY" secondItem="BJ1-c9-pHd" secondAttribute="centerY" id="vtv-fg-Myt"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="ff6-oE-ETl"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="BJ1-c9-pHd" firstAttribute="leading" secondItem="RWn-Se-kfz" secondAttribute="leading" id="11N-0u-UIa"/>
+                        <constraint firstAttribute="trailing" secondItem="BJ1-c9-pHd" secondAttribute="trailing" id="JS9-JO-vZV"/>
+                        <constraint firstItem="BJ1-c9-pHd" firstAttribute="top" secondItem="ff6-oE-ETl" secondAttribute="top" id="Ybu-Uj-VmQ"/>
+                        <constraint firstAttribute="bottom" secondItem="BJ1-c9-pHd" secondAttribute="bottom" id="zws-Vs-Naq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k1S-KB-LYm">
+                    <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="TA8-0n-nCy">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Bvp-On-EPW">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95686274509803915" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="TA8-0n-nCy" firstAttribute="leading" secondItem="k1S-KB-LYm" secondAttribute="leading" id="AnQ-fL-JYG"/>
+                        <constraint firstAttribute="bottom" secondItem="TA8-0n-nCy" secondAttribute="bottom" id="onJ-QA-6Zq"/>
+                        <constraint firstItem="TA8-0n-nCy" firstAttribute="top" secondItem="k1S-KB-LYm" secondAttribute="top" id="qrS-lj-xlh"/>
+                        <constraint firstAttribute="trailing" secondItem="TA8-0n-nCy" secondAttribute="trailing" id="zJK-nx-o2M"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.3411764705882353" green="0.37254901960784315" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RWn-Se-kfz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7Iz-pO-8JB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RWn-Se-kfz" secondAttribute="trailing" id="B2G-pe-VEK"/>
+                <constraint firstItem="RWn-Se-kfz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eOY-WO-nYx"/>
+                <constraint firstItem="k1S-KB-LYm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="kO1-ac-1fa"/>
+                <constraint firstAttribute="bottom" secondItem="k1S-KB-LYm" secondAttribute="bottom" id="ki7-CS-BjZ"/>
+                <constraint firstItem="k1S-KB-LYm" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="l2v-Hl-jsV"/>
+                <constraint firstItem="k1S-KB-LYm" firstAttribute="top" secondItem="RWn-Se-kfz" secondAttribute="bottom" id="l9i-ab-7jO"/>
+            </constraints>
+            <point key="canvasLocation" x="-394.20289855072468" y="73.660714285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_back" width="27" height="27"/>
+    </resources>
+</document>
