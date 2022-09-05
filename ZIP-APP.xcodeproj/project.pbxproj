@@ -332,6 +332,27 @@
 		C884318328C35E2800673799 /* OpenFolderComponent+OpenZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884317D28C35E2800673799 /* OpenFolderComponent+OpenZip.swift */; };
 		C884318428C35E2800673799 /* OpenFolderComponent+PreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884317E28C35E2800673799 /* OpenFolderComponent+PreviewImage.swift */; };
 		C884318528C35E2800673799 /* OpenFolderInteractor+OpenZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884317F28C35E2800673799 /* OpenFolderInteractor+OpenZip.swift */; };
+		C884319F28C4989500673799 /* SelectCategoryItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884318828C4989500673799 /* SelectCategoryItemViewModel.swift */; };
+		C88431A028C4989500673799 /* SelectCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884318928C4989500673799 /* SelectCategoryViewModel.swift */; };
+		C88431A128C4989500673799 /* SelectCategoryAudioInteractor+SelectAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884318A28C4989500673799 /* SelectCategoryAudioInteractor+SelectAudio.swift */; };
+		C88431A228C4989500673799 /* SelectCategoryAudioRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884318B28C4989500673799 /* SelectCategoryAudioRouter.swift */; };
+		C88431A328C4989500673799 /* SelectCategoryAudioInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884318C28C4989500673799 /* SelectCategoryAudioInteractor.swift */; };
+		C88431A428C4989500673799 /* SelectCategoryAudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C884318D28C4989500673799 /* SelectCategoryAudioViewController.xib */; };
+		C88431A528C4989500673799 /* SelectCategoryAudioComponent+SelectAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884318E28C4989500673799 /* SelectCategoryAudioComponent+SelectAudio.swift */; };
+		C88431A628C4989500673799 /* SelectCategoryAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884318F28C4989500673799 /* SelectCategoryAudioViewController.swift */; };
+		C88431A728C4989500673799 /* SelectCategoryAudioBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884319028C4989500673799 /* SelectCategoryAudioBuilder.swift */; };
+		C88431A828C4989500673799 /* SelectAudioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884319328C4989500673799 /* SelectAudioViewModel.swift */; };
+		C88431A928C4989500673799 /* SelectAudioItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884319428C4989500673799 /* SelectAudioItemViewModel.swift */; };
+		C88431AA28C4989500673799 /* SelectAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884319528C4989500673799 /* SelectAudioViewController.swift */; };
+		C88431AB28C4989500673799 /* SelectAudioBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884319628C4989500673799 /* SelectAudioBuilder.swift */; };
+		C88431AC28C4989500673799 /* SelectAudioRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884319728C4989500673799 /* SelectAudioRouter.swift */; };
+		C88431AD28C4989500673799 /* SelectAudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C884319828C4989500673799 /* SelectAudioViewController.xib */; };
+		C88431AE28C4989500673799 /* SelectAudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884319A28C4989500673799 /* SelectAudioCell.swift */; };
+		C88431AF28C4989500673799 /* SelectAudioCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C884319B28C4989500673799 /* SelectAudioCell.xib */; };
+		C88431B028C4989500673799 /* ScrollableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884319D28C4989500673799 /* ScrollableLabel.swift */; };
+		C88431B128C4989500673799 /* SelectAudioInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884319E28C4989500673799 /* SelectAudioInteractor.swift */; };
+		C88431B428C49B1200673799 /* HomeComponent+SelectCategoryAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88431B228C49B1200673799 /* HomeComponent+SelectCategoryAudio.swift */; };
+		C88431B528C49B1200673799 /* HomeInteractor+SelectCategoryAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88431B328C49B1200673799 /* HomeInteractor+SelectCategoryAudio.swift */; };
 		D27757A0AE49BF14D6C85C36 /* Pods_ZIP_APP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F45421FC8974ECBE141225 /* Pods_ZIP_APP.framework */; };
 /* End PBXBuildFile section */
 
@@ -706,6 +727,27 @@
 		C884317D28C35E2800673799 /* OpenFolderComponent+OpenZip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenFolderComponent+OpenZip.swift"; sourceTree = "<group>"; };
 		C884317E28C35E2800673799 /* OpenFolderComponent+PreviewImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenFolderComponent+PreviewImage.swift"; sourceTree = "<group>"; };
 		C884317F28C35E2800673799 /* OpenFolderInteractor+OpenZip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenFolderInteractor+OpenZip.swift"; sourceTree = "<group>"; };
+		C884318828C4989500673799 /* SelectCategoryItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCategoryItemViewModel.swift; sourceTree = "<group>"; };
+		C884318928C4989500673799 /* SelectCategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCategoryViewModel.swift; sourceTree = "<group>"; };
+		C884318A28C4989500673799 /* SelectCategoryAudioInteractor+SelectAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelectCategoryAudioInteractor+SelectAudio.swift"; sourceTree = "<group>"; };
+		C884318B28C4989500673799 /* SelectCategoryAudioRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCategoryAudioRouter.swift; sourceTree = "<group>"; };
+		C884318C28C4989500673799 /* SelectCategoryAudioInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCategoryAudioInteractor.swift; sourceTree = "<group>"; };
+		C884318D28C4989500673799 /* SelectCategoryAudioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectCategoryAudioViewController.xib; sourceTree = "<group>"; };
+		C884318E28C4989500673799 /* SelectCategoryAudioComponent+SelectAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SelectCategoryAudioComponent+SelectAudio.swift"; sourceTree = "<group>"; };
+		C884318F28C4989500673799 /* SelectCategoryAudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCategoryAudioViewController.swift; sourceTree = "<group>"; };
+		C884319028C4989500673799 /* SelectCategoryAudioBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCategoryAudioBuilder.swift; sourceTree = "<group>"; };
+		C884319328C4989500673799 /* SelectAudioViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAudioViewModel.swift; sourceTree = "<group>"; };
+		C884319428C4989500673799 /* SelectAudioItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAudioItemViewModel.swift; sourceTree = "<group>"; };
+		C884319528C4989500673799 /* SelectAudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAudioViewController.swift; sourceTree = "<group>"; };
+		C884319628C4989500673799 /* SelectAudioBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAudioBuilder.swift; sourceTree = "<group>"; };
+		C884319728C4989500673799 /* SelectAudioRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAudioRouter.swift; sourceTree = "<group>"; };
+		C884319828C4989500673799 /* SelectAudioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectAudioViewController.xib; sourceTree = "<group>"; };
+		C884319A28C4989500673799 /* SelectAudioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAudioCell.swift; sourceTree = "<group>"; };
+		C884319B28C4989500673799 /* SelectAudioCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectAudioCell.xib; sourceTree = "<group>"; };
+		C884319D28C4989500673799 /* ScrollableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableLabel.swift; sourceTree = "<group>"; };
+		C884319E28C4989500673799 /* SelectAudioInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAudioInteractor.swift; sourceTree = "<group>"; };
+		C88431B228C49B1200673799 /* HomeComponent+SelectCategoryAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeComponent+SelectCategoryAudio.swift"; sourceTree = "<group>"; };
+		C88431B328C49B1200673799 /* HomeInteractor+SelectCategoryAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeInteractor+SelectCategoryAudio.swift"; sourceTree = "<group>"; };
 		ECA906848B2A8CD2650BD24C /* Pods-ZIP-APP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZIP-APP.release.xcconfig"; path = "Target Support Files/Pods-ZIP-APP/Pods-ZIP-APP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1008,6 +1050,8 @@
 		C8842EFE28B9C53100673799 /* Ribs */ = {
 			isa = PBXGroup;
 			children = (
+				C884319128C4989500673799 /* SelectAudio */,
+				C884318628C4989500673799 /* SelectCategoryAudio */,
 				C884312628C3536800673799 /* OpenZip */,
 				C88430F828C347D800673799 /* ChangePassword */,
 				C884310028C347D800673799 /* CreatePassword */,
@@ -1034,6 +1078,8 @@
 		C8842F0128B9C66400673799 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C88431B228C49B1200673799 /* HomeComponent+SelectCategoryAudio.swift */,
+				C88431B328C49B1200673799 /* HomeInteractor+SelectCategoryAudio.swift */,
 				C884312328C34E3F00673799 /* HomeComponent+Setting.swift */,
 				C884312228C34E3F00673799 /* HomeInteractor+Setting.swift */,
 				C884308828C3452F00673799 /* HomeComponent+Compress.swift */,
@@ -1663,6 +1709,71 @@
 			path = aes;
 			sourceTree = "<group>";
 		};
+		C884318628C4989500673799 /* SelectCategoryAudio */ = {
+			isa = PBXGroup;
+			children = (
+				C884318728C4989500673799 /* ViewModel */,
+				C884318A28C4989500673799 /* SelectCategoryAudioInteractor+SelectAudio.swift */,
+				C884318B28C4989500673799 /* SelectCategoryAudioRouter.swift */,
+				C884318C28C4989500673799 /* SelectCategoryAudioInteractor.swift */,
+				C884318D28C4989500673799 /* SelectCategoryAudioViewController.xib */,
+				C884318E28C4989500673799 /* SelectCategoryAudioComponent+SelectAudio.swift */,
+				C884318F28C4989500673799 /* SelectCategoryAudioViewController.swift */,
+				C884319028C4989500673799 /* SelectCategoryAudioBuilder.swift */,
+			);
+			path = SelectCategoryAudio;
+			sourceTree = "<group>";
+		};
+		C884318728C4989500673799 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C884318828C4989500673799 /* SelectCategoryItemViewModel.swift */,
+				C884318928C4989500673799 /* SelectCategoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C884319128C4989500673799 /* SelectAudio */ = {
+			isa = PBXGroup;
+			children = (
+				C884319228C4989500673799 /* ViewModel */,
+				C884319528C4989500673799 /* SelectAudioViewController.swift */,
+				C884319628C4989500673799 /* SelectAudioBuilder.swift */,
+				C884319728C4989500673799 /* SelectAudioRouter.swift */,
+				C884319828C4989500673799 /* SelectAudioViewController.xib */,
+				C884319928C4989500673799 /* Cell */,
+				C884319C28C4989500673799 /* View */,
+				C884319E28C4989500673799 /* SelectAudioInteractor.swift */,
+			);
+			path = SelectAudio;
+			sourceTree = "<group>";
+		};
+		C884319228C4989500673799 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C884319328C4989500673799 /* SelectAudioViewModel.swift */,
+				C884319428C4989500673799 /* SelectAudioItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C884319928C4989500673799 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C884319A28C4989500673799 /* SelectAudioCell.swift */,
+				C884319B28C4989500673799 /* SelectAudioCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C884319C28C4989500673799 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C884319D28C4989500673799 /* ScrollableLabel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1790,6 +1901,7 @@
 				C884310D28C347D800673799 /* ChangePasswordViewController.xib in Resources */,
 				C884307228C3450F00673799 /* CompressLoadingViewController.xib in Resources */,
 				C8842E4628B9C44200673799 /* MontserratAlternates-ExtraLightItalic.otf in Resources */,
+				C88431A428C4989500673799 /* SelectCategoryAudioViewController.xib in Resources */,
 				C8842EB828B9C4B500673799 /* InputTextFragment.xib in Resources */,
 				C8842E6028B9C46400673799 /* gif_compress_loading.json in Resources */,
 				C8842E3C28B9C44200673799 /* MontserratAlternates-LightItalic.otf in Resources */,
@@ -1814,6 +1926,7 @@
 				C8842E5328B9C44200673799 /* Montserrat-ExtraLightItalic.otf in Resources */,
 				C8842F8B28C1975800673799 /* FolderDetailCell.xib in Resources */,
 				C884301828C1E3EB00673799 /* SelectMediaNoPermissionView.xib in Resources */,
+				C88431AF28C4989500673799 /* SelectAudioCell.xib in Resources */,
 				C8842E4A28B9C44200673799 /* MontserratAlternates-SemiBoldItalic.otf in Resources */,
 				C8842E5A28B9C44200673799 /* MontserratAlternates-Italic.otf in Resources */,
 				C8842E3A28B9C44200673799 /* SIL Open Font License.txt in Resources */,
@@ -1825,6 +1938,7 @@
 				C8842E4428B9C44200673799 /* MontserratAlternates-BlackItalic.otf in Resources */,
 				C8842EBA28B9C4B500673799 /* AddFileMenuView.xib in Resources */,
 				C8842E3E28B9C44200673799 /* Montserrat-BoldItalic.otf in Resources */,
+				C88431AD28C4989500673799 /* SelectAudioViewController.xib in Resources */,
 				C8842FE828C1994C00673799 /* SelectDestinationViewController.xib in Resources */,
 				C884300E28C1E3EB00673799 /* MediaCollectionViewCell.xib in Resources */,
 				C8842E3528B9C44200673799 /* clarendon_blk_bt-regular.ttf in Resources */,
@@ -1929,6 +2043,7 @@
 				C884318428C35E2800673799 /* OpenFolderComponent+PreviewImage.swift in Sources */,
 				C884310828C347D800673799 /* ChangePasswordViewModel.swift in Sources */,
 				C8842FB228C197C300673799 /* OpenFolderInteractor+RenameItem.swift in Sources */,
+				C88431B528C49B1200673799 /* HomeInteractor+SelectCategoryAudio.swift in Sources */,
 				C8842EEC28B9C4B500673799 /* UserDefaultExtensions.swift in Sources */,
 				C8842F8C28C1975800673799 /* FolderDetailViewController.swift in Sources */,
 				C8842EC328B9C4B500673799 /* HighlightableButton.swift in Sources */,
@@ -1941,6 +2056,7 @@
 				C884306A28C3450F00673799 /* InputToCompressViewController.swift in Sources */,
 				C8842EBF28B9C4B500673799 /* YesNoDialog.swift in Sources */,
 				C884308528C3450F00673799 /* ExtractBuilder.swift in Sources */,
+				C88431A728C4989500673799 /* SelectCategoryAudioBuilder.swift in Sources */,
 				C884307828C3450F00673799 /* CompressComponent+CompressLoading.swift in Sources */,
 				C8842EF328B9C4B500673799 /* CollectionViewExtensions.swift in Sources */,
 				C8842EFD28B9C4B500673799 /* BaseNavigationController.swift in Sources */,
@@ -1948,6 +2064,7 @@
 				C884307928C3450F00673799 /* CompressInteractor+InputToCompress.swift in Sources */,
 				C884318028C35E2800673799 /* OpenFolderInteractor+PreviewImage.swift in Sources */,
 				C884310C28C347D800673799 /* ChangePasswordInteractor.swift in Sources */,
+				C88431A228C4989500673799 /* SelectCategoryAudioRouter.swift in Sources */,
 				C884310A28C347D800673799 /* ChangePasswordViewController.swift in Sources */,
 				C884317228C3545600673799 /* aes_ni.c in Sources */,
 				C8842ED128B9C4B500673799 /* BezierPathExtensions.swift in Sources */,
@@ -1955,11 +2072,13 @@
 				C884311028C347D800673799 /* CreatePasswordInteractor.swift in Sources */,
 				C8842FAD28C197C300673799 /* OpenFolderComponent+SelectDestination.swift in Sources */,
 				C884306728C3450F00673799 /* InputToCompressBuilder.swift in Sources */,
+				C88431B128C4989500673799 /* SelectAudioInteractor.swift in Sources */,
 				C8842EED28B9C4B500673799 /* BundleExtensions.swift in Sources */,
 				C884303428C1E46100673799 /* PreviewImageViewModel.swift in Sources */,
 				C8842F3828B9C66400673799 /* RootViewController.swift in Sources */,
 				C884312528C34E3F00673799 /* HomeComponent+Setting.swift in Sources */,
 				C8842EDC28B9C4B500673799 /* AVAudioPlayerNodeExtensions.swift in Sources */,
+				C88431B428C49B1200673799 /* HomeComponent+SelectCategoryAudio.swift in Sources */,
 				C884300D28C1E3EB00673799 /* SelectMediaBuilder.swift in Sources */,
 				C884310F28C347D800673799 /* CreatePasswordRouter.swift in Sources */,
 				C88430F728C347B000673799 /* SettingInterator+CreatePassword.swift in Sources */,
@@ -1969,6 +2088,7 @@
 				C884308328C3450F00673799 /* ExtractRouter.swift in Sources */,
 				C8842E6428B9C48500673799 /* DIConnector.swift in Sources */,
 				C8842ED528B9C4B500673799 /* AVAssetExtension.swift in Sources */,
+				C88431B028C4989500673799 /* ScrollableLabel.swift in Sources */,
 				C8842ED828B9C4B500673799 /* FloatExtensions.swift in Sources */,
 				C884308028C3450F00673799 /* ExtractComponent+InputPassword.swift in Sources */,
 				C8842EE228B9C4B500673799 /* URLRequestExtensions.swift in Sources */,
@@ -1994,6 +2114,7 @@
 				C8842EBB28B9C4B500673799 /* ExtensibleTouchView.swift in Sources */,
 				C884306F28C3450F00673799 /* CompressInteractor.swift in Sources */,
 				C8842FEC28C1994C00673799 /* SelectDestinationRouter.swift in Sources */,
+				C88431A928C4989500673799 /* SelectAudioItemViewModel.swift in Sources */,
 				C884316728C3545600673799 /* unzip.c in Sources */,
 				C8842F2D28B9C66400673799 /* HomeRouter.swift in Sources */,
 				C8842F3728B9C66400673799 /* RootInteractor.swift in Sources */,
@@ -2011,16 +2132,20 @@
 				C8842FB728C197C300673799 /* OpenFolderComponent+FolderDetail.swift in Sources */,
 				C884300F28C1E3EB00673799 /* MediaCollectionViewCell.swift in Sources */,
 				C884317428C3545600673799 /* pwd2key.c in Sources */,
+				C88431A828C4989500673799 /* SelectAudioViewModel.swift in Sources */,
 				C8842ED628B9C4B500673799 /* AVAudioFileExtensions.swift in Sources */,
 				C884307328C3450F00673799 /* CompressLoadingViewController.swift in Sources */,
 				C8842FD428C1985A00673799 /* AddFilePopupViewController.swift in Sources */,
 				C8842F8528C1975800673799 /* FolderDetailItemViewModel.swift in Sources */,
 				C8842FB428C197C300673799 /* OpenFolderComponent+CreateFolder.swift in Sources */,
 				C8842ECF28B9C4B500673799 /* CGRectExtensions.swift in Sources */,
+				C88431AE28C4989500673799 /* SelectAudioCell.swift in Sources */,
 				C884316E28C3545600673799 /* hmac.c in Sources */,
+				C88431A328C4989500673799 /* SelectCategoryAudioInteractor.swift in Sources */,
 				C8842FF028C19D1400673799 /* OptionActionType.swift in Sources */,
 				C884312428C34E3F00673799 /* HomeInteractor+Setting.swift in Sources */,
 				C884313628C3536900673799 /* OpenZipCell.swift in Sources */,
+				C884319F28C4989500673799 /* SelectCategoryItemViewModel.swift in Sources */,
 				C884302D28C1E46100673799 /* PreviewVideoBuilder.swift in Sources */,
 				C8842F9B28C1978B00673799 /* CreateFolderRouter.swift in Sources */,
 				C8842FF328C19EA600673799 /* HomeComponent+OpenFolder.swift in Sources */,
@@ -2029,6 +2154,7 @@
 				C88430D928C3478300673799 /* InputPasswordPurpose.swift in Sources */,
 				C884301928C1E3EB00673799 /* SelectMediaComponet+PreviewImage.swift in Sources */,
 				C8842FB828C197C300673799 /* OpenFolderInteractor+AddFilePopup.swift in Sources */,
+				C88431AA28C4989500673799 /* SelectAudioViewController.swift in Sources */,
 				C884318528C35E2800673799 /* OpenFolderInteractor+OpenZip.swift in Sources */,
 				C8842FAC28C197C300673799 /* OpenFolderInteractor+SelectDestination.swift in Sources */,
 				C88430F428C347B000673799 /* SettingComponent+CreatePassword.swift in Sources */,
@@ -2086,12 +2212,14 @@
 				C884318228C35E2800673799 /* OpenFolderInteractor+PreviewVideo.swift in Sources */,
 				C88430DB28C3478300673799 /* InputPasswordRouter.swift in Sources */,
 				C8842FE428C1994C00673799 /* SelectDestinationNavigationViewModel.swift in Sources */,
+				C88431A628C4989500673799 /* SelectCategoryAudioViewController.swift in Sources */,
 				C884313228C3536900673799 /* OpenZipViewModel.swift in Sources */,
 				C88430EC28C347B000673799 /* SettingViewModel.swift in Sources */,
 				C8842EB728B9C4B500673799 /* PasswordTextField.swift in Sources */,
 				C8842ED028B9C4B500673799 /* CGFloatExtensions.swift in Sources */,
 				C8842FF428C19EA600673799 /* HomeInteractor+OpenFolder.swift in Sources */,
 				C884316A28C3545600673799 /* ioapi_buf.c in Sources */,
+				C88431A528C4989500673799 /* SelectCategoryAudioComponent+SelectAudio.swift in Sources */,
 				C8842FC628C1984100673799 /* RenameItemRouter.swift in Sources */,
 				C88430EE28C347B000673799 /* SettingRouter.swift in Sources */,
 				C8842EEF28B9C4B500673799 /* DateExtensions.swift in Sources */,
@@ -2124,7 +2252,9 @@
 				C884316928C3545600673799 /* ioapi.c in Sources */,
 				C8842F0028B9C5C600673799 /* DIConfiguration.swift in Sources */,
 				C8842EEE28B9C4B500673799 /* IntExtensions.swift in Sources */,
+				C88431A028C4989500673799 /* SelectCategoryViewModel.swift in Sources */,
 				C8842F3928B9C66400673799 /* RootRouter.swift in Sources */,
+				C88431AC28C4989500673799 /* SelectAudioRouter.swift in Sources */,
 				C8842FEB28C1994C00673799 /* SelectDestinationNavigationItemView.swift in Sources */,
 				C884308E28C3453000673799 /* HomeComponent+Extract.swift in Sources */,
 				C8842FE328C1994C00673799 /* SelectDestinationViewModel.swift in Sources */,
@@ -2132,6 +2262,7 @@
 				C8842F8428C1975800673799 /* FolderDetailViewModel.swift in Sources */,
 				C8842EE328B9C4B500673799 /* ColorExtensions.swift in Sources */,
 				C8842F8A28C1975800673799 /* FolderDetailCell.swift in Sources */,
+				C88431A128C4989500673799 /* SelectCategoryAudioInteractor+SelectAudio.swift in Sources */,
 				C88430F228C347B000673799 /* SettingInteractor+ChangePassword.swift in Sources */,
 				C884306828C3450F00673799 /* InputToCompressInteractor.swift in Sources */,
 				C884307F28C3450F00673799 /* ExtractLoadingRouter.swift in Sources */,
@@ -2149,6 +2280,7 @@
 				C884308B28C3453000673799 /* HomeInteractor+Extract.swift in Sources */,
 				C884303628C1E46100673799 /* PreviewImageRouter.swift in Sources */,
 				C8842EDD28B9C4B500673799 /* CGPointExtensions.swift in Sources */,
+				C88431AB28C4989500673799 /* SelectAudioBuilder.swift in Sources */,
 				C8842EF228B9C4B500673799 /* UIImageViewExtensions.swift in Sources */,
 				C884310B28C347D800673799 /* ChangePasswordRouter.swift in Sources */,
 				C884308D28C3453000673799 /* HomeInteractor+Compress.swift in Sources */,

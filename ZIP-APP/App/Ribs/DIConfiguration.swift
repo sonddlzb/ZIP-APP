@@ -84,5 +84,13 @@ extension DIConnector {
         DIContainer.register(OpenZipBuildable.self) { _, args in
              return OpenZipBuilder(dependency: args.get())
         }
+
+        DIContainer.register(SelectCategoryAudioBuildable.self) { _, args in
+             return SelectCategoryAudioBuilder(dependency: args.get())
+        }
+
+        DIContainer.register(SelectAudioBuildable.self) { _, args in
+             return SelectAudioBuilder(dependency: args.get())
+        }
     }
 }
