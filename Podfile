@@ -45,4 +45,6 @@ target 'ZIP-APP' do
 
   binary_pod 'lottie-ios'
   binary_pod 'DifferenceKit'
+  binary_pod 'GoogleSignIn'
+  binary_pod 'GoogleAPIClientForREST/Drive'
 end

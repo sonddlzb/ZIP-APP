@@ -43,6 +43,7 @@ final class HomeBuilder: Builder<HomeDependency>, HomeBuildable {
         let extractBuilder = DIContainer.resolve(ExtractBuildable.self, agrument: component)
         let settingBuilder = DIContainer.resolve(SettingBuildable.self, agrument: component)
         let selectCategoryAudioBuilder = DIContainer.resolve(SelectCategoryAudioBuildable.self, agrument: component)
+        let addFileFromGoogleDriverBuilder = DIContainer.resolve(AddFileFromGoogleDriveBuildable.self, agrument: component)
 
         return HomeRouter(interactor: interactor,
                           viewController: viewController,
@@ -51,6 +52,7 @@ final class HomeBuilder: Builder<HomeDependency>, HomeBuildable {
                           settingBuilder: settingBuilder,
                           compressBuilder: compressBuilder,
                           extractBuilder: extractBuilder,
-                          selectCategoryAudioBuilder: selectCategoryAudioBuilder)
+                          selectCategoryAudioBuilder: selectCategoryAudioBuilder,
+                          addFileFromGoogleDriveBuilder: addFileFromGoogleDriverBuilder)
     }
 }
