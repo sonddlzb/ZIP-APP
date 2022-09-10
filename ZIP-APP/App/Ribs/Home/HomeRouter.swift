@@ -15,7 +15,8 @@ protocol HomeInteractable: Interactable, OpenFolderListener, SelectMediaListener
 }
 
 
-protocol HomeViewControllable: ViewControllable, ExtractViewControllable, CompressViewControllable{
+protocol HomeViewControllable: ExtractViewControllable, CompressViewControllable{
+    func showDocumentPicker()
 }
 
 final class HomeRouter: ViewableRouter<HomeInteractable, HomeViewControllable> {
@@ -242,7 +243,7 @@ extension HomeRouter: HomeRouting {
     }
 
     func showDocumentPicker() {
-
+        self.viewController.showDocumentPicker()
     }
 
 }

@@ -137,19 +137,19 @@ extension OpenFolderInteractor: OpenFolderPresentableListener {
     }
 
     func didSelectAddFileFromDocumentBrowser() {
-//        listener?.openFolderWantToAddFileFromDocumentBrowser(folderURL: self.viewModel.url)
+        listener?.openFolderWantToAddFileFromDocumentBrowser(folderURL: self.viewModel.url)
     }
 
     func didSelectAddFileFromGoogleDrive() {
-//        listener?.openFolderWantToAddFileFromGoogleDrive(folderURL: self.viewModel.url)
+        listener?.openFolderWantToAddFileFromGoogleDrive(folderURL: self.viewModel.url)
     }
 
     func didSelectAddFileFromOnedrive() {
-//        listener?.openFolderWantToAddFileFromOnedrive(folderURL: self.viewModel.url)
+        listener?.openFolderWantToAddFileFromOnedrive(folderURL: self.viewModel.url)
     }
 
     func didSelectAddFileFromDropbox() {
-//        listener?.openFolderWantToAddFileFromDropbox(folderURL: self.viewModel.url)
+        listener?.openFolderWantToAddFileFromDropbox(folderURL: self.viewModel.url)
     }
 
     func didSelectCreateNewFolder() {
