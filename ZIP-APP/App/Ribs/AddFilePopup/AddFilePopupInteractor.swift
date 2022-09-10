@@ -18,6 +18,10 @@ protocol AddFilePopupListener: AnyObject {
     func addFilePopupWantToDismiss()
     func addFilePopupWantToAddFileFromPhoto()
     func addFilePopupWantToAddFileFromAudio()
+    func addFilePopupWantToAddFileFromDocumentBrowser()
+    func addFilePopupWantToAddFileFromGoogleDrive()
+    func addFilePopupWantToAddFileFromOneDrive()
+    func addFilePopupWantToAddFileFromDropbox()
 }
 
 final class AddFilePopupInteractor: PresentableInteractor<AddFilePopupPresentable>, AddFilePopupInteractable {
@@ -47,6 +51,22 @@ extension AddFilePopupInteractor: AddFilePopupPresentableListener {
 
     func didSelectAddFileFromAudio() {
         listener?.addFilePopupWantToAddFileFromAudio()
+    }
+
+    func didSelectAddFileFromDocumentBrowser() {
+        listener?.addFilePopupWantToAddFileFromDocumentBrowser()
+    }
+
+    func didSelectAddFileFromGoogleDrive() {
+        listener?.addFilePopupWantToAddFileFromGoogleDrive()
+    }
+
+    func didSelectAddFileFromOneDrive() {
+        listener?.addFilePopupWantToAddFileFromOneDrive()
+    }
+
+    func didSelectAddFileFromDropbox() {
+        listener?.addFilePopupWantToAddFileFromDropbox()
     }
 
     func didSelectClose() {
