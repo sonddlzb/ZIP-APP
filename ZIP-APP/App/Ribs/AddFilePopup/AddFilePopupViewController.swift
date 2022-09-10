@@ -11,6 +11,10 @@ import UIKit
 protocol AddFilePopupPresentableListener: AnyObject {
     func didSelectAddFileFromPhoto()
     func didSelectAddFileFromAudio()
+    func didSelectAddFileFromDocumentBrowser()
+    func didSelectAddFileFromGoogleDrive()
+    func didSelectAddFileFromOneDrive()
+    func didSelectAddFileFromDropbox()
     func didSelectClose()
 }
 
@@ -100,6 +104,30 @@ extension AddFilePopupViewController: AddFileMenuViewDelegate {
     func addFileMenuViewDidSelectAudio(_ view: AddFileMenuView) {
         self.animateDismissing {
             self.listener?.didSelectAddFileFromAudio()
+        }
+    }
+
+    func addFileMenuViewDidSelectDocumentBrowser(_ view: AddFileMenuView) {
+        self.animateDismissing {
+            self.listener?.didSelectAddFileFromDocumentBrowser()
+        }
+    }
+
+    func addFileMenuViewDidSelectGoogleDrive(_ view: AddFileMenuView) {
+        self.animateDismissing {
+            self.listener?.didSelectAddFileFromGoogleDrive()
+        }
+    }
+
+    func addFileMenuViewDidSelectOnedrive(_ view: AddFileMenuView) {
+        self.animateDismissing {
+            self.listener?.didSelectAddFileFromOneDrive()
+        }
+    }
+
+    func addFileMenuViewDidSelectDropbox(_ view: AddFileMenuView) {
+        self.animateDismissing {
+            self.listener?.didSelectAddFileFromDropbox()
         }
     }
 }

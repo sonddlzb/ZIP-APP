@@ -23,4 +23,28 @@ extension OpenFolderInteractor: AddFilePopupListener {
             self.listener?.openFolderWantToAddFileFromAudio(folderURL: self.viewModel.url)
         })
     }
+
+    func addFilePopupWantToAddFileFromDocumentBrowser() {
+        self.router?.dismissAddFilePopup(completion: {
+            self.listener?.openFolderWantToAddFileFromDocumentBrowser(folderURL: self.viewModel.url)
+        })
+    }
+
+    func addFilePopupWantToAddFileFromGoogleDrive() {
+        self.router?.dismissAddFilePopup(completion: {
+            self.listener?.openFolderWantToAddFileFromGoogleDrive(folderURL: self.viewModel.url)
+        })
+    }
+
+    func addFilePopupWantToAddFileFromOneDrive() {
+        self.router?.dismissAddFilePopup(completion: {
+            self.listener?.openFolderWantToAddFileFromOnedrive(folderURL: self.viewModel.url)
+        })
+    }
+
+    func addFilePopupWantToAddFileFromDropbox() {
+        self.router?.dismissAddFilePopup(completion: {
+            self.listener?.openFolderWantToAddFileFromDropbox(folderURL: self.viewModel.url)
+        })
+    }
 }
