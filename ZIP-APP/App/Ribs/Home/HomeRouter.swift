@@ -9,7 +9,7 @@ import MediaPlayer
 import RIBs
 import TLLogging
 
-protocol HomeInteractable: Interactable, OpenFolderListener, SelectMediaListener, CompressListener, ExtractListener, SelectCategoryAudioListener {
+protocol HomeInteractable: Interactable, OpenFolderListener, SelectMediaListener, CompressListener, ExtractListener, SelectCategoryAudioListener, SettingListener {
     var router: HomeRouting? { get set }
     var listener: HomeListener? { get set }
 }
@@ -124,11 +124,20 @@ extension HomeRouter: HomeRouting {
     }
 
     func routeToSetting() {
-
+        let settingRouter = settingBuilder.build(withListener: interactor)
+        self.viewController.push(viewControllable: settingRouter.viewControllable)
+        attachChild(settingRouter)
+        self.settingRouter = settingRouter
     }
 
     func dismissSetting() {
+        guard let router = settingRouter else {
+            return
+        }
 
+        self.viewControllable.popToBefore(viewControllable: router.viewControllable)
+        detachChild(router)
+        self.settingRouter = nil
     }
 
     func routeToSelectCategoryAudio() {

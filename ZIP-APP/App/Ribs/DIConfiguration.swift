@@ -92,5 +92,17 @@ extension DIConnector {
         DIContainer.register(SelectAudioBuildable.self) { _, args in
              return SelectAudioBuilder(dependency: args.get())
         }
+
+        DIContainer.register(CreatePasswordBuildable.self) { _, args in
+             return CreatePasswordBuilder(dependency: args.get())
+        }
+
+        DIContainer.register(ChangePasswordBuildable.self) { _, args in
+             return ChangePasswordBuilder(dependency: args.get())
+        }
+
+        DIContainer.register(ExtractLoadingBuildable.self) { _, args in
+             return ExtractLoadingBuilder(dependency: args.get())
+        }
     }
 }
