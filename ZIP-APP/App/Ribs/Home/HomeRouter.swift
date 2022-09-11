@@ -9,13 +9,13 @@ import MediaPlayer
 import RIBs
 import TLLogging
 
-protocol HomeInteractable: Interactable, OpenFolderListener, SelectMediaListener, CompressListener, ExtractListener, SelectCategoryAudioListener, SettingListener {
+protocol HomeInteractable: Interactable, OpenFolderListener, SelectMediaListener, CompressListener, ExtractListener, SelectCategoryAudioListener, SettingListener, AddFileFromGoogleDriveListener {
     var router: HomeRouting? { get set }
     var listener: HomeListener? { get set }
 }
 
 
-protocol HomeViewControllable: ExtractViewControllable, CompressViewControllable{
+protocol HomeViewControllable: ViewControllable, ExtractViewControllable, CompressViewControllable, AddFileFromGoogleDriveViewControllable{
     func showDocumentPicker()
 }
 
@@ -38,6 +38,9 @@ final class HomeRouter: ViewableRouter<HomeInteractable, HomeViewControllable> {
     var selectCategoryAudioBuilder: SelectCategoryAudioBuildable
     var selectCategoryAudioRouter: SelectCategoryAudioRouting?
 
+    var addFileFromGoogleDriveBuilder: AddFileFromGoogleDriveBuildable
+    var addFileFromGoogleDriveRouter: AddFileFromGoogleDriveRouting?
+
     init(interactor: HomeInteractable,
          viewController: HomeViewControllable,
          openFolderBuilder: OpenFolderBuildable,
@@ -45,12 +48,14 @@ final class HomeRouter: ViewableRouter<HomeInteractable, HomeViewControllable> {
          settingBuilder: SettingBuildable,
          compressBuilder: CompressBuildable,
          extractBuilder: ExtractBuildable,
-         selectCategoryAudioBuilder: SelectCategoryAudioBuildable) {
+         selectCategoryAudioBuilder: SelectCategoryAudioBuildable,
+         addFileFromGoogleDriveBuilder: AddFileFromGoogleDriveBuildable) {
         self.openFolderBuilder = openFolderBuilder
         self.selectMediaBuilder = selectMediaBuilder
         self.compressBuilder = compressBuilder
         self.extractBuilder = extractBuilder
         self.settingBuilder = settingBuilder
+        self.addFileFromGoogleDriveBuilder = addFileFromGoogleDriveBuilder
         self.selectCategoryAudioBuilder = selectCategoryAudioBuilder
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
@@ -219,11 +224,18 @@ extension HomeRouter: HomeRouting {
     }
 
     func routeToAddFileFromGoogleDrive(folderURL: URL) {
-
+        let router = addFileFromGoogleDriveBuilder.build(withListener: self.interactor, downloadFolderURL: folderURL)
+        attachChild(router)
+        self.addFileFromGoogleDriveRouter = router
     }
 
     func dismissAddFileFromGoogleDrive() {
+        guard let router = addFileFromGoogleDriveRouter else {
+            return
+        }
 
+        detachChild(router)
+        self.addFileFromGoogleDriveRouter = nil
     }
 
     func routeToAddFileFromDropbox(folderURL: URL) {

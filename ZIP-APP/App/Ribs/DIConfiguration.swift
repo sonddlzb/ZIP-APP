@@ -104,5 +104,13 @@ extension DIConnector {
         DIContainer.register(ExtractLoadingBuildable.self) { _, args in
              return ExtractLoadingBuilder(dependency: args.get())
         }
+
+        DIContainer.register(OpenCloudBuildable.self) { _, args in
+            return OpenCloudBuilder(dependency: args.get())
+        }
+
+        DIContainer.register(AddFileFromGoogleDriveBuildable.self) { _, args in
+            return AddFileFromGoogleDriveBuilder(dependency: args.get())
+        }
     }
 }

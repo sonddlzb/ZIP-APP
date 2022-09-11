@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C87A2BFE28CCABB300305170 /* AddFileFromGoogleDriveRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2BF928CCABB300305170 /* AddFileFromGoogleDriveRouter.swift */; };
+		C87A2BFF28CCABB300305170 /* AddFileFromGoogleDriveBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2BFA28CCABB300305170 /* AddFileFromGoogleDriveBuilder.swift */; };
+		C87A2C0028CCABB300305170 /* AddFileFromGoogleDriveInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2BFB28CCABB300305170 /* AddFileFromGoogleDriveInteractor.swift */; };
+		C87A2C0128CCABB300305170 /* AddFileFromGoogleDriveComponent+OpenCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2BFC28CCABB300305170 /* AddFileFromGoogleDriveComponent+OpenCloud.swift */; };
+		C87A2C0228CCABB300305170 /* AddFileFromGoogleDriveInteractor+OpenCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2BFD28CCABB300305170 /* AddFileFromGoogleDriveInteractor+OpenCloud.swift */; };
+		C87A2C1928CCABDC00305170 /* OpenCloudViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C0528CCABDC00305170 /* OpenCloudViewModel.swift */; };
+		C87A2C1A28CCABDC00305170 /* OpenCloudItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C0628CCABDC00305170 /* OpenCloudItemViewModel.swift */; };
+		C87A2C1B28CCABDC00305170 /* OpenCloudInteractor+OpenCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C0728CCABDC00305170 /* OpenCloudInteractor+OpenCloud.swift */; };
+		C87A2C1C28CCABDC00305170 /* OpenCloudRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C0828CCABDC00305170 /* OpenCloudRouter.swift */; };
+		C87A2C1D28CCABDC00305170 /* OpenCloudBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C0928CCABDC00305170 /* OpenCloudBuilder.swift */; };
+		C87A2C1E28CCABDC00305170 /* OpenCloudInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C0A28CCABDC00305170 /* OpenCloudInteractor.swift */; };
+		C87A2C1F28CCABDC00305170 /* CloudFolderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C87A2C0C28CCABDC00305170 /* CloudFolderCell.xib */; };
+		C87A2C2028CCABDC00305170 /* CloudFolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C0D28CCABDC00305170 /* CloudFolderCell.swift */; };
+		C87A2C2128CCABDC00305170 /* CloudFileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C87A2C0E28CCABDC00305170 /* CloudFileCell.xib */; };
+		C87A2C2228CCABDC00305170 /* CloudFileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C0F28CCABDC00305170 /* CloudFileCell.swift */; };
+		C87A2C2328CCABDC00305170 /* OpenCloudComponent+OpenCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C1028CCABDC00305170 /* OpenCloudComponent+OpenCloud.swift */; };
+		C87A2C2428CCABDC00305170 /* GoogleDriveItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C1228CCABDC00305170 /* GoogleDriveItem.swift */; };
+		C87A2C2528CCABDC00305170 /* CloudItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C1328CCABDC00305170 /* CloudItem.swift */; };
+		C87A2C2628CCABDC00305170 /* OpenCloudViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C87A2C1428CCABDC00305170 /* OpenCloudViewController.xib */; };
+		C87A2C2728CCABDC00305170 /* CloudService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C1628CCABDC00305170 /* CloudService.swift */; };
+		C87A2C2828CCABDC00305170 /* GoogleDriveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C1728CCABDC00305170 /* GoogleDriveService.swift */; };
+		C87A2C2928CCABDC00305170 /* OpenCloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C1828CCABDC00305170 /* OpenCloudViewController.swift */; };
+		C87A2C2C28CCADAB00305170 /* HomeInteractor+AddFileFromGoogleDrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C2A28CCADAB00305170 /* HomeInteractor+AddFileFromGoogleDrive.swift */; };
+		C87A2C2D28CCADAB00305170 /* HomeComponent+AddFileFromGoogleDrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C2B28CCADAB00305170 /* HomeComponent+AddFileFromGoogleDrive.swift */; };
 		C8842DD928B9BEAF00673799 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842DD828B9BEAF00673799 /* AppDelegate.swift */; };
 		C8842DE228B9BEB100673799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8842DE128B9BEB100673799 /* Assets.xcassets */; };
 		C8842DE528B9BEB100673799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8842DE328B9BEB100673799 /* LaunchScreen.storyboard */; };
@@ -376,6 +400,30 @@
 /* Begin PBXFileReference section */
 		39F45421FC8974ECBE141225 /* Pods_ZIP_APP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZIP_APP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4BF08952D980EFBA0D702AB /* Pods-ZIP-APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZIP-APP.debug.xcconfig"; path = "Target Support Files/Pods-ZIP-APP/Pods-ZIP-APP.debug.xcconfig"; sourceTree = "<group>"; };
+		C87A2BF928CCABB300305170 /* AddFileFromGoogleDriveRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFileFromGoogleDriveRouter.swift; sourceTree = "<group>"; };
+		C87A2BFA28CCABB300305170 /* AddFileFromGoogleDriveBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFileFromGoogleDriveBuilder.swift; sourceTree = "<group>"; };
+		C87A2BFB28CCABB300305170 /* AddFileFromGoogleDriveInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFileFromGoogleDriveInteractor.swift; sourceTree = "<group>"; };
+		C87A2BFC28CCABB300305170 /* AddFileFromGoogleDriveComponent+OpenCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddFileFromGoogleDriveComponent+OpenCloud.swift"; sourceTree = "<group>"; };
+		C87A2BFD28CCABB300305170 /* AddFileFromGoogleDriveInteractor+OpenCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddFileFromGoogleDriveInteractor+OpenCloud.swift"; sourceTree = "<group>"; };
+		C87A2C0528CCABDC00305170 /* OpenCloudViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenCloudViewModel.swift; sourceTree = "<group>"; };
+		C87A2C0628CCABDC00305170 /* OpenCloudItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenCloudItemViewModel.swift; sourceTree = "<group>"; };
+		C87A2C0728CCABDC00305170 /* OpenCloudInteractor+OpenCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenCloudInteractor+OpenCloud.swift"; sourceTree = "<group>"; };
+		C87A2C0828CCABDC00305170 /* OpenCloudRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenCloudRouter.swift; sourceTree = "<group>"; };
+		C87A2C0928CCABDC00305170 /* OpenCloudBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenCloudBuilder.swift; sourceTree = "<group>"; };
+		C87A2C0A28CCABDC00305170 /* OpenCloudInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenCloudInteractor.swift; sourceTree = "<group>"; };
+		C87A2C0C28CCABDC00305170 /* CloudFolderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CloudFolderCell.xib; sourceTree = "<group>"; };
+		C87A2C0D28CCABDC00305170 /* CloudFolderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudFolderCell.swift; sourceTree = "<group>"; };
+		C87A2C0E28CCABDC00305170 /* CloudFileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CloudFileCell.xib; sourceTree = "<group>"; };
+		C87A2C0F28CCABDC00305170 /* CloudFileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudFileCell.swift; sourceTree = "<group>"; };
+		C87A2C1028CCABDC00305170 /* OpenCloudComponent+OpenCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenCloudComponent+OpenCloud.swift"; sourceTree = "<group>"; };
+		C87A2C1228CCABDC00305170 /* GoogleDriveItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDriveItem.swift; sourceTree = "<group>"; };
+		C87A2C1328CCABDC00305170 /* CloudItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudItem.swift; sourceTree = "<group>"; };
+		C87A2C1428CCABDC00305170 /* OpenCloudViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenCloudViewController.xib; sourceTree = "<group>"; };
+		C87A2C1628CCABDC00305170 /* CloudService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudService.swift; sourceTree = "<group>"; };
+		C87A2C1728CCABDC00305170 /* GoogleDriveService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDriveService.swift; sourceTree = "<group>"; };
+		C87A2C1828CCABDC00305170 /* OpenCloudViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenCloudViewController.swift; sourceTree = "<group>"; };
+		C87A2C2A28CCADAB00305170 /* HomeInteractor+AddFileFromGoogleDrive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeInteractor+AddFileFromGoogleDrive.swift"; sourceTree = "<group>"; };
+		C87A2C2B28CCADAB00305170 /* HomeComponent+AddFileFromGoogleDrive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeComponent+AddFileFromGoogleDrive.swift"; sourceTree = "<group>"; };
 		C8842DD528B9BEAF00673799 /* ZIP-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZIP-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8842DD828B9BEAF00673799 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8842DE128B9BEB100673799 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -794,6 +842,74 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C87A2BF828CCABB300305170 /* AddFileFromGoogleDrive */ = {
+			isa = PBXGroup;
+			children = (
+				C87A2BF928CCABB300305170 /* AddFileFromGoogleDriveRouter.swift */,
+				C87A2BFA28CCABB300305170 /* AddFileFromGoogleDriveBuilder.swift */,
+				C87A2BFB28CCABB300305170 /* AddFileFromGoogleDriveInteractor.swift */,
+				C87A2BFC28CCABB300305170 /* AddFileFromGoogleDriveComponent+OpenCloud.swift */,
+				C87A2BFD28CCABB300305170 /* AddFileFromGoogleDriveInteractor+OpenCloud.swift */,
+			);
+			path = AddFileFromGoogleDrive;
+			sourceTree = "<group>";
+		};
+		C87A2C0328CCABDC00305170 /* OpenCloud */ = {
+			isa = PBXGroup;
+			children = (
+				C87A2C0428CCABDC00305170 /* ViewModel */,
+				C87A2C0728CCABDC00305170 /* OpenCloudInteractor+OpenCloud.swift */,
+				C87A2C0828CCABDC00305170 /* OpenCloudRouter.swift */,
+				C87A2C0928CCABDC00305170 /* OpenCloudBuilder.swift */,
+				C87A2C0A28CCABDC00305170 /* OpenCloudInteractor.swift */,
+				C87A2C0B28CCABDC00305170 /* Cell */,
+				C87A2C1028CCABDC00305170 /* OpenCloudComponent+OpenCloud.swift */,
+				C87A2C1128CCABDC00305170 /* Model */,
+				C87A2C1428CCABDC00305170 /* OpenCloudViewController.xib */,
+				C87A2C1528CCABDC00305170 /* Service */,
+				C87A2C1828CCABDC00305170 /* OpenCloudViewController.swift */,
+			);
+			path = OpenCloud;
+			sourceTree = "<group>";
+		};
+		C87A2C0428CCABDC00305170 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C87A2C0528CCABDC00305170 /* OpenCloudViewModel.swift */,
+				C87A2C0628CCABDC00305170 /* OpenCloudItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C87A2C0B28CCABDC00305170 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C87A2C0C28CCABDC00305170 /* CloudFolderCell.xib */,
+				C87A2C0D28CCABDC00305170 /* CloudFolderCell.swift */,
+				C87A2C0E28CCABDC00305170 /* CloudFileCell.xib */,
+				C87A2C0F28CCABDC00305170 /* CloudFileCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C87A2C1128CCABDC00305170 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C87A2C1228CCABDC00305170 /* GoogleDriveItem.swift */,
+				C87A2C1328CCABDC00305170 /* CloudItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C87A2C1528CCABDC00305170 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C87A2C1628CCABDC00305170 /* CloudService.swift */,
+				C87A2C1728CCABDC00305170 /* GoogleDriveService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		C8842DCC28B9BEAF00673799 = {
 			isa = PBXGroup;
 			children = (
@@ -1050,6 +1166,8 @@
 		C8842EFE28B9C53100673799 /* Ribs */ = {
 			isa = PBXGroup;
 			children = (
+				C87A2C0328CCABDC00305170 /* OpenCloud */,
+				C87A2BF828CCABB300305170 /* AddFileFromGoogleDrive */,
 				C884319128C4989500673799 /* SelectAudio */,
 				C884318628C4989500673799 /* SelectCategoryAudio */,
 				C884312628C3536800673799 /* OpenZip */,
@@ -1078,6 +1196,8 @@
 		C8842F0128B9C66400673799 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C87A2C2B28CCADAB00305170 /* HomeComponent+AddFileFromGoogleDrive.swift */,
+				C87A2C2A28CCADAB00305170 /* HomeInteractor+AddFileFromGoogleDrive.swift */,
 				C88431B228C49B1200673799 /* HomeComponent+SelectCategoryAudio.swift */,
 				C88431B328C49B1200673799 /* HomeInteractor+SelectCategoryAudio.swift */,
 				C884312328C34E3F00673799 /* HomeComponent+Setting.swift */,
@@ -1891,6 +2011,7 @@
 				C8842E5528B9C44200673799 /* MontserratAlternates-ExtraLight.otf in Resources */,
 				C884301728C1E3EB00673799 /* SelectMediaNoDataView.xib in Resources */,
 				C8842DE528B9BEB100673799 /* LaunchScreen.storyboard in Resources */,
+				C87A2C1F28CCABDC00305170 /* CloudFolderCell.xib in Resources */,
 				C8842E5F28B9C46400673799 /* gif_extract_loading.json in Resources */,
 				C8842E5928B9C44200673799 /* MontserratAlternates-ExtraBoldItalic.otf in Resources */,
 				C8842E4B28B9C44200673799 /* Montserrat-SemiBoldItalic.otf in Resources */,
@@ -1900,6 +2021,7 @@
 				C884307D28C3450F00673799 /* ExtractLoadingViewController.xib in Resources */,
 				C884310D28C347D800673799 /* ChangePasswordViewController.xib in Resources */,
 				C884307228C3450F00673799 /* CompressLoadingViewController.xib in Resources */,
+				C87A2C2128CCABDC00305170 /* CloudFileCell.xib in Resources */,
 				C8842E4628B9C44200673799 /* MontserratAlternates-ExtraLightItalic.otf in Resources */,
 				C88431A428C4989500673799 /* SelectCategoryAudioViewController.xib in Resources */,
 				C8842EB828B9C4B500673799 /* InputTextFragment.xib in Resources */,
@@ -1917,6 +2039,7 @@
 				C8842EB928B9C4B500673799 /* YesNoDialog.xib in Resources */,
 				C884313A28C3536900673799 /* OpenZipViewController.xib in Resources */,
 				C8842E4228B9C44200673799 /* MontserratAlternates-MediumItalic.otf in Resources */,
+				C87A2C2628CCABDC00305170 /* OpenCloudViewController.xib in Resources */,
 				C8842F6128C195C500673799 /* OpenFolderViewController.xib in Resources */,
 				C8842E4828B9C44200673799 /* Montserrat-LightItalic.otf in Resources */,
 				C8842E4E28B9C44200673799 /* MontserratAlternates-SemiBold.otf in Resources */,
@@ -2023,6 +2146,7 @@
 				C884310928C347D800673799 /* ChangePasswordBuilder.swift in Sources */,
 				C8842EE928B9C4B500673799 /* UIViewControllerExtensions.swift in Sources */,
 				C8842F8928C1975800673799 /* FolderDetailRouter.swift in Sources */,
+				C87A2C2028CCABDC00305170 /* CloudFolderCell.swift in Sources */,
 				C884313428C3536900673799 /* OpenZipRouter.swift in Sources */,
 				C884317528C3545600673799 /* aestab.c in Sources */,
 				C8842EFA28B9C4B500673799 /* ViewControllableExtensions.swift in Sources */,
@@ -2038,6 +2162,7 @@
 				C8842FE628C1994C00673799 /* SelectDestinationInteractor.swift in Sources */,
 				C8842EDB28B9C4B500673799 /* CIImageExtensions.swift in Sources */,
 				C884306628C3450F00673799 /* InputToCompressViewModel.swift in Sources */,
+				C87A2C1B28CCABDC00305170 /* OpenCloudInteractor+OpenCloud.swift in Sources */,
 				C884311328C347D800673799 /* CreatePasswordViewController.swift in Sources */,
 				C884306D28C3450F00673799 /* CompressInputValue.swift in Sources */,
 				C884318428C35E2800673799 /* OpenFolderComponent+PreviewImage.swift in Sources */,
@@ -2046,9 +2171,11 @@
 				C88431B528C49B1200673799 /* HomeInteractor+SelectCategoryAudio.swift in Sources */,
 				C8842EEC28B9C4B500673799 /* UserDefaultExtensions.swift in Sources */,
 				C8842F8C28C1975800673799 /* FolderDetailViewController.swift in Sources */,
+				C87A2C1928CCABDC00305170 /* OpenCloudViewModel.swift in Sources */,
 				C8842EC328B9C4B500673799 /* HighlightableButton.swift in Sources */,
 				C8842EC228B9C4B500673799 /* SkippedInteractiveView.swift in Sources */,
 				C8842ED928B9C4B500673799 /* AVMutableCompositionExtensions.swift in Sources */,
+				C87A2C2928CCABDC00305170 /* OpenCloudViewController.swift in Sources */,
 				C8842F2E28B9C66400673799 /* HomeBuilder.swift in Sources */,
 				C8842EE128B9C4B500673799 /* TimeIntervalExtensions.swift in Sources */,
 				C88430F328C347B000673799 /* DefaultPhotoSize.swift in Sources */,
@@ -2064,6 +2191,7 @@
 				C884307928C3450F00673799 /* CompressInteractor+InputToCompress.swift in Sources */,
 				C884318028C35E2800673799 /* OpenFolderInteractor+PreviewImage.swift in Sources */,
 				C884310C28C347D800673799 /* ChangePasswordInteractor.swift in Sources */,
+				C87A2BFE28CCABB300305170 /* AddFileFromGoogleDriveRouter.swift in Sources */,
 				C88431A228C4989500673799 /* SelectCategoryAudioRouter.swift in Sources */,
 				C884310A28C347D800673799 /* ChangePasswordViewController.swift in Sources */,
 				C884317228C3545600673799 /* aes_ni.c in Sources */,
@@ -2073,6 +2201,7 @@
 				C8842FAD28C197C300673799 /* OpenFolderComponent+SelectDestination.swift in Sources */,
 				C884306728C3450F00673799 /* InputToCompressBuilder.swift in Sources */,
 				C88431B128C4989500673799 /* SelectAudioInteractor.swift in Sources */,
+				C87A2C2228CCABDC00305170 /* CloudFileCell.swift in Sources */,
 				C8842EED28B9C4B500673799 /* BundleExtensions.swift in Sources */,
 				C884303428C1E46100673799 /* PreviewImageViewModel.swift in Sources */,
 				C8842F3828B9C66400673799 /* RootViewController.swift in Sources */,
@@ -2100,6 +2229,7 @@
 				C8842EBE28B9C4B500673799 /* SolarTextField.swift in Sources */,
 				C884317028C3545600673799 /* fileenc.c in Sources */,
 				C884307028C3450F00673799 /* CompressInteractor+InputPassword.swift in Sources */,
+				C87A2BFF28CCABB300305170 /* AddFileFromGoogleDriveBuilder.swift in Sources */,
 				C8842EC128B9C4B500673799 /* PlayerView.swift in Sources */,
 				C8842FC528C1984100673799 /* RenameItemInteractor.swift in Sources */,
 				C884310E28C347D800673799 /* CreatePasswordViewModel.swift in Sources */,
@@ -2120,6 +2250,7 @@
 				C8842F3728B9C66400673799 /* RootInteractor.swift in Sources */,
 				C8842F7328C195E400673799 /* OpenFolderNoDataView.swift in Sources */,
 				C8842FD228C1985A00673799 /* AddFilePopupRouter.swift in Sources */,
+				C87A2C1E28CCABDC00305170 /* OpenCloudInteractor.swift in Sources */,
 				C884302F28C1E46100673799 /* PreviewVideoViewController.swift in Sources */,
 				C884317728C3545600673799 /* UZKFileInfo.m in Sources */,
 				C884308428C3450F00673799 /* ExtractComponent+ExtractLoading.swift in Sources */,
@@ -2130,6 +2261,7 @@
 				C884313328C3536900673799 /* OpenZipItemViewModel.swift in Sources */,
 				C884301528C1E3EB00673799 /* SelectMediaNoPermissionView.swift in Sources */,
 				C8842FB728C197C300673799 /* OpenFolderComponent+FolderDetail.swift in Sources */,
+				C87A2C2528CCABDC00305170 /* CloudItem.swift in Sources */,
 				C884300F28C1E3EB00673799 /* MediaCollectionViewCell.swift in Sources */,
 				C884317428C3545600673799 /* pwd2key.c in Sources */,
 				C88431A828C4989500673799 /* SelectAudioViewModel.swift in Sources */,
@@ -2140,8 +2272,10 @@
 				C8842FB428C197C300673799 /* OpenFolderComponent+CreateFolder.swift in Sources */,
 				C8842ECF28B9C4B500673799 /* CGRectExtensions.swift in Sources */,
 				C88431AE28C4989500673799 /* SelectAudioCell.swift in Sources */,
+				C87A2C2328CCABDC00305170 /* OpenCloudComponent+OpenCloud.swift in Sources */,
 				C884316E28C3545600673799 /* hmac.c in Sources */,
 				C88431A328C4989500673799 /* SelectCategoryAudioInteractor.swift in Sources */,
+				C87A2C2728CCABDC00305170 /* CloudService.swift in Sources */,
 				C8842FF028C19D1400673799 /* OptionActionType.swift in Sources */,
 				C884312428C34E3F00673799 /* HomeInteractor+Setting.swift in Sources */,
 				C884313628C3536900673799 /* OpenZipCell.swift in Sources */,
@@ -2152,6 +2286,7 @@
 				C8842F9628C1978B00673799 /* CreateFolderViewModel.swift in Sources */,
 				C8842EE828B9C4B500673799 /* URLExtensions.swift in Sources */,
 				C88430D928C3478300673799 /* InputPasswordPurpose.swift in Sources */,
+				C87A2C1A28CCABDC00305170 /* OpenCloudItemViewModel.swift in Sources */,
 				C884301928C1E3EB00673799 /* SelectMediaComponet+PreviewImage.swift in Sources */,
 				C8842FB828C197C300673799 /* OpenFolderInteractor+AddFilePopup.swift in Sources */,
 				C88431AA28C4989500673799 /* SelectAudioViewController.swift in Sources */,
@@ -2159,9 +2294,11 @@
 				C8842FAC28C197C300673799 /* OpenFolderInteractor+SelectDestination.swift in Sources */,
 				C88430F428C347B000673799 /* SettingComponent+CreatePassword.swift in Sources */,
 				C884303C28C1E5AC00673799 /* HomeInteractor+SelectMedia.swift in Sources */,
+				C87A2C0128CCABB300305170 /* AddFileFromGoogleDriveComponent+OpenCloud.swift in Sources */,
 				C884307128C3450F00673799 /* CompressBuilder.swift in Sources */,
 				C8842EBD28B9C4B500673799 /* InputTextFragment.swift in Sources */,
 				C8842FB628C197C300673799 /* OpenFolderComponent+RenameItem.swift in Sources */,
+				C87A2C0028CCABB300305170 /* AddFileFromGoogleDriveInteractor.swift in Sources */,
 				C884301428C1E3EB00673799 /* SelectMediaViewModel.swift in Sources */,
 				C8842FE928C1994C00673799 /* SelectDestinationViewController.swift in Sources */,
 				C8842FC928C1984100673799 /* RenameItemBuilder.swift in Sources */,
@@ -2183,11 +2320,13 @@
 				C8842EF028B9C4B500673799 /* String+Mime.swift in Sources */,
 				C884308628C3450F00673799 /* ExtractInteractor+ExtractLoading.swift in Sources */,
 				C8842F8628C1975800673799 /* FolderDetailInteractor.swift in Sources */,
+				C87A2C2428CCABDC00305170 /* GoogleDriveItem.swift in Sources */,
 				C8842F7128C195E400673799 /* OptionView.swift in Sources */,
 				C884317628C3545600673799 /* SSZipArchive.m in Sources */,
 				C884307628C3450F00673799 /* CompressLoadingBuilder.swift in Sources */,
 				C884307E28C3450F00673799 /* ExtractLoadingBuilder.swift in Sources */,
 				C8842F9828C1978B00673799 /* CreateFolderBuilder.swift in Sources */,
+				C87A2C2828CCABDC00305170 /* GoogleDriveService.swift in Sources */,
 				C884311A28C3488D00673799 /* ExportAudioOperation.swift in Sources */,
 				C8842F6E28C195E400673799 /* OptionItemViewModel.swift in Sources */,
 				C88430DC28C3478300673799 /* InputPasswordViewController.swift in Sources */,
@@ -2213,6 +2352,7 @@
 				C88430DB28C3478300673799 /* InputPasswordRouter.swift in Sources */,
 				C8842FE428C1994C00673799 /* SelectDestinationNavigationViewModel.swift in Sources */,
 				C88431A628C4989500673799 /* SelectCategoryAudioViewController.swift in Sources */,
+				C87A2C1C28CCABDC00305170 /* OpenCloudRouter.swift in Sources */,
 				C884313228C3536900673799 /* OpenZipViewModel.swift in Sources */,
 				C88430EC28C347B000673799 /* SettingViewModel.swift in Sources */,
 				C8842EB728B9C4B500673799 /* PasswordTextField.swift in Sources */,
@@ -2275,15 +2415,19 @@
 				C884301128C1E3EB00673799 /* SelectMediaInteractor+PreviewImage.swift in Sources */,
 				C8842EE728B9C4B500673799 /* TableViewExtensions.swift in Sources */,
 				C8842F9728C1978B00673799 /* CreateFolderInteractor.swift in Sources */,
+				C87A2C2D28CCADAB00305170 /* HomeComponent+AddFileFromGoogleDrive.swift in Sources */,
 				C8842F3C28BA69B100673799 /* AppComponent.swift in Sources */,
 				C8842FC428C1984100673799 /* RenameItemViewModel.swift in Sources */,
 				C884308B28C3453000673799 /* HomeInteractor+Extract.swift in Sources */,
+				C87A2C2C28CCADAB00305170 /* HomeInteractor+AddFileFromGoogleDrive.swift in Sources */,
 				C884303628C1E46100673799 /* PreviewImageRouter.swift in Sources */,
 				C8842EDD28B9C4B500673799 /* CGPointExtensions.swift in Sources */,
 				C88431AB28C4989500673799 /* SelectAudioBuilder.swift in Sources */,
 				C8842EF228B9C4B500673799 /* UIImageViewExtensions.swift in Sources */,
 				C884310B28C347D800673799 /* ChangePasswordRouter.swift in Sources */,
+				C87A2C1D28CCABDC00305170 /* OpenCloudBuilder.swift in Sources */,
 				C884308D28C3453000673799 /* HomeInteractor+Compress.swift in Sources */,
+				C87A2C0228CCABB300305170 /* AddFileFromGoogleDriveInteractor+OpenCloud.swift in Sources */,
 				C8842FEA28C1994C00673799 /* SelectDestinationNavigationView.swift in Sources */,
 				C8842EC028B9C4B500673799 /* PaddingTextField.swift in Sources */,
 				C8842F3628B9C66400673799 /* RootComponent+Home.swift in Sources */,
