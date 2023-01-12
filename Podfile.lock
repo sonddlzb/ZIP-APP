@@ -1,10 +1,10 @@
 PODS:
-  - Alamofire (5.6.2)
-  - AppAuth (1.5.0):
-    - AppAuth/Core (= 1.5.0)
-    - AppAuth/ExternalUserAgent (= 1.5.0)
-  - AppAuth/Core (1.5.0)
-  - AppAuth/ExternalUserAgent (1.5.0):
+  - Alamofire (5.6.4)
+  - AppAuth (1.6.0):
+    - AppAuth/Core (= 1.6.0)
+    - AppAuth/ExternalUserAgent (= 1.6.0)
+  - AppAuth/Core (1.6.0)
+  - AppAuth/ExternalUserAgent (1.6.0):
     - AppAuth/Core
   - DifferenceKit (1.3.0):
     - DifferenceKit/Core (= 1.3.0)
@@ -12,22 +12,22 @@ PODS:
   - DifferenceKit/Core (1.3.0)
   - DifferenceKit/UIKitExtension (1.3.0):
     - DifferenceKit/Core
-  - GoogleAPIClientForREST/Core (2.0.0):
-    - GTMSessionFetcher/Full (< 3.0, >= 1.6.1)
-  - GoogleAPIClientForREST/Drive (2.0.0):
+  - GoogleAPIClientForREST/Core (3.0.0):
+    - GTMSessionFetcher/Full (< 4.0, >= 1.6.1)
+  - GoogleAPIClientForREST/Drive (3.0.0):
     - GoogleAPIClientForREST/Core
-    - GTMSessionFetcher/Full (< 3.0, >= 1.6.1)
-  - GoogleSignIn (6.2.2):
+    - GTMSessionFetcher/Full (< 4.0, >= 1.6.1)
+  - GoogleSignIn (7.0.0):
     - AppAuth (~> 1.5)
-    - GTMAppAuth (~> 1.3)
-    - GTMSessionFetcher/Core (~> 1.1)
-  - GTMAppAuth (1.3.0):
-    - AppAuth/Core (~> 1.4)
-    - GTMSessionFetcher/Core (~> 1.5)
-  - GTMSessionFetcher/Core (1.7.2)
-  - GTMSessionFetcher/Full (1.7.2):
-    - GTMSessionFetcher/Core (= 1.7.2)
-  - lottie-ios (3.4.1)
+    - GTMAppAuth (< 3.0, >= 1.3)
+    - GTMSessionFetcher/Core (< 4.0, >= 1.1)
+  - GTMAppAuth (2.0.0):
+    - AppAuth/Core (~> 1.6)
+    - GTMSessionFetcher/Core (< 4.0, >= 1.5)
+  - GTMSessionFetcher/Core (3.1.0)
+  - GTMSessionFetcher/Full (3.1.0):
+    - GTMSessionFetcher/Core
+  - lottie-ios (4.0.1)
   - Resolver (1.5.0)
   - RIBs (0.9.3):
     - RxRelay (~> 5.1)
@@ -39,8 +39,8 @@ PODS:
     - RxSwift (~> 5)
   - RxSwift (5.1.3)
   - SVProgressHUD (2.2.5)
-  - SwiftLint (0.48.0)
-  - TLLogging (1.0.3)
+  - SwiftLint (0.50.3)
+  - TLLogging (1.0.4)
 
 DEPENDENCIES:
   - Alamofire
@@ -85,23 +85,23 @@ CHECKOUT OPTIONS:
     :tag: v0.10.0
 
 SPEC CHECKSUMS:
-  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
-  AppAuth: 80317d99ac7ff2801a2f18ff86b48cd315ed465d
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  AppAuth: 8fca6b5563a5baef2c04bee27538025e4ceb2add
   DifferenceKit: ab185c4d7f9cef8af3fcf593e5b387fb81e999ca
-  GoogleAPIClientForREST: 2abe83bae1085d28f94ccc30a49fc7950d721fb9
-  GoogleSignIn: 3c68388ac221f379676e8f1cb115df3aaf73b93f
-  GTMAppAuth: 4d8f864896f3646f0c33baf38a28362f4c601e15
-  GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
-  lottie-ios: 016449b5d8be0c3dcbcfa0a9988469999cd04c5d
+  GoogleAPIClientForREST: 77c1fea751a6b572af8d8a224a5990f92ff80010
+  GoogleSignIn: b232380cf495a429b8095d3178a8d5855b42e842
+  GTMAppAuth: 99fb010047ba3973b7026e45393f51f27ab965ae
+  GTMSessionFetcher: c9e714f7eec91a55641e2bab9f45fd83a219b882
+  lottie-ios: 54d22edf55b839f0929cabbfe609c9aa548b1145
   Resolver: 68984624572763018fd8ec7b8e3e8df0e3b6bba5
   RIBs: d4c4c7e7e4580f0bbe88bdc88b6c11704a738b7f
   RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
   RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
   RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  SwiftLint: 284cea64b6187c5d6bd83e9a548a64104d546447
-  TLLogging: da818f99577a4629c555d6a6db6d4916878c2b71
+  SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
+  TLLogging: 636a4873bf1aaa9d60c4b938433b17e3ce33cb51
 
-PODFILE CHECKSUM: 188bea6a6324d8b7686d2265bbf4363d9e5d5b5d
+PODFILE CHECKSUM: 569a900ac443f06bab1f47d490e00b972a525a5e
 
 COCOAPODS: 1.11.3

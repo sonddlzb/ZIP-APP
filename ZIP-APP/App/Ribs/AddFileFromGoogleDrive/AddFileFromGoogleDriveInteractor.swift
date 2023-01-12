@@ -11,7 +11,7 @@ import RxSwift
 import TLLogging
 
 private struct Const {
-    static let clientID = "859784632740-c2ihc06ad94l78nafqbud9c1ued4irbd.apps.googleusercontent.com"
+    static let clientID = "1078221558246-lr568tkkvem4scg07kkeedvt0b3k78ec.apps.googleusercontent.com"
 }
 
 protocol AddFileFromGoogleDriveRouting: Routing {
@@ -38,7 +38,7 @@ final class AddFileFromGoogleDriveInteractor: Interactor, AddFileFromGoogleDrive
     override func didBecomeActive() {
         super.didBecomeActive()
 
-        let gidSignInCallBack: GIDSignInCallback = { [weak self] _, error in
+        let gidSignInCallBack: (GIDGoogleUser?, Error?) -> Void = { [weak self] _, error in
             if let error = error {
                 TLLogging.log("Google sign in error: \(error)")
                 if (error as NSError).code == -15 {
@@ -53,14 +53,14 @@ final class AddFileFromGoogleDriveInteractor: Interactor, AddFileFromGoogleDrive
         }
 
         if GIDSignIn.sharedInstance.hasPreviousSignIn() {
-            GIDSignIn.sharedInstance.restorePreviousSignIn(callback: gidSignInCallBack)
+            GIDSignIn.sharedInstance.restorePreviousSignIn(completion: gidSignInCallBack)
             return
         }
 
         if let viewController = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.topViewController() {
             let configuration = GIDConfiguration(clientID: Const.clientID)
             let scopes = [kGTLRAuthScopeDrive, kGTLRAuthScopeDriveFile, kGTLRAuthScopeDriveReadonly]
-            GIDSignIn.sharedInstance.signIn(with: configuration, presenting: viewController, hint: nil, additionalScopes: scopes, callback: gidSignInCallBack)
+            GIDSignIn.sharedInstance.signIn(withPresenting: viewController, hint: nil, additionalScopes: scopes)
         }
     }
 

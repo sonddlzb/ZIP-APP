@@ -15,7 +15,7 @@ protocol CompressLoadingPresentableListener: AnyObject {
 final class CompressLoadingViewController: BaseViewControler, CompressLoadingPresentable, CompressLoadingViewControllable {
     // MARK: - Outlets
     @IBOutlet private weak var blurView: SolarBlurView!
-    @IBOutlet private weak var gifView: AnimationView!
+    @IBOutlet private weak var gifView: LottieAnimationView!
 
     weak var listener: CompressLoadingPresentableListener?
 

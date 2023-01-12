@@ -81,7 +81,7 @@ extension GoogleDriveService: CloudService {
     }
 
     func fetch(item: CloudItem, completion: @escaping ([CloudItem]?, Error?) -> Void) {
-        self.service.authorizer = GIDSignIn.sharedInstance.currentUser?.authentication.fetcherAuthorizer()
+        self.service.authorizer = GIDSignIn.sharedInstance.currentUser?.fetcherAuthorizer
         let query = GTLRDriveQuery_FilesList.query()
         query.fields = "*"
         query.q = "trashed = false and '\(item.identifier())' In parents"
@@ -117,7 +117,7 @@ extension GoogleDriveService: CloudService {
         self.info.markDownloading(itemId: fileId)
         self.startDownloadingSubject.onNext(.next(item))
 
-        self.service.authorizer = GIDSignIn.sharedInstance.currentUser?.authentication.fetcherAuthorizer()
+        self.service.authorizer = GIDSignIn.sharedInstance.currentUser?.fetcherAuthorizer
 
         let filename: String
         if item.name().hasSuffix(fileExtension) {
