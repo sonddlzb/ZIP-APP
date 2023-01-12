@@ -19,11 +19,11 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xtc-70-WcJ" customClass="SolarBlurView" customModule="Zip" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xtc-70-WcJ" customClass="SolarBlurView" customModule="ZIP_APP" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDk-OL-URf" customClass="AnimationView" customModule="Lottie">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDk-OL-URf" customClass="LottieAnimationView" customModule="ZIP_APP" customModuleProvider="target">
                     <rect key="frame" x="35" y="276" width="344" height="344"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -48,7 +48,4 @@
             <point key="canvasLocation" x="-394" y="74"/>
         </view>
     </objects>
-    <designables>
-        <designable name="DDk-OL-URf"/>
-    </designables>
 </document>

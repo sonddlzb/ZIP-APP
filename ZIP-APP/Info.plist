@@ -2,24 +2,26 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Photo Library Permission</string>
-	<key>NSAppleMusicUsageDescription</key>
-	<string></string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>This permission for profile photo only</string>
-	<key>CFBundleExecutable</key>
-	<string>$(EXECUTABLE_NAME)</string>
-	<key>CFBundleIdentifier</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string>$(PRODUCT_NAME)</string>
-	<key>CFBundlePackageType</key>
-	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Photo Library Permission</string>
+    <key>NSAppleMusicUsageDescription</key>
+    <string></string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>This permission for profile photo only</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+	<key>GIDClientID</key>
+	<string>1078221558246-lr568tkkvem4scg07kkeedvt0b3k78ec.apps.googleusercontent.com</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -27,16 +29,16 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.859784632740-c2ihc06ad94l78nafqbud9c1ued4irbd</string>
+				<string>com.googleusercontent.apps.1078221558246-lr568tkkvem4scg07kkeedvt0b3k78ec</string>
 			</array>
 		</dict>
 		<dict>
+			<key>CFBundleURLName</key>
+			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>db-5c1751rst33iqoa</string>
 			</array>
-			<key>CFBundleURLName</key>
-			<string></string>
 		</dict>
 		<dict>
 			<key>CFBundleURLSchemes</key>
@@ -45,22 +47,6 @@
 			</array>
 		</dict>
 	</array>
-	<key>CFBundleVersion</key>
-	<string>1</string>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
-	<key>UIAppFonts</key>
-	<array>
-		<string>clarendon_blk_bt-black.ttf</string>
-		<string>clarendon_blk_bt-regular.ttf</string>
-		<string>Montserrat-Bold.otf</string>
-	</array>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>UISupportedInterfaceOrientations</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-	</array>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>dbapi-8-emm</string>
@@ -68,5 +54,27 @@
 		<string>msauthv2</string>
 		<string>msauthv3</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>clarendon_blk_bt-black.ttf</string>
+		<string>clarendon_blk_bt-regular.ttf</string>
+		<string>Montserrat-Bold.otf</string>
+	</array>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>UIAppFonts</key>
+    <array>
+        <string>clarendon_blk_bt-black.ttf</string>
+        <string>clarendon_blk_bt-regular.ttf</string>
+        <string>Montserrat-Bold.otf</string>
+    </array>
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+    </array>
 </dict>
 </plist>

@@ -20,11 +20,11 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9X-MY-kOR" customClass="SolarBlurView" customModule="Zip" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9X-MY-kOR" customClass="SolarBlurView" customModule="ZIP_APP" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JF2-OA-0De" customClass="AnimationView" customModule="Lottie">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JF2-OA-0De" customClass="LottieAnimationView" customModule="ZIP_APP" customModuleProvider="target">
                     <rect key="frame" x="35" y="276" width="344" height="344"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -49,7 +49,4 @@
             <point key="canvasLocation" x="-394.20289855072468" y="73.660714285714278"/>
         </view>
     </objects>
-    <designables>
-        <designable name="JF2-OA-0De"/>
-    </designables>
 </document>

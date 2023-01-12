@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C82010E02970598F009753FC /* Pods_ZIP_APP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F45421FC8974ECBE141225 /* Pods_ZIP_APP.framework */; };
+		C82010E12970598F009753FC /* Pods_ZIP_APP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 39F45421FC8974ECBE141225 /* Pods_ZIP_APP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C87A2BFE28CCABB300305170 /* AddFileFromGoogleDriveRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2BF928CCABB300305170 /* AddFileFromGoogleDriveRouter.swift */; };
 		C87A2BFF28CCABB300305170 /* AddFileFromGoogleDriveBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2BFA28CCABB300305170 /* AddFileFromGoogleDriveBuilder.swift */; };
 		C87A2C0028CCABB300305170 /* AddFileFromGoogleDriveInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2BFB28CCABB300305170 /* AddFileFromGoogleDriveInteractor.swift */; };
@@ -31,6 +33,7 @@
 		C87A2C2928CCABDC00305170 /* OpenCloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C1828CCABDC00305170 /* OpenCloudViewController.swift */; };
 		C87A2C2C28CCADAB00305170 /* HomeInteractor+AddFileFromGoogleDrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C2A28CCADAB00305170 /* HomeInteractor+AddFileFromGoogleDrive.swift */; };
 		C87A2C2D28CCADAB00305170 /* HomeComponent+AddFileFromGoogleDrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87A2C2B28CCADAB00305170 /* HomeComponent+AddFileFromGoogleDrive.swift */; };
+		C882F00829705DB2002ADB6F /* client_1078221558246-lr568tkkvem4scg07kkeedvt0b3k78ec.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = C882F00729705DB2002ADB6F /* client_1078221558246-lr568tkkvem4scg07kkeedvt0b3k78ec.apps.googleusercontent.com.plist */; };
 		C8842DD928B9BEAF00673799 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8842DD828B9BEAF00673799 /* AppDelegate.swift */; };
 		C8842DE228B9BEB100673799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8842DE128B9BEB100673799 /* Assets.xcassets */; };
 		C8842DE528B9BEB100673799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8842DE328B9BEB100673799 /* LaunchScreen.storyboard */; };
@@ -377,7 +380,6 @@
 		C88431B128C4989500673799 /* SelectAudioInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C884319E28C4989500673799 /* SelectAudioInteractor.swift */; };
 		C88431B428C49B1200673799 /* HomeComponent+SelectCategoryAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88431B228C49B1200673799 /* HomeComponent+SelectCategoryAudio.swift */; };
 		C88431B528C49B1200673799 /* HomeInteractor+SelectCategoryAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88431B328C49B1200673799 /* HomeInteractor+SelectCategoryAudio.swift */; };
-		D27757A0AE49BF14D6C85C36 /* Pods_ZIP_APP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F45421FC8974ECBE141225 /* Pods_ZIP_APP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -397,9 +399,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C82010E22970598F009753FC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C82010E12970598F009753FC /* Pods_ZIP_APP.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		39F45421FC8974ECBE141225 /* Pods_ZIP_APP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZIP_APP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4BF08952D980EFBA0D702AB /* Pods-ZIP-APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZIP-APP.debug.xcconfig"; path = "Target Support Files/Pods-ZIP-APP/Pods-ZIP-APP.debug.xcconfig"; sourceTree = "<group>"; };
+		C82010DB29704E62009753FC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C87A2BF928CCABB300305170 /* AddFileFromGoogleDriveRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFileFromGoogleDriveRouter.swift; sourceTree = "<group>"; };
 		C87A2BFA28CCABB300305170 /* AddFileFromGoogleDriveBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFileFromGoogleDriveBuilder.swift; sourceTree = "<group>"; };
 		C87A2BFB28CCABB300305170 /* AddFileFromGoogleDriveInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFileFromGoogleDriveInteractor.swift; sourceTree = "<group>"; };
@@ -424,6 +441,7 @@
 		C87A2C1828CCABDC00305170 /* OpenCloudViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenCloudViewController.swift; sourceTree = "<group>"; };
 		C87A2C2A28CCADAB00305170 /* HomeInteractor+AddFileFromGoogleDrive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeInteractor+AddFileFromGoogleDrive.swift"; sourceTree = "<group>"; };
 		C87A2C2B28CCADAB00305170 /* HomeComponent+AddFileFromGoogleDrive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeComponent+AddFileFromGoogleDrive.swift"; sourceTree = "<group>"; };
+		C882F00729705DB2002ADB6F /* client_1078221558246-lr568tkkvem4scg07kkeedvt0b3k78ec.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_1078221558246-lr568tkkvem4scg07kkeedvt0b3k78ec.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
 		C8842DD528B9BEAF00673799 /* ZIP-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZIP-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8842DD828B9BEAF00673799 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8842DE128B9BEB100673799 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -433,7 +451,6 @@
 		C8842DF528B9BEB100673799 /* ZIP-APPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZIP-APPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8842DF928B9BEB100673799 /* ZIP_APPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZIP_APPUITests.swift; sourceTree = "<group>"; };
 		C8842DFB28B9BEB100673799 /* ZIP_APPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZIP_APPUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C8842E0828B9C3D200673799 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8842E0D28B9C44200673799 /* clarendon_blk_bt-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "clarendon_blk_bt-regular.ttf"; sourceTree = "<group>"; };
 		C8842E0E28B9C44200673799 /* clarendon_blk_bt-black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "clarendon_blk_bt-black.ttf"; sourceTree = "<group>"; };
 		C8842E1028B9C44200673799 /* Montserrat-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.otf"; sourceTree = "<group>"; };
@@ -804,7 +821,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D27757A0AE49BF14D6C85C36 /* Pods_ZIP_APP.framework in Frameworks */,
+				C82010E02970598F009753FC /* Pods_ZIP_APP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -935,6 +952,8 @@
 		C8842DD728B9BEAF00673799 /* ZIP-APP */ = {
 			isa = PBXGroup;
 			children = (
+				C882F00729705DB2002ADB6F /* client_1078221558246-lr568tkkvem4scg07kkeedvt0b3k78ec.apps.googleusercontent.com.plist */,
+				C82010DB29704E62009753FC /* Info.plist */,
 				C884313B28C3545500673799 /* Thirdparty */,
 				C8842E0A28B9C3DB00673799 /* App */,
 			);
@@ -969,7 +988,6 @@
 				C8842E5C28B9C46400673799 /* Gif */,
 				C8842E0B28B9C42900673799 /* Fonts */,
 				C8842DE328B9BEB100673799 /* LaunchScreen.storyboard */,
-				C8842E0828B9C3D200673799 /* Info.plist */,
 				C8842DD828B9BEAF00673799 /* AppDelegate.swift */,
 				C8842DE128B9BEB100673799 /* Assets.xcassets */,
 			);
@@ -1905,7 +1923,8 @@
 				C8842DD128B9BEAF00673799 /* Sources */,
 				C8842DD228B9BEAF00673799 /* Frameworks */,
 				C8842DD328B9BEAF00673799 /* Resources */,
-				91706F4D2A9D43DC1F151801 /* [CP] Embed Pods Frameworks */,
+				C82010E22970598F009753FC /* Embed Frameworks */,
+				6DD5AAC4CC91C09F037B760F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2006,6 +2025,7 @@
 				C8842FD128C1985A00673799 /* AddFilePopupViewController.xib in Resources */,
 				C8842E3928B9C44200673799 /* Montserrat-BlackItalic.otf in Resources */,
 				C8842E4928B9C44200673799 /* Montserrat-Medium.otf in Resources */,
+				C882F00829705DB2002ADB6F /* client_1078221558246-lr568tkkvem4scg07kkeedvt0b3k78ec.apps.googleusercontent.com.plist in Resources */,
 				C8842E4C28B9C44200673799 /* Montserrat-ExtraBoldItalic.otf in Resources */,
 				C8842E5728B9C44200673799 /* MontserratAlternates-ThinItalic.otf in Resources */,
 				C8842E5528B9C44200673799 /* MontserratAlternates-ExtraLight.otf in Resources */,
@@ -2119,7 +2139,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		91706F4D2A9D43DC1F151801 /* [CP] Embed Pods Frameworks */ = {
+		6DD5AAC4CC91C09F037B760F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2605,12 +2625,16 @@
 				DEVELOPMENT_TEAM = C88L7TD8K4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ZIP-APP/Info.plist";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This permission for profile photo only";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo Library Permission";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2637,12 +2661,16 @@
 				DEVELOPMENT_TEAM = C88L7TD8K4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ZIP-APP/Info.plist";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This permission for profile photo only";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo Library Permission";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

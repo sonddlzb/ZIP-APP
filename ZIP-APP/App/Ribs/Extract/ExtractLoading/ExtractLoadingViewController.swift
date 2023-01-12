@@ -14,7 +14,7 @@ protocol ExtractLoadingPresentableListener: AnyObject {
 
 final class ExtractLoadingViewController: BaseViewControler, ExtractLoadingPresentable, ExtractLoadingViewControllable {
     @IBOutlet private weak var blurView: SolarBlurView!
-    @IBOutlet private weak var gifView: AnimationView!
+    @IBOutlet private weak var gifView: LottieAnimationView!
 
     weak var listener: ExtractLoadingPresentableListener?
 
